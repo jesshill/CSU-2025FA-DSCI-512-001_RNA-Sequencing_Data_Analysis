@@ -1,13 +1,20 @@
 # Course Description - 2025
 
-Linux/Unix is the primary platform for computational science. The goal of this course is to train scientists in its use with particular emphasis on the needs of bioinformatics users. The course covers basic Linux commands and utilities, running and managing computational jobs, and handling and manipulating large biological datasets.
+RNA-seq is a commonly used method for analyzing gene expression. This course will provide hands-on experience processing and analyzing high-throughput sequencing data, with an emphasis on RNA-seq.
 
-<ins>By the end of the course, students will:
+By the end of the course students will be proficient with:
+- Handling and processing high-throughput sequencing data
+- High-throughput sequencing data quality control and filtering
+- Alignment
+- Differential gene expression analysis
+- Data visualization
 
-- Be comfortable with the Linux command line and command-line programs, including the ability to move, create, or edit files and directories
-- Know how to search, manipulate, and process large datasets
-- Write and execute small bash script programs
-- Know how to connect to a remote server like the (Alpine)[https://www.colorado.edu/rc/alpine] system and run jobs on it. You can find more information and documentation about Alpine [here](https://curc.readthedocs.io/en/latest/clusters/alpine/index.html).
+By the end of this course, you should...
+- Have a grasp of the goals and process of RNA-seq experiments
+- Understand RNA-seq experimental design
+- Become familiar with common RNA-seq analysis steps: quality control, alignment, tabulation, differential expression, and clustering
+- Be able to write (or at least hack) automated pipelines for RNA-seq analysis
+- Be familiar with best practices
 
 # Time and Place
 
@@ -49,17 +56,13 @@ Because this course is so flexible, it puts a lot of responsibility on you to en
 
 # Prerequisites
 
-Students do not need to have any prior experience in computing, programming, or coding.
+Linux as a computational platform (DSCI 510) or familiarity with UNIX/Linux and working from the command line.
 
-Graduate standing is encouraged but not required. An interest in using LINUX/UNIX in your research work is encouraged. We will focus on using LINUX/UNIX to support research primarily in the life sciences. However, the content is broadly applicable to many fields.
-
-**BEFORE** the first day of class, ensure you have purchased, uploaded, or installed all the required hardware and software. See [Computer Requirements](Computer_Requirements.md).
+Please see the [Course Requirements](Requirements.md) for information on the computer you should bring to class, requesting Alpine access, and required software.
 
 # Textbook
 
-[The Linux Command Line, 5th ed](https://github.com/jesshill/CSU-2025FA-DSCI-510-001_LINUX_as_a_computational_platform/blob/main/Resources/The-Linux-Command-Line-Book-5th-Edition.pdf) by William Shotts. 
-
-The book is available as a **free, downloadable pdf** from the book website (also attached above) or as a paperback widely sold by booksellers.
+There is no textbook for this course. Assigned readings come from papers describing the techniques used in the course.
 
 # Communications
 
