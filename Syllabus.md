@@ -9,7 +9,7 @@ RNA-seq is a commonly used method for analyzing gene expression. This course wil
 - Differential gene expression analysis
 - Data visualization
 
-**By the end of this course, you should...**
+**By the end of this course, you should ...**
 - Have a grasp of the goals and process of RNA-seq experiments
 - Understand RNA-seq experimental design
 - Become familiar with common RNA-seq analysis steps: quality control, alignment, tabulation, differential expression, and clustering
