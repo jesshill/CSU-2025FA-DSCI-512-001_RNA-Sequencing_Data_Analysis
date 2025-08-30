@@ -18,7 +18,7 @@ By the end of this course, you should...
 
 # Time and Place
 
-**Come to class:** The lectures will be very interactive with individualized help only available in the classroom, so in-person attendance is encouraged. <ins>Class starts on August 25th and ends on September 21st. 
+**Come to class:** The lectures will be very interactive with individualized help only available in the classroom, so in-person attendance is encouraged. <ins>Class starts on November #th and ends on December #st. 
 
 **Lectures:** Tuesdays and Thursdays, 10:00 - 11:50 am in AZ building, room E210
 
