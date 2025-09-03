@@ -34,9 +34,23 @@ Everyone will need to install a [text editor](https://en.wikipedia.org/wiki/Text
 - Windows 11:
   - Recommend [Notepad++](https://notepad-plus-plus.org/), BBEdit, or [Visual Studio Code](https://code.visualstudio.com/download) do not recommend TextEdit, Wordpad, Notebook, EMACS, or Microsoft Word.
   - If you already have a text editor you like that is not listed, you are free to use it provided it saves files in true flat .txt and not rich text format.
+- We do not recommend TextEdit, Wordpad, Notebook, or Microsoft Word. You are free to use vim or emacs if you are already familar with those interfaces, but they are beyond the scope of this course. 
 
+### 2. R and RStudio
 
+For the second half of the class, we will use Rstudio.
 
+#### MAC USERS
+
+**MAC: To install R**
+
+Open an internet browser and go to www.r-project.org.
+Click the “download R” link in the middle of the page under “Getting Started.”
+Select a USA CRAN location (a mirror site) and click the corresponding link.
+Click on the “Download R for (Mac) OS X” link at the top of the page.
+Click on the file containing the latest version of R under “Files.”
+Save the .pkg file, double-click it to open, and follow the installation instructions.
+Now that R is installed, you need to download and install RStudio.
 
 
 
