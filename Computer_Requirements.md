@@ -15,9 +15,39 @@ You will need to have either a MAC laptop, a laptop running Windows 11 (ideally 
 
 If your laptop is very slow or near dying, please consider borrowing a laptop for the class.
 
-The computer should be a laptop. A tablet or iPad is not going to cut it!
+The computer should be a laptop. **A tablet or iPad is not going to cut it!**
 
-## 2. Learn how to open the terminal on your computer
+## 2. Download and install all required software
+
+You will need ...
+
+1. a text editor (see below)
+2. R and R Studio (2nd half of class, see below)
+3. [IGV](https://igv.org/doc/webapp/) (optional, see below) or create an account on [Galaxy](https://usegalaxy.org/)
+
+### 1. text editor 
+
+Everyone will need to install a [text editor](https://en.wikipedia.org/wiki/Text_editor) for writing and modifying plain text files. 
+
+- Mac:
+  - Recommend [BBEdit](https://www.barebones.com/products/) or [Xcode](https://xcodereleases.com/). Click Download under the BBEdit software. You dont need to buy it. The free version does everthing you need.
+- Windows 11:
+  - Recommend [Notepad++](https://notepad-plus-plus.org/), BBEdit, or [Visual Studio Code](https://code.visualstudio.com/download) do not recommend TextEdit, Wordpad, Notebook, EMACS, or Microsoft Word.
+  - If you already have a text editor you like that is not listed, you are free to use it provided it saves files in true flat .txt and not rich text format.
+
+
+
+
+
+
+
+
+
+
+
+
+
+Learn how to open the terminal on your computer
 
 What is a terminal or command line interface? 
 
