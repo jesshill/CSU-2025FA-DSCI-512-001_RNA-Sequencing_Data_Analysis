@@ -13,12 +13,12 @@ RNA-seq is a commonly used method for analyzing gene expression. This course wil
 - Have a grasp of the goals and process of RNA-seq experiments
 - Understand RNA-seq experimental design
 - Become familiar with common RNA-seq analysis steps: quality control, alignment, tabulation, differential expression, and clustering
-- Be able to write (or at least hack) automated pipelines for RNA-seq analysis
+- Be able to write and/or hack automated pipelines for RNA-seq analysis
 - Be familiar with best practices
 
 # Time and Place
 
-**Come to class:** The lectures will be very interactive with individualized help only available in the classroom, so in-person attendance is encouraged. <ins>Class starts on November #th and ends on December #st. 
+**Come to class:** The lectures will be very interactive with individualized help only available in the classroom, so in-person attendance is encouraged. <ins>Class starts on November 10th and ends on December 14th. 
 
 **Lectures:** Tuesdays and Thursdays, 10:00 - 11:50 am in AZ building, room E210
 
