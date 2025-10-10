@@ -32,7 +32,7 @@ Meeting ID: 959 4557 2799
 
 | Date  | Week | Description | Reading | Assignments | Quizzes |
 |-------|------|-------------|---------|-------------|---------|
-| November 11 | 1 | Course introduction, ALPINE, Intro to RNA-seq | Reading 1 **(due ...)** | Assignment 1 **(due ...)** | Quiz 1 **(due ...)** |
+| November 11 | 1 | Course introduction, ALPINE, Intro to RNA-seq | Reading 1 **(due Nov. 18th)** | Assignment 1 **(due ...)** | Quiz 1 **(due ...)** |
 | November 13 | 1 | Installing Software |  |  |  |
 | November 18 | 2 | The Project, the Pipeline, Installing Software II SRA Toolkit, Project Initiation, Running Jobs with Slurm, Data Acquisition | Reading 2 **(due ...)** | Assignment 2 **(due ...)** | Quiz 2 **(due ...)** |
 | November 20 | 2 | Overview of R, Data Aquisition, Pre-processing & Quality Control | Reading 3 **(due ...)** | Assignment 3 **(due ...)** |  |
