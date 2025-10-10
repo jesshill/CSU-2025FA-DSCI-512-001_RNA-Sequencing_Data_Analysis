@@ -30,18 +30,18 @@ Meeting ID: 959 4557 2799
 
 # Schedule
 
-| Date  | Week | Description | Reading | Assignments |
-|-------|------|-------------|---------|-------------|
-| November 11 | 1 | Course introduction, The terminal, Navigating the file system | Chapters 1, 2 | Assignment 1 **(due September 2)**|
-| November 13 | 1 | Paths, Options, Working with files 1 (more, less, head, tail, wc), Wildcards, Getting help | Chapter 2 (navigation), Chapter 3 (ls, less), Chapter 4 (wildcards) | Assignment 2 **(due September 2)** |
-| November 18 | 2 | Making & removing, Copying & moving, File transfer, File formats | Chapters 4-5 (mkdir, cp, mv), Chapter 6 (redirection), Chapter 16, Chapter 18 (gzip) | Assignment 3 **(due September 9)** |
-| November 20 | 2 | Redirection, Working with files 2 (cat, grep, cut), Practice grep & cut, Pipes, More Pipes | Chapter 19 (grep), Chapter 20 (sort, uniq, cut), Chapter 5 (alias), Chapter 9 | Assignment 4 **(due September 9)** |
-| November 25 | 3 | Connecting to remote computers, Working with files 3 (sed, tr), Scripting 1, Scripting 2 (review, echo, commenting out), Variables (capturing output & math) | Chapter 20 (sed), Chapter 24, Chapter 25, Chapter 32, Chapter 34, [Ryan's Tutorials - bash intro](https://ryanstutorials.net/bash-scripting-tutorial/bash-script.php) | Assignment 5 **(due September 16)** |
-| November 27 | 3 | Array variables, Special variables & IO, String operations, Environmental variables | Chapter 34, Chapter 11, [Ryan's Tutorials - variables](https://ryanstutorials.net/bash-scripting-tutorial/bash-variables.php) | Assignment 6 **(due September 16)** |
-| December 2 | 4 | Scripting 3 (control flow), Conditionals (if, else), Loops (while, for) | [Ryan's Tutorials - loops](https://ryanstutorials.net/bash-scripting-tutorial/bash-loops.php), [Ryan's Tutorials - if](https://ryanstutorials.net/bash-scripting-tutorial/bash-if-statements.php), Chapter 9, Chapter 24 |     |
-| December 4 | 4 | Control flow practice, Intro to Alpine, Custom commands, Running jobs on Alpine, Next steps on Alpine | [Alpine Quick Start Guide](https://curc.readthedocs.io/en/latest/clusters/alpine/index.html) |     |
-| December 9 | 5 | Scripting 3 (control flow), Conditionals (if, else), Loops (while, for) | [Ryan's Tutorials - loops](https://ryanstutorials.net/bash-scripting-tutorial/bash-loops.php), [Ryan's Tutorials - if](https://ryanstutorials.net/bash-scripting-tutorial/bash-if-statements.php), Chapter 9, Chapter 24 |     |
-| December 11 | 5 | Control flow practice, Intro to Alpine, Custom commands, Running jobs on Alpine, Next steps on Alpine | [Alpine Quick Start Guide](https://curc.readthedocs.io/en/latest/clusters/alpine/index.html) |     |
+| Date  | Week | Description | Reading | Assignments | Quizzes |
+|-------|------|-------------|---------|-------------|---------|
+| November 11 | 1 | Course introduction, ALPINE, Intro to RNA-seq | Reading 1 **(due ...)** | Assignment 1 **(due ...)** | Quiz 1 **(due ...)** |
+| November 13 | 1 | Installing Software |  |  |  |
+| November 18 | 2 | The Project, the Pipeline, Installing Software II SRA Toolkit, Project Initiation, Running Jobs with Slurm, Data Acquisition | Reading 2 **(due ...)** | Assignment 2 **(due ...)** | Quiz 2 **(due ...)** |
+| November 20 | 2 | Overview of R, Data Aquisition, Pre-processing & Quality Control | Reading 3 **(due ...)** | Assignment 3 **(due ...)** |  |
+| November 25 | 3 | NO CLASS - BREAK |  |  |  |
+| November 27 | 3 | NO CLASS - BREAK |  |  |  |
+| December 2 | 4 | Automation I, Alignment, Building Indexes |  | Assignment 4 **(due ...)** | Quiz 3 **(due ...)** |
+| December 4 | 4 | Alignment | Reading 4 **(due ...)** | Assignment 5 **(due ...)** |  |
+| December 9 | 5 | Tabulation, Differential Expression Analysis | Reading 5 **(due ...)** |  |  |
+| December 11 | 5 | ... | ... |  |  |
 | **Final Exam** | **6** | **FAQ on Exam project, Tips & Tricks 1** | **Examples of past projects**  | **Exam Project (due December 16th)** |
 
 # Attendance
