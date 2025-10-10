@@ -42,7 +42,7 @@ Meeting ID: 959 4557 2799
 | December 4 | 4 | Alignment | Reading 4 **(due ...)** | Assignment 5 **(due ...)** |  |
 | December 9 | 5 | Tabulation, Differential Expression Analysis | Reading 5 **(due ...)** |  |  |
 | December 11 | 5 | ... | ... |  |  |
-| **Final Exam** | **6** | **FAQ on Exam project, Tips & Tricks 1** | **Examples of past projects**  | **Exam Project (due December 16th)** |
+| **Final Exam** | **6** |  |  | **Exam Project (due December 16th)** |
 
 # Attendance
 
