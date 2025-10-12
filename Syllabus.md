@@ -39,10 +39,10 @@ Meeting ID: 959 4557 2799
 | November 25 | 3 | NO CLASS - BREAK |  |  |  |
 | November 27 | 3 | NO CLASS - BREAK |  |  |  |
 | December 2 | 4 | Automation I, Alignment, Building Indexes |  | Assignment 4 **(due Dec. 4th)** | Quiz 3 **(due Dec. 9th)** |
-| December 4 | 4 | Alignment | Reading 4 **(due ...)** | Assignment 5 **(due Dec. 4th)** |  |
-| December 9 | 5 | Tabulation, Differential Expression Analysis | Reading 5 **(due ...)** |  |  |
+| December 4 | 4 | Alignment | Reading 4 **(due Dec. 9th)** | Assignment 5 **(due Dec. 4th)** |  |
+| December 9 | 5 | Tabulation, Differential Expression Analysis | Reading 5 **(due Dec. 16th)** |  |  |
 | December 11 | 5 | Genome Browsers, Announcments, Clean Up |  |  |  |
-| **Final Exam** | **6** |  |  | **Exam Project (due December 16th)** |
+| December 16 **Final Exam** | **6** |  |  | **Exam Project (due December 16th)** |
 
 # Attendance
 
