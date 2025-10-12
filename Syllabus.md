@@ -34,8 +34,8 @@ Meeting ID: 959 4557 2799
 |-------|------|-------------|---------|-------------|---------|
 | November 11 | 1 | Course introduction, ALPINE, Intro to RNA-seq | Reading 1 **(due Nov. 18th)** | Assignment 1 **(due Dec. 4th)** | Quiz 1 **(due Nov. 18th)** |
 | November 13 | 1 | Installing Software |  |  |  |
-| November 18 | 2 | The Project, the Pipeline, Installing Software II SRA Toolkit, Project Initiation, Running Jobs with Slurm, Data Acquisition | Reading 2 **(due ...)** | Assignment 2 **(due Dec. 4th)** | Quiz 2 **(due Dec. 2nd)** |
-| November 20 | 2 | Overview of R, Data Aquisition, Pre-processing & Quality Control | Reading 3 **(due ...)** | Assignment 3 **(due ...)** |  |
+| November 18 | 2 | The Project, the Pipeline, Installing Software II SRA Toolkit, Project Initiation, Running Jobs with Slurm, Data Acquisition | Reading 2 **(due Dec. 2nd)** | Assignment 2 **(due Dec. 4th)** | Quiz 2 **(due Dec. 2nd)** |
+| November 20 | 2 | Overview of R, Data Aquisition, Pre-processing & Quality Control | Reading 3 **(due Dec. 2nd)** | Assignment 3 **(due ...)** |  |
 | November 25 | 3 | NO CLASS - BREAK |  |  |  |
 | November 27 | 3 | NO CLASS - BREAK |  |  |  |
 | December 2 | 4 | Automation I, Alignment, Building Indexes |  | Assignment 4 **(due Dec. 4th)** | Quiz 3 **(due Dec. 9th)** |
