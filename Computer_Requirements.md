@@ -72,11 +72,11 @@ If you can't access a terminal, please contact me prior to class! I will be avai
 
 You will need ... 
 
-1. a text editor (see below)
-2. R and R Studio (see below)
-3. [IGV](https://igv.org/doc/webapp/) (optional, see below) or create an account on [Galaxy](https://usegalaxy.org/) (optional)
+1. a text editor
+2. R and R Studio
+3. (Optional) [IGV](https://igv.org/doc/webapp/) or create an account on [Galaxy](https://usegalaxy.org/)
 
-### 3.1. text editor 
+### 1. Text editor 
 
 Everyone will need to install a [text editor](https://en.wikipedia.org/wiki/Text_editor) for writing and modifying plain text files. 
 
@@ -86,7 +86,7 @@ Everyone will need to install a [text editor](https://en.wikipedia.org/wiki/Text
   - Recommend [Notepad++](https://notepad-plus-plus.org/), BBEdit, or [Visual Studio Code](https://code.visualstudio.com/download) do not recommend TextEdit, Wordpad, Notebook, EMACS, or Microsoft Word.
   - If you already have a text editor you like that is not listed, you are free to use it provided it saves files in true flat .txt and not rich text format.
 
-### 3.2. R and RStudio
+### 2. R and RStudio
 
 For the second half of the class, we will use R/Rstudio.
 
