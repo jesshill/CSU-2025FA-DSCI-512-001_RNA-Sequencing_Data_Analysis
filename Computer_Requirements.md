@@ -1,6 +1,6 @@
 # Computer Requirements
 
-By using Linux and other tools to that will be mentioned in this class on your own computer, you can more quickly incorporate what you learn into your own research. Before coming to the first class, please ensure you have done Steps 1, 2, and 3 below. We will work on Step 4 in class …
+By using LINUX, and other tools that will be mentioned in this class, on your own computer, you can more quickly incorporate what you learn into your own research. Before coming to the first class, please ensure you have done Steps 1, 2, and 3 below. We will work on Step 4 in class …
 
 1. Select a computer to use in the class
 2. Learn how to open the terminal on your computer
@@ -11,7 +11,7 @@ By using Linux and other tools to that will be mentioned in this class on your o
 
 ## 1. Select a computer to use in the class
 
-You will need to have either a MAC laptop, a laptop running Windows 11 (ideally with a Linux subsystem installed), or a Linux laptop. CSU will no longer be supporting laptops running Windows versions less than 11 or MAC laptops running on OS less than Ventura on their internet for security purposes. If you don't have a MAC, Windows, or Linux laptop, please obtain one! There are laptops available for rental through the [Morgan Library](https://lib.colostate.edu/services/borrow-renew/borrowing-laptops/). Check that same link for laptop rentals available through each college. Your graduate program, department, or lab may have laptops to borrow.
+You will need to have either a MAC laptop, a laptop running Windows 11 (ideally with a Linux subsystem installed), or a Linux laptop. CSU will no longer be supporting laptops running Windows versions less than 11 or MAC laptops running on OS less than Ventura on their internet for security purposes. If you don't have a MAC, Windows, or Linux laptop, please obtain one! There are laptops available for rental through the [Morgan Library](https://lib.colostate.edu/services/borrow-renew/borrowing-laptops/). Check that same link for laptop rentals available through each college. Your graduate program, department, or lab may have laptops to borrow also.
 
 If your laptop is very slow or near dying, please consider borrowing a laptop for the class.
 
@@ -22,8 +22,8 @@ The computer should be a laptop. **A tablet or iPad is not going to cut it!**
 You will need ...
 
 1. a text editor (see below)
-2. R and R Studio (2nd half of class, see below)
-3. [IGV](https://igv.org/doc/webapp/) (optional, see below) or create an account on [Galaxy](https://usegalaxy.org/)
+2. R and R Studio (see below)
+3. [IGV](https://igv.org/doc/webapp/) (optional, see below) or create an account on [Galaxy](https://usegalaxy.org/) (optional)
 
 ### 1. text editor 
 
