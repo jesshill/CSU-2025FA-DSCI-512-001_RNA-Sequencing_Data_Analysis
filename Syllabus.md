@@ -89,11 +89,11 @@ Please e-mail me with any questions through regular e-mail or canvas e-mail. Cou
 
 Your grade for this course will be based on assignments, participation, ?readings?, quizes, and a final exam. The percentages are as follows:
 
-- Assignments: 35%
-- Participation: 15%
-- Readings: ???
+- Assignments: 30%
+- Participation: 10%
+- Readings: 15%
 - Quizes: 15%
-- Final exam: 35%
+- Final exam: 30%
 
 The calculation of the final letter grade will be made as follows:
 
