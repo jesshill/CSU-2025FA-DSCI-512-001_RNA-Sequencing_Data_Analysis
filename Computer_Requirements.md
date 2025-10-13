@@ -34,6 +34,16 @@ Everyone will need to install a [text editor](https://en.wikipedia.org/wiki/Text
 - Windows 11:
   - Recommend [Notepad++](https://notepad-plus-plus.org/), BBEdit, or [Visual Studio Code](https://code.visualstudio.com/download) do not recommend TextEdit, Wordpad, Notebook, EMACS, or Microsoft Word.
   - If you already have a text editor you like that is not listed, you are free to use it provided it saves files in true flat .txt and not rich text format.
+
+
+
+Everyone will need to install a [text editor](https://en.wikipedia.org/wiki/Text_editor) for writing and modifying plain text files. 
+
+- Mac:
+  - Recommend [BBEdit](https://www.barebones.com/products/) or [Xcode](https://xcodereleases.com/). Click Download under the BBEdit software. You dont need to buy it. The free version does everthing you need.
+- Windows 11:
+  - Recommend [Notepad++](https://notepad-plus-plus.org/), BBEdit, or [Visual Studio Code](https://code.visualstudio.com/download) do not recommend TextEdit, Wordpad, Notebook, EMACS, or Microsoft Word.
+  - If you already have a text editor you like that is not listed, you are free to use it provided it saves files in true flat .txt and not rich text format.
 - We do not recommend TextEdit, Wordpad, Notebook, or Microsoft Word. You are free to use vim or emacs if you are already familar with those interfaces, but they are beyond the scope of this course. 
 
 ### 2. R and RStudio
