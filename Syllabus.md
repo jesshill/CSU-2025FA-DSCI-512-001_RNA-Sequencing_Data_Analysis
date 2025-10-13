@@ -44,6 +44,13 @@ Meeting ID: 959 4557 2799
 | December 11 | 5 | Genome Browsers, Announcments, Clean Up |  |  |  |
 | **December 16** | **6** |  |  | **Final Exam Project (due December 16th)** |
 
+Bonus content/Additional content that may be helpful: 
+- [Alignment how to](...)
+- [FeatureCount how to](...)
+- [Genome Browsers](...)
+- [Moving files](...)
+- [Syncing](...)
+
 # Attendance
 
 Class attendance is not mandatory, but please let me know if you will be attending multiple classes remotely or making them up at a later time. I just want to make sure I know who is still engaged.
