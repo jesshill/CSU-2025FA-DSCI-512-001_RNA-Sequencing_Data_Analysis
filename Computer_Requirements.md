@@ -49,7 +49,7 @@ To bump your Mac into power user mode, you'll need **Xcode**. To obtain Xcode �
 
 Your PC needs to be running Windows 11 (becuase of CSU internet security policy). You can install Linux on top of the Windows operating system. 
 
-**1.)** Please read [Install the Linux Subsystem on Windows 11](https://learn.microsoft.com/en-us/windows/wsl/install) to install the system. Opt for UBUNTU distribution (not LTS) if/when you have a choice.
+**1.** Please read [Install the Linux Subsystem on Windows 11](https://learn.microsoft.com/en-us/windows/wsl/install) to install the system. Opt for UBUNTU distribution (not LTS) if/when you have a choice.
 
 When complete, you'll be asked for a username and password specific to your Ubuntu installation. These don't need to be the same as your Windows 11 credentials. With this step complete, you'll find yourself at the Ubuntu bash command line.
 
@@ -57,7 +57,7 @@ When complete, you'll be asked for a username and password specific to your Ubun
   - Don't forget your username and password for ubuntu! Write it down. You'll need it for the class!!!
 Having trouble getting the `Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux` line to execute? Make sure you are in a PowerShell with Administrator privileges (aka, an elevated powershell). To open one, search PowerShell in the windowsStart search bar, then RIGHT click on powershell, then select “Run as Administrator”
 
-**2.)** Alternatively, you can go into your "Start Menu", search Ubuntu, you will see it pop up under the "Store" section, you can then click on the "right side arrow" and you will see "Get" pop up. You can click "Get" to download and install the software. 
+**2.** Alternatively, you can go into your "Start Menu", search Ubuntu, you will see it pop up under the "Store" section, you can then click on the "right side arrow" and you will see "Get" pop up. You can click "Get" to download and install the software. 
 
 ### Linux Distro users
 
@@ -128,7 +128,7 @@ Now that **R** is installed, you need to download and install **RStudio**.
 - Click on “Download RStudio Desktop.” (the free version)
 - Click on the version recommended for your system, or the latest Windows version, and save the executable file. Run the .exe file and follow the installation instructions.
 
-## 3. Download and install all required software
+### 2. Genome browser like IGV or Galaxey 
 
 
 
