@@ -29,7 +29,7 @@ It should look something like this:
 
 Here are the options for accessing a terminal on different systems. Again, please verify you can access your terminal before class:
 
-### Mac OS users 
+### # Mac OS users 
 
 Lucky you! Your Mac runs on a Linux-like operating system. All you need to get running is to familiarize yourself with the **Terminal** application.
 
@@ -45,7 +45,7 @@ To bump your Mac into power user mode, you'll need **Xcode**. To obtain Xcode �
 - Search for Xcode
 - Download and install Xcode. This will take a while to download and install. It may be a good idea to do this overnight.
 
-### Windows OS users
+### # Windows OS users
 
 Your PC needs to be running Windows 11 (becuase of CSU internet security policy). You can install Linux on top of the Windows operating system. 
 
@@ -59,7 +59,7 @@ Having trouble getting the `Enable-WindowsOptionalFeature -Online -FeatureName M
 
 **2.** Alternatively, you can go into your "Start Menu", search Ubuntu, you will see it pop up under the "Store" section, you can then click on the "right side arrow" and you will see "Get" pop up. You can click "Get" to download and install the software. 
 
-### Linux Distro users
+### # Linux Distro users
 
 If you have a laptop that is running a Linux distro natively, you are all set to go. To access the terminal, search the DASH for Terminal. Click on the Terminal icon to open the application.
 
@@ -88,9 +88,7 @@ Everyone will need to install a [text editor](https://en.wikipedia.org/wiki/Text
 
 ### 2. R and RStudio
 
-For the second half of the class, we will use R/Rstudio.
-
-#### MAC USERS
+#### # MAC USERS
 
 **Install R**
 
@@ -109,7 +107,7 @@ Now that **R** is installed, you need to download and install **RStudio**.
 - Click on “Download RStudio Desktop.” (the free version)
 - Click on the version recommended for your system, or the latest Mac version, save the .dmg file on your computer, double-click it to open, and then drag and drop it to your applications folder.
 
-#### PC USERS
+#### # PC USERS
 
 **Install R**
 
@@ -128,11 +126,11 @@ Now that **R** is installed, you need to download and install **RStudio**.
 - Click on “Download RStudio Desktop.” (the free version)
 - Click on the version recommended for your system, or the latest Windows version, and save the executable file. Run the .exe file and follow the installation instructions.
 
-### 2. Genome browser like IGV or Galaxey 
+### 3. Genome browser like IGV, Galaxey, or UCSC
 
+Download and install [IGV](https://igv.org/doc/desktop/#DownloadPage/). You may need to update your java.
 
-
-
+Alternatevly, there is also 
 
 
 
