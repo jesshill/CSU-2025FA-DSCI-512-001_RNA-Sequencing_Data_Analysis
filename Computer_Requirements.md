@@ -126,11 +126,11 @@ Now that **R** is installed, you need to download and install **RStudio**.
 - Click on “Download RStudio Desktop.” (the free version)
 - Click on the version recommended for your system, or the latest Windows version, and save the executable file. Run the .exe file and follow the installation instructions.
 
-### 3. Genome browser like IGV, Galaxey, or UCSC
+### 3. Genome browser like IGV or using Galaxey and UCSC Genome Browser 
 
 Download and install [IGV](https://igv.org/doc/desktop/#DownloadPage/). You may need to update your java, but they do also have downloads with Java included.
 
-Alternatevly, there is also [Galaxy](https://galaxy-main.usegalaxy.org/) which is a location to upload your data (public repository) that can then be used to create a URL for your data. With this URL, you can then upload your data as a track on the UCSC Genome Browser. 
+Alternatevly, there is also [Galaxy](https://galaxy-main.usegalaxy.org/) which is a location to upload your data (public repository) that can then be used to create a URL for your data. With this URL, you can then upload your data as a track on the [UCSC Genome Browser](https://genome.ucsc.edu/). 
 
 ## 4. Request an Alpine user account
 
