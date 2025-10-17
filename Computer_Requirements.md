@@ -76,7 +76,7 @@ You will need:
 2. R and R Studio
 3. (Optional) [IGV](https://igv.org/doc/webapp/) or create an account on [Galaxy](https://usegalaxy.org/)
 
-### 1. Text editor 
+### 3.1. Text editor 
 
 Everyone will need to install a [text editor](https://en.wikipedia.org/wiki/Text_editor) for writing and modifying plain text files. 
 
@@ -86,7 +86,7 @@ Everyone will need to install a [text editor](https://en.wikipedia.org/wiki/Text
   - Recommend [Notepad++](https://notepad-plus-plus.org/), BBEdit, or [Visual Studio Code](https://code.visualstudio.com/download) do not recommend TextEdit, Wordpad, Notebook, EMACS, or Microsoft Word.
   - If you already have a text editor you like that is not listed, you are free to use it provided it saves files in true flat .txt and not rich text format.
 
-### 2. R and RStudio
+### 3.2. R and RStudio
 
 #### # MAC USERS
 
@@ -126,7 +126,7 @@ Now that **R** is installed, you need to download and install **RStudio**.
 - Click on “Download RStudio Desktop.” (the free version)
 - Click on the version recommended for your system, or the latest Windows version, and save the executable file. Run the .exe file and follow the installation instructions.
 
-### 3. Genome browser like IGV or using Galaxey and UCSC Genome Browser 
+### 3.3. Genome browser like IGV or using Galaxey and UCSC Genome Browser 
 
 Download and install [IGV](https://igv.org/doc/desktop/#DownloadPage/). You may need to update your java, but they do also have downloads with Java included.
 
@@ -161,5 +161,3 @@ ilovealpine,123456
 - You're all set!
 
 **If you are having trouble with this, we can do it together once the class begins!**
-
-Back to [The Terminal](Modules/Week1/1-2_The_Terminal.md)
