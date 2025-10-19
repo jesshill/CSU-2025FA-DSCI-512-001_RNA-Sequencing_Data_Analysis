@@ -19,7 +19,7 @@ Today's Objectives:
 
 ### Intro to class:
 
-- Please read through the Syllabus to learn more about the class.
+- Please read through the [Syllabus](../../Syllabus.md) to learn more about the class.
 - This class is the last in a 3-part series. The other two classes are DSCI510 LINUX and DSCI511 Python. This class focuses on building pipelines and computational projects in LINUX and R using RNA-seq data analysis as an example.
 - The course will be primarily accessed through this GitHub page. There is a Canvas page for the class and this will be the area to turn in assignments and see grades.
 
