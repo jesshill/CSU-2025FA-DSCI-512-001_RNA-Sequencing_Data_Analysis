@@ -48,7 +48,7 @@ Perrou, C. 2011. [Molecular Stratification of Triple-Negative Breast Cancers](ht
   - A computer program called a clustering algorithm organizes the order of rows and columns into groupings
 
 <p align="center">
-<img width="410" alt="HeatMap ex1" src="https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Images/HM_ex1.png">
+<img width="600" alt="HeatMap ex1" src="https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Images/HM_ex1.png">
 </p>
 
 2. Transcriptome profiling gene expression patterns through development
