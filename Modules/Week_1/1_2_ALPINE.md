@@ -174,7 +174,7 @@ Compute nodes are **multi-core processors**. This means we can run multiple jobs
 Here is an outline of the different types of compute nodes available:
 
 <p align="center">
-<img width="410" alt="alpine nodes" src="https://github.com/jesshill/CSU-2025FA-DSCI-510-001_LINUX_as_a_computational_platform/blob/main/Images/alpine_nodes.png">
+<img width="600" alt="alpine nodes" src="https://github.com/jesshill/CSU-2025FA-DSCI-510-001_LINUX_as_a_computational_platform/blob/main/Images/alpine_nodes.png">
 </p>
 
 ## Alpine File Storage
@@ -186,5 +186,5 @@ Whereas the nodes are analogous to CPU and memory on your home laptop, the files
 Here are the different file storage spaces available:
 
 <p align="center">
-<img width="600" alt="storage locations" src="https://github.com/jesshill/CSU-2025FA-DSCI-510-001_LINUX_as_a_computational_platform/blob/main/Images/storageLocations.png">
+<img width="800" alt="storage locations" src="https://github.com/jesshill/CSU-2025FA-DSCI-510-001_LINUX_as_a_computational_platform/blob/main/Images/storageLocations.png">
 </p>
