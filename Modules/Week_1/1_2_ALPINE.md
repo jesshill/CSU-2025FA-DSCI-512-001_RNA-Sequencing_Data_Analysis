@@ -54,9 +54,6 @@ ilovealpine,123456
 - After submitting the form, you will receive an account confirmation email from CU-Boulder.
 - You're all set!
 
-**If you are having trouble with this, we can do it together once the class begins!**
-
-
 ## Resources & References
 
 [Overview of research computing including ALPINE](https://www.colorado.edu/rc/resources)
@@ -85,7 +82,7 @@ ilovealpine,123456
 
 ## Accessing Alpine
 
-To log onto ALPINE, you can use the terminal command `ssh` or you can use the browser portal called **onDemand**. I'm including a description of the `ssh` here for your reference, but we'll skip down to use onDemand together.
+To log onto ALPINE, you can use the terminal command `ssh` or you can use the browser portal called **onDemand**. See below for examples of both!
 
 ---
 
