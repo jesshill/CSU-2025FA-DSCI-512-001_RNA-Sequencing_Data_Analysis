@@ -8,12 +8,26 @@
 
 ## How do we do RNA-seq? 
 
-- Isolate mRNA convert it to cDNA
-- Create a library of cDNA fragments with specialized adapter sequences ligated to each end
-- Interrogate the sequence of each cDNA fragment on high-throughput sequencing instrumentation
-- Identify the gene of origin for each fragment
-- Quantify fragments emanating from each gene
+1. Isolate mRNA convert it to cDNA
+2. Create a library of cDNA fragments with specialized adapter sequences ligated to each end
+3. Interrogate the sequence of each cDNA fragment on high-throughput sequencing instrumentation
+4. Identify the gene of origin for each fragment
+5. Quantify fragments emanating from each gene
 
 <p align="center">
 <img width="410" alt="RNAseq workflow" src="https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Images/191114_rnaseqintro_depict.png">
 </p>
+
+## What can we learn from RNA-seq?
+
+### Discovery 
+
+- Annotate genomes
+- Find new transcripts, splice junctions, polyA sites
+- Identify Single Nucleotide Polymorphisms (SNPs) differences
+
+### Comparison
+
+- RNA abundance differences between conditions
+- Splice/isoform differences between conditions
+- Compare how different SNP-containing alleles are expressed
