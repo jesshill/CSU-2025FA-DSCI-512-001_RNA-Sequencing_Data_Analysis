@@ -45,4 +45,5 @@ Please take this [brief survey](https://forms.gle/VuRskcNHvUHU5WeY6)
 
 Probably, yes! You will definitely be able to design your experiments with deeper thought and insight. You'll be able to do a basic “vanilla” level analysis of your own RNA-seq data. More advanced projects will require you to take on new training and education on your own, but you will likely be able to study independently. You will also be able to have better conversations with computational collaborators whom you may need to bring in as your analysis becomes more advanced.
 
+
 Continue on to [ALPINE](1_2_ALPINE.md)
