@@ -15,5 +15,5 @@
 - Quantify fragments emanating from each gene
 
 <p align="center">
-<img width="410" alt="RNAseq workflow" src="...">
+<img width="410" alt="RNAseq workflow" src="https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Images/191114_rnaseqintro_depict.png">
 </p>
