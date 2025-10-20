@@ -188,3 +188,6 @@ Here are the different file storage spaces available:
 <p align="center">
 <img width="800" alt="storage locations" src="https://github.com/jesshill/CSU-2025FA-DSCI-510-001_LINUX_as_a_computational_platform/blob/main/Images/storageLocations.png">
 </p>
+
+
+Continue on to [ALPINE](1_3_Intro_to_RNAseq.md)
