@@ -190,4 +190,4 @@ Here are the different file storage spaces available:
 </p>
 
 
-Continue on to [ALPINE](1_3_Intro_to_RNAseq.md)
+Continue on to [Intro to RNAseq](1_3_Intro_to_RNAseq.md)
