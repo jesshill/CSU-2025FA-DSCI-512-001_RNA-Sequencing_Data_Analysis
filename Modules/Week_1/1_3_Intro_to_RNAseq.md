@@ -14,3 +14,6 @@
 - Identify the gene of origin for each fragment
 - Quantify fragments emanating from each gene
 
+<p align="center">
+<img width="410" alt="RNAseq workflow" src="...">
+</p>
