@@ -62,3 +62,13 @@ Boeck, ME, et al. 2016. [The time-resolved transcriptome of C. elegans](https://
 <p align="center">
 <img width="300" alt="HeatMap ex2" src="https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Images/HM_ex2.png">
 </p>
+
+## What else can we learn?
+
+RNA-seq in its most basic form assesses the transcriptome of a sample. This is useful to take a snapshot of gene expression within that sample at a given time. However, by sequencing subsets of transcriptomes, we can understand more RNA processes and the basic biology of the cell with greater detail. Therefore, by combining RNA-seq methodology with approaches that isolate specific pools of RNA, we can expand our knowledge.
+
+Some examples of these protocols are shown in the chart below.
+
+<p align="center">
+<img width="300" alt="..." src="...">
+</p>
