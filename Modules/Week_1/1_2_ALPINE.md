@@ -26,8 +26,6 @@ Thursday, we will ...
 2. Initiate a “conda virtual environment” where we can install RNA-seq software
 3. Install software within our conda environment
 
----
-
 ## Requesting an Alpine user account
 
 Register for an Alpine Account. You must have a valid CSU NetID and Duo two-factor authentication enabled to apply for an account on Alpine through CSU.
@@ -51,14 +49,13 @@ ilovealpine,123456
 <img width="410" alt="req-research-computing-acct" src="https://github.com/jesshill/CSU-2025FA-DSCI-510-001_LINUX_as_a_computational_platform/blob/main/Images/req-research-computing-acct.png">
 </p>
 
-- When prompted for a description of your research, write a brief description of your own research or simply state that you are in the DSCI 510 LINUX course.
+- When prompted for a description of your research, write a brief description of your own research or simply state that you are in the DSCI 512 RNA-seq course.
 - Check the box stating that you are enrolled in a course that requires access to Research Computing resources.
 - After submitting the form, you will receive an account confirmation email from CU-Boulder.
 - You're all set!
 
 **If you are having trouble with this, we can do it together once the class begins!**
 
----
 
 ## Resources & References
 
@@ -127,8 +124,6 @@ Password: godofmischief,push
 
 The team at CU Boulder who developed ALPINE have helped to create an alternative way to interact with the ALPINE Supercomputer, one that can happen in you internet browser like Chrome or Firefox. This method of accessing ALPINE is called OnDemand.
 
-**!!! Exercise:** Let's connect to ALPINE using OnDemand:
-
 - Navigate to [https://ondemand-rmacc.rc.colorado.edu](https://ondemand-rmacc.rc.colorado.edu) in a new tab or window
 - For me, I right click on the above link and select **Open Link in New Window**
 - You will be asked to select an identity provider using a pull-down menu. Select on the pull-down menu (it may say **ORCID**). Start typing **Colorado State University**. Click on **Remember** and log in. It should look like this
@@ -157,8 +152,6 @@ Just like your local computer, the ALPINE supercomputer is comprised of **comput
 
 When we log into ALPINE through ssh or onDemand, we don't immediately have access to all the parts of the ALPINE hardware. Instead, we arrive at the login node. The name of the login node is written right prior to the prompt. Typing `hostname` also gives you the name of the login node.
 
-**!!! Try It:** type `hostname`
-
 ### The Nodes
 
 Detailed descriptions of [nodes](https://curc.readthedocs.io/en/latest/compute/node-types.html)
@@ -171,25 +164,7 @@ When you first log into Alpine using `ssh`, you will be on a **login node**. Thi
 
 #### Compile nodes
 
-To move to a compile node, use the command `acompile`.
-
-**!!! Try It:** Switch over to a compile node like so …
-
-```
-$ hostname
-$ acompile
-$ hostname
-```
-
-When on a compile node, we can load existing software, install new software, run small jobs, and send big jobs to the compute nodes.
-
-Let's see what software is available to load:
-
-**!!! Try It:** 
-
-```
-$ module avail
-```
+To move to a compile node, use the command `acompile`. When on a compile node, we can load existing software, install new software, run small jobs, and send big jobs to the compute nodes. You can see what software is available by typing 'module avail'.
 
 #### Compute nodes
 
