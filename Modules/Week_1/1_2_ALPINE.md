@@ -151,7 +151,7 @@ When we log into ALPINE through ssh or onDemand, we don't immediately have acces
 
 ### The Nodes
 
-Detailed descriptions of [nodes](https://curc.readthedocs.io/en/latest/compute/node-types.html)
+Detailed descriptions of [nodes](https://curc.readthedocs.io/en/latest/compute/node-types.html) can be found here. 
 
 Nodes are spaces on Alpine where you can do tasks and execute jobs. Each node type has a designated purpose. Part of your job will be to learn what is appropriate behavior on the different types of nodes. We will learn about the **login nodes**, the **compile nodes**, and the **compute nodes**.
 
@@ -177,7 +177,7 @@ Here is an outline of the different types of compute nodes available:
 <img width="600" alt="alpine nodes" src="https://github.com/jesshill/CSU-2025FA-DSCI-510-001_LINUX_as_a_computational_platform/blob/main/Images/alpine_nodes.png">
 </p>
 
-## Alpine File Storage
+### Alpine File Storage
 
 Detailed information about the [File Storage on Alpine](https://curc.readthedocs.io/en/latest/compute/filesystems.html)
 
@@ -189,5 +189,10 @@ Here are the different file storage spaces available:
 <img width="800" alt="storage locations" src="https://github.com/jesshill/CSU-2025FA-DSCI-510-001_LINUX_as_a_computational_platform/blob/main/Images/storageLocations.png">
 </p>
 
+### Software 
+
+We have two methods for installing software on ALPINE:
+- **Module system** - The Research Computing team has already installed some software for us. We just need to select it using the module system.
+- **conda** - Alternatively, we can install virtual enrivonments. These are spaces where multiple software can be downloaded and installed. Each time we log into ALPINE, we'll enter one of these environments. Different users can create different environments for different research projects and toggle between them.
 
 Continue on to [Intro to RNAseq](1_3_Intro_to_RNAseq.md)
