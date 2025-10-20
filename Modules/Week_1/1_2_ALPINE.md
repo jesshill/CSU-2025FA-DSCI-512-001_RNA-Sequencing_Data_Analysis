@@ -14,7 +14,7 @@ ALPINE is an example of a **High-Performance Computing system** or HPC. HPC is a
 
 However, please keep in mind that a supercomputer isn't required for RNA-seq data analysis. Most of these tasks can be done on a personal MAC or LINUX computer. PCs can also theoretically do the same tasks but it will be much more challenging to install the software.
 
-Today, we will do the following together ...
+Today, we will do the following together ... 
 
 1. Register for ALPINE if you haven't already
 2. Log into ALPINE using OnDemand - see how many students can do this
@@ -26,37 +26,7 @@ Thursday, we will ...
 2. Initiate a “conda virtual environment” where we can install RNA-seq software
 3. Install software within our conda environment
 
----
-
-The supercomputer we'll be using is **ALPINE** and it lives on CU Boulder campus. [ALPINE](https://www.colorado.edu/rc/alpine) is a joint venture between Colorado State University and CU Boulder and is sponsored by those institutes and by a grant from the National Science Foundation. **ALPINE** is shared between CU Boulder, Colorado State University, CU Anschutz, and RMACC (Rocky Mountain Advanced Computing Consortium, a network of >20 other academic institutions in Colorado, Arizona, Idaho, Montana, and New Mexico).
-
-There is a list of the [Top 500 biggest supercomputers](https://www.top500.org/lists/top500/list/2023/06/) on the planet (as of June 2023). According to this list, the largest supercomputer is **FRONTIER** located at Oak Ridge National Labs in Tennessee and run by the DOE (US Department of Energy).
-
-How do these supercomputer systems compare to our laptops?
-
-| Typical laptop | Alpine Supercomputer	| FRONTIER Supercomputer |
-| -------------- | -------------------- | ---------------------- |
-| 0.1 - 10 teraFLOPS | 450 teraFLOPS |	1,102,000 teraFLOPS |
-| 1 - 4 cores organized onto 1 node |	11,300 cores on 485 nodes	| 8,730,112 cores |
-
-- **FLOPS** is a measure of how many floating point operations a computer can do per second. So it's a measure of calculations a second
-- **Cores** relates to how many CPUs (Central Processing Units) the computer has
-
-**!!! NOTE:** *All 500* of the top 500 Supercomputer systems run LINUX or LINUX-based operating systems!
-
-### What are the benefits and drawbacks of using a supercomputer?
-
-#### Benefits
-- power, efficiency, and speed!!!
-- team of professionals to help set up the system and provide user support
-- allows for collaboration with other users
-
-#### Drawbacks
-- There is a learning curve
-- Multi-user platform requires job-sharing - there is usually a queue to execute your code
-- May not have architecture specialized for your task.
-
-### Resources & References
+## Resources & References
 
 [Overview of research computing including ALPINE](https://www.colorado.edu/rc/resources)
 
@@ -68,8 +38,7 @@ How do these supercomputer systems compare to our laptops?
 
 [All content from past workshops!!!](https://github.com/ResearchComputing/)
 
-
-### Some pictures of the HPC System
+## Some pictures of the HPC System
 
 <p align="center">
 <img width="410" alt="HPC1" src="https://github.com/jesshill/CSU-2025FA-DSCI-510-001_LINUX_as_a_computational_platform/blob/main/Images/HPC1.png">
@@ -83,13 +52,13 @@ How do these supercomputer systems compare to our laptops?
 <img width="410" alt="HPC3" src="https://github.com/jesshill/CSU-2025FA-DSCI-510-001_LINUX_as_a_computational_platform/blob/main/Images/HPC3.png">
 </p>
 
-### Accessing Alpine
+## Accessing Alpine
 
 To log onto ALPINE, you can use the terminal command `ssh` or you can use the browser portal called **onDemand**. I'm including a description of the `ssh` here for your reference, but we'll skip down to use onDemand together.
 
 ---
 
-#### ssh into ALPINE
+### ssh into ALPINE
 
 You can log into ALPINE using `ssh` in your own terminal window like so:
 
@@ -120,7 +89,7 @@ Password: godofmischief,push
 
 ---
 
-#### Use onDemand to access Alpine
+### Use onDemand to access Alpine
 
 The team at CU Boulder who developed ALPINE have helped to create an alternative way to interact with the ALPINE Supercomputer, one that can happen in you internet browser like Chrome or Firefox. This method of accessing ALPINE is called OnDemand.
 
@@ -144,7 +113,7 @@ Next steps:
 
 ---
 
-### The ALPINE System - Mapped out
+## The ALPINE System - Mapped out
 
 <p align="center">
 <img width="410" alt="alpine map" src="https://github.com/jesshill/CSU-2025FA-DSCI-510-001_LINUX_as_a_computational_platform/blob/main/Images/alpine_map.png">
@@ -156,17 +125,17 @@ When we log into ALPINE through ssh or onDemand, we don't immediately have acces
 
 **!!! Try It:** type `hostname`
 
-#### The Nodes
+### The Nodes
 
 Detailed descriptions of [nodes](https://curc.readthedocs.io/en/latest/compute/node-types.html)
 
 Nodes are spaces on Alpine where you can do tasks and execute jobs. Each node type has a designated purpose. Part of your job will be to learn what is appropriate behavior on the different types of nodes. We will learn about the **login nodes**, the **compile nodes**, and the **compute nodes**.
 
-##### Login nodes
+#### Login nodes
 
 When you first log into Alpine using `ssh`, you will be on a **login node**. Think of this as a lobby of a hotel. This is where you arrive first. You can do things like move and copy files, edit scripts, and execute small tasks. You should not run large jobs in the login node. You should not install software when you are here.
 
-##### Compile nodes
+#### Compile nodes
 
 To move to a compile node, use the command `acompile`.
 
@@ -188,13 +157,13 @@ Let's see what software is available to load:
 $ module avail
 ```
 
-##### Compute nodes
+#### Compute nodes
 
 **Compute notes** are the most numerous nodes on the system. There are roughly 256 regular compute nodes on the ALPINE system and 42 specialized ones. The compute nodes are where big jobs will run.
 
 To run the jobs, we will need to get in line by requesting a job through a process called **batch submission**. Depending on how many users there are and what types of jobs have already been requested to run, we will be assigned to different compute nodes when they become available. The batch submission software used by ALPINE is called **slurm** and the main command we use is `sbatch`.
 
-Compute nodes are **multi-core processors**. This means we can run multiple jobs on one node. In the ALPINE architecture, we will mostly be using the **AMD milan** compute nodes (called `amilan`) which have 64 cores and can run up to 64 jobs simultaneously. Users can also request multiple nodes, too.
+Compute nodes are **multi-core processors**. This means we can run multiple jobs on one node. In the ALPINE architecture, we will mostly be using the **AMD milan** compute nodes (called `amilan`) which have 64 cores and can run up to 64 jobs simultaneously. Users can also request multiple nodes, too. **Cores** relates to how many CPUs (Central Processing Units) the computer has.
 
 Here is an outline of the different types of compute nodes available:
 
@@ -202,7 +171,7 @@ Here is an outline of the different types of compute nodes available:
 <img width="410" alt="alpine nodes" src="https://github.com/jesshill/CSU-2025FA-DSCI-510-001_LINUX_as_a_computational_platform/blob/main/Images/alpine_nodes.png">
 </p>
 
-### Alpine File Storage
+## Alpine File Storage
 
 Detailed information about the [File Storage on Alpine](https://curc.readthedocs.io/en/latest/compute/filesystems.html)
 
@@ -213,92 +182,3 @@ Here are the different file storage spaces available:
 <p align="center">
 <img width="600" alt="storage locations" src="https://github.com/jesshill/CSU-2025FA-DSCI-510-001_LINUX_as_a_computational_platform/blob/main/Images/storageLocations.png">
 </p>
-
-**!!! Exercise:** Explore your directories through the command line on ALPINE:
-
-```
-$ curc-quota. #curc-quota lets you check how much disk space you are using up 
-$ pwd # check where you are
-$ ls -alh
-$ cd /projects/$USER
-$ ls -alh
-$ cd /scratch/alpine/$USER
-$ ls -alh
-```
-
-Continue on to [Custom Commands on Alpine](4-6_Custom_Commands.md)
-
-
-
----
-
-### Connecting to remote computers
-
-Up to this point, we have only used the terminal to interact with your **local** computer. Today we will talk about several ways we can use the terminal to interact with **remote** computers over the internet.
-
-In some instances, we will **log into** a remote computer, also known as **connecting** to it. This will allow us to interact with that computer as if we had opened its terminal. With this access, we could navigate that computer's file structure, write new files, run jobs, or transfer files. It would be just like interacting with our local computer.
-
-This differs slightly from **transferring files** between the remote computer and our local computer. We transferred files from UCSC Genome Browser to our local computer. In that instance, UCSC Genome browser set up a special **public-facing, read-only** directory of files that we could copy over to our computer but we wouldn't be able to write files there or run commands there.
-
-What types of remote computers can we log into?
-
-```
-1. remote personal computers
-2. servers or repositories (computing or file storage)
-3. supercomputers
-```
-
-### Accessing remote computers with ssh - Secure SHell
-
-**ssh usage**
-
-```
-ssh <addressOfRemoteServer>
-
-ssh [-l <yourloginname>] <addressOfRemoteServer> #that's a lower case “L”
-```
-
-**!!! Exercise:** Try logging into Alpine using **ssh** 
-
-The login address for ALPINE is: `login.rc.colorado.edu`
-
-If your username is `loki@colostate.edu`, and your password is `godofmischief`, you would log in like so:
-
-```
-$ssh -l loki@colostate.edu login.rc.colorado.edu
-Password: godofmischief,push
-# Switch to your DUO app on your phone to approve
-```
-
-**!!! that's a lower case "L"**
-
-**!!! Replace your eID e-mail with loki@colostate.edu**
-
-**!!! You won't see anything pop up when you type your password**
-
-**!!! If `,push` doesnt work, try `,phone` or the 6-digit code on your DUO app (refreshes every 20 seconds)**
-
-**!!! Exercise:** Make a file.
-- Use nano to create a file called `iwashere.txt`
-- Write a little note
-
-### Accessing ALPINE using OnDemand
-
-The team at CU Boulder who developed ALPINE have helped to create an alternative way to interact with the ALPINE Supercomputer, one that can happen in you internet browser like Chrome or Firefox. This method of accessing ALPINE is called OnDemand.
-
-**!!! Exercise:** Let's practice accessing ALPINE using **OnDemand** together.
-
-- Navigate to [OnDemand](https://ondemand-rmacc.rc.colorado.edu/pun/sys/dashboard) in a new tab or window
-  - For me, I right click on the above link and select **Open Link in New Window**
-  - You will be asked to select an identity provider using a pull-down menu. Select on the pull-down menu (it may say **ORCID**). Start typing **Colorado State University**. Click on **Remember** and log in. It should look like this
-
-<p align="center">
-<img width="410" alt="login" src="https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Images/login_window.png">
-</p>
-
-Next steps:
-- Log into your CSU NET ID. You will receive a DUO PUSH on your phone. Accept it.
-- To access the LINUX command line on ALPINE, go to the **Clusters** menu. Select **>_Alpine Shell**
-- In another window, you can also access your files by going to the **Files** menu and selecting any available directories.
-
----
