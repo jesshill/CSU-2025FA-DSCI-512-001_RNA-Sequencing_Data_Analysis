@@ -93,7 +93,7 @@ The first tissue studied by this method was the mouse retina. The transcriptomes
 <img width="700" alt="Drop-Seq example" src="https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Images/drop-seq_ex.jpg">
 </p>
 
-Figure from [Macosco et al., 2015, Cell](https://www.cell.com/fulltext/S0092-8674(15)00549-8) : A.) Retinal tissue was dissociated and assessed by DROP-seq. B.) A tSNE plot of the resulting transcriptome profiles.
+Figure from [Macosco et al., 2015, Cell](https://www.cell.com/fulltext/S0092-8674(15)00549-8): A.) Retinal tissue was dissociated and assessed by DROP-seq. B.) A tSNE plot of the resulting transcriptome profiles.
 
 Single-cell resolution RNA-seq is now available through kits and platforms mass-produced by different companies including the 10X Genomics Chromium Platform and Illumiina Sequencing (PIP-seq). However, these high resolution assays still present certain technical challeneges depending on the cell types/organisms being probed. 
 
