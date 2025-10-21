@@ -77,3 +77,8 @@ Images adapted from Stark et al., 2019
 
 ## What is the spatial resolution of RNA-seq? 
 
+The original protocols for RNA-seq required 4 ug (micrograms) of total RNA preparation. This was a large input requirement. Advancements in the RNA-seq protocol now make it possible to perform RNA-seq on individual cells that contain only tens of picograms of total RNA. By combining these reduced input protocols with microfluidics, individual cells can now have their individual transcriptomes profiled.
+
+DROP-seq is one of the first and most successful examples of this type of technology. DROP-seq creates oil-water droplets of individual cells followed by parallel processing of thousands or tens of thousands of RNA-seq libraries 
+
+( Macosco et al., 2015, Cell). Click below for .gif, from http://mccarrolllab.org/dropseq/ )
