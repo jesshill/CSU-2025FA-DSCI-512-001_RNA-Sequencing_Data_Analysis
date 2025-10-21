@@ -79,4 +79,21 @@ Images adapted from Stark et al., 2019
 
 The original protocols for RNA-seq required 4 micrograms of total RNA preparation. This was a large input requirement. Advancements in the RNA-seq protocol now make it possible to perform RNA-seq on individual cells that contain only tens of picograms of total RNA. By combining these reduced input protocols with microfluidics, individual cells can now have their individual transcriptomes profiled.
 
-DROP-seq is one of the first and most successful examples of this type of technology. DROP-seq creates oil-water droplets of individual cells followed by parallel processing of thousands or tens of thousands of RNA-seq libraries [Macosco et al., 2015, Cell](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.cell.com/action/showPdf?pii=S0092-8674%2815%2900549-8). Click [here](https://mccarrolllab.org/dropseq/) to see droplet formation in action!
+**DROP-seq** is one of the first and most successful examples of this type of technology. DROP-seq creates oil-water droplets of individual cells followed by parallel processing of thousands or tens of thousands of RNA-seq libraries [Macosco et al., 2015, Cell](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.cell.com/action/showPdf?pii=S0092-8674%2815%2900549-8). Click [here](https://mccarrolllab.org/dropseq/) to see droplet formation in action!
+
+<p align="center">
+<img width="300" alt="Drop-Seq" src="https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Images/drop-seq.gif">
+</p>
+
+Using DROP-seq, the individual cell compositions of complex tissues, organs, and tumors can be probed. This has led to advances in our understanding of how cells work together in multicellular systems. Cell types can be identified from the heterogenous pool of cells based on known cell identity markers. Further, different cell groupings may be referred to as cell states (as opposed to cell types) due to the fact that gene expression responses are confounded with cell identity in these studies. 
+
+The first tissue studied by this method was the mouse retina. The transcriptomes of 44,808 mouse embryonic retinal cells were separated by DROP-seq into 39 transcriptionally distinct clusters and plotted using a new form of transcriptome diversity representation called a tSNE plot. The study re-capitulated known retinal cell types, identified novel cell types not previously associated with the retina, and discovered a wide range of transcriptome diversity among the amacrine cell group [Macosco et al., 2015, Cell](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.cell.com/action/showPdf?pii=S0092-8674%2815%2900549-8).
+
+<p align="center">
+<img width="300" alt="Drop-Seq example" src="https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Images/drop-seq_ex.jpg">
+</p>
+
+Figure from [Macosco et al., 2015, Cell](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.cell.com/action/showPdf?pii=S0092-8674%2815%2900549-8): A.) Retinal tissue was dissociated and assessed by DROP-seq. B.) A tSNE plot of the resulting transcriptome profiles.
+
+Single-cell resolution RNA-seq is now available through kits and platforms mass-produced by different companies including the 10X Genomics Chromium Platform and Illumiina Sequencing (PIP-seq). However, these high resolution assays still present certain technical challeneges depending on the cell types/organisms being probed. 
+
