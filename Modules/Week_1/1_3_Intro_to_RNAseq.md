@@ -70,5 +70,10 @@ RNA-seq in its most basic form assesses the transcriptome of a sample. This is u
 Some examples of these protocols are shown in the chart below.
 
 <p align="center">
-<img width="300" alt="seq methods" src="https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Images/seq_methods.jpg">
+<img width="600" alt="seq methods" src="https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Images/seq_methods.jpg">
 </p>
+
+Images adapted from Stark et al., 2019
+
+## What is the spatial resolution of RNA-seq? 
+
