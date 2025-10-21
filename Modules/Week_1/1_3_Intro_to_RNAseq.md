@@ -97,6 +97,6 @@ Figure from [Macosco et al., 2015, Cell](https://www.cell.com/fulltext/S0092-867
 
 Single-cell resolution RNA-seq is now available through kits and platforms mass-produced by different companies including the 10X Genomics Chromium Platform and Illumiina Sequencing (PIP-seq). However, these high resolution assays still present certain technical challeneges depending on the cell types/organisms being probed. 
 
-Continue on to [The RNA-seq Protocol](241105_rnaseqprotocol.pdf)
+Continue on to [The RNA-seq Protocol](1_4_241105_rnaseqprotocol.pdf)
 
-Continue on to [Installing Software](1_4_Installing_Software.md)
+Continue on to [Installing Software](1_5_Installing_Software.md)
