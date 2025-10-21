@@ -34,7 +34,7 @@
 
 ### Examples
 
-1. Transcriptome profiling has been used to identify cancer sub-types
+**1. Transcriptome profiling has been used to identify cancer sub-types**
 
 Perrou, C. 2011. [Molecular Stratification of Triple-Negative Breast Cancers](https://theoncologist.onlinelibrary.wiley.com/doi/full/10.1634/theoncologist.2011-S1-61) The Oncologist. 16 Suppl 1:61-70.
 
@@ -51,7 +51,7 @@ Perrou, C. 2011. [Molecular Stratification of Triple-Negative Breast Cancers](ht
 <img width="600" alt="HeatMap ex1" src="https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Images/HM_ex1.png">
 </p>
 
-2. Transcriptome profiling gene expression patterns through development
+**2. Transcriptome profiling gene expression patterns through development**
 
 Boeck, ME, et al. 2016. [The time-resolved transcriptome of C. elegans](https://genome.cshlp.org/content/26/10/1441.long) Genome Research. Oct;26(10):1441-1450.
 
@@ -77,8 +77,6 @@ Images adapted from Stark et al., 2019
 
 ## What is the spatial resolution of RNA-seq? 
 
-The original protocols for RNA-seq required 4 ug (micrograms) of total RNA preparation. This was a large input requirement. Advancements in the RNA-seq protocol now make it possible to perform RNA-seq on individual cells that contain only tens of picograms of total RNA. By combining these reduced input protocols with microfluidics, individual cells can now have their individual transcriptomes profiled.
+The original protocols for RNA-seq required 4 micrograms of total RNA preparation. This was a large input requirement. Advancements in the RNA-seq protocol now make it possible to perform RNA-seq on individual cells that contain only tens of picograms of total RNA. By combining these reduced input protocols with microfluidics, individual cells can now have their individual transcriptomes profiled.
 
-DROP-seq is one of the first and most successful examples of this type of technology. DROP-seq creates oil-water droplets of individual cells followed by parallel processing of thousands or tens of thousands of RNA-seq libraries 
-
-( Macosco et al., 2015, Cell). Click below for .gif, from http://mccarrolllab.org/dropseq/ )
+DROP-seq is one of the first and most successful examples of this type of technology. DROP-seq creates oil-water droplets of individual cells followed by parallel processing of thousands or tens of thousands of RNA-seq libraries [Macosco et al., 2015, Cell](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.cell.com/action/showPdf?pii=S0092-8674%2815%2900549-8). Click [here](https://mccarrolllab.org/dropseq/) to see droplet formation in action!
