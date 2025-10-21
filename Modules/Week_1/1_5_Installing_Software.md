@@ -9,4 +9,21 @@ Here are the software packages we'll need for this class and how we'll install e
 | Software Package  | What it does | How we'll install it |
 |-------------------|--------------|----------------------|
 | sra-toolkit | downloads genomics data from online databases	 | modules |
-| sra-toolkit | downloads genomics data from online databases	 | modules |
+| fastp | quality control | conda |
+| bwa (bowtie) | alignment | conda |
+| hisat2 | alignment | conda |
+| bedtools | genomics file conversion | conda |
+| samtools | genomics file conversion | conda |
+| subread | tabulation | conda |
+| deeptools | heatmaps & file conversion | conda |
+
+## Resources
+
+- [Loading Modules]()
+- [Research Computing]()
+- [Anaconda Resources]()
+- [bioconda]()
+
+## Log into ALPINE through OnDemand
+
+...
