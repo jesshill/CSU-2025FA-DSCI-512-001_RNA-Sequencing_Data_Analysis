@@ -48,8 +48,23 @@ $ curc-quota
 
 - 'curc-quota' should give you your disk usage. 
 
+Here is the “map” of ALPINE for reference.
 
+<p align="center">
+<img width="600" alt="alpine map" src="https://github.com/jesshill/CSU-2025FA-DSCI-510-001_LINUX_as_a_computational_platform/blob/main/Images/alpine_map.png">
+</p>
 
+Now move to the compile node!
 
+```
+$ acompile
+$ hostname
+```
+
+From here, we can see what modules we have loaded already: 
+
+```
+
+```
 
 
