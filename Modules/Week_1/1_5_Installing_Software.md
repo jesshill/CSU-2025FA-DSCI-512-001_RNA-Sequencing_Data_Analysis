@@ -37,7 +37,7 @@ Let's log into ALPINE using [OnDemand](https://curc.readthedocs.io/en/latest/ope
 
 Follow along to load the sra-toolkit using the modules system.
 
-- First, let's explore a little of where we are ...
+First, let's explore a little of where we are ...
 
 ```
 $ whoami
@@ -46,7 +46,7 @@ $ pwd
 $ curc-quota 
 ```
 
-- 'curc-quota' should give you your disk usage. 
+`curc-quota` should give you your disk usage. 
 
 Here is the “map” of ALPINE for reference.
 
@@ -64,7 +64,13 @@ $ hostname
 From here, we can see what modules we have loaded already: 
 
 ```
+$ module list
+```
 
+Next, lets see what modules are pre-installed by the staff and available to load: 
+
+```
+$ module avail
 ```
 
 
