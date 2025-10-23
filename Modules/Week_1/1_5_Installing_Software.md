@@ -33,4 +33,4 @@ Let's log into ALPINE using [OnDemand](https://curc.readthedocs.io/en/latest/ope
 - Log into your CSU NET ID. You will receive a DUO PUSH on your phone. Accept it.
 - To access the LINUX command line on ALPINE, go to the Clusters menu. Select >_Alpine Shell
 
-
+## Loading Modules 
