@@ -73,4 +73,11 @@ Next, lets see what modules are pre-installed by the staff and available to load
 $ module avail
 ```
 
+The one we want is `sra-toolkit/3.0.0`. To load it, do the following: 
+
+```
+$ module load sra-toolkit
+```
+
+**!!! Quick Tip** Don't forget to use TAB autocomplete 
 
