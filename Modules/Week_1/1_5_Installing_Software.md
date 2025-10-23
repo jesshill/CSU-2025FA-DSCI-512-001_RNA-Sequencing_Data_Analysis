@@ -19,11 +19,18 @@ Here are the software packages we'll need for this class and how we'll install e
 
 ## Resources
 
-- [Loading Modules]()
-- [Research Computing]()
-- [Anaconda Resources]()
-- [bioconda]()
+- [Loading Modules](https://curc.readthedocs.io/en/latest/compute/modules.html)
+- [Research Computing](https://curc.readthedocs.io/en/latest/software/python.html#basic-conda-commands-to-get-you-started)
+- [Anaconda Resources](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
+- [bioconda](https://bioconda.github.io/index.html)
 
 ## Log into ALPINE through OnDemand
 
-...
+For this course, we will access ALPINE through a web browser portal called OnDemand.
+
+Let's log into ALPINE using [OnDemand](https://curc.readthedocs.io/en/latest/open_ondemand/index.html). 
+- Open https://ondemand-rmacc.rc.colorado.edu in a new tab or window
+- Log into your CSU NET ID. You will receive a DUO PUSH on your phone. Accept it.
+- To access the LINUX command line on ALPINE, go to the Clusters menu. Select >_Alpine Shell
+
+
