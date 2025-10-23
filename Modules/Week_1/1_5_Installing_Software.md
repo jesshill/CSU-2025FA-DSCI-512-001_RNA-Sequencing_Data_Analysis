@@ -55,20 +55,17 @@ Here is the “map” of ALPINE for reference.
 </p>
 
 Now move to the compile node!
-
 ```
 $ acompile
 $ hostname
 ```
 
 From here, we can see what modules we have loaded already: 
-
 ```
 $ module list
 ```
 
 Next, lets see what modules are pre-installed by the staff and available to load: 
-
 ```
 $ module avail
 ```
@@ -80,4 +77,10 @@ $ module load sra-toolkit
 ```
 
 **!!! Quick Tip** Don't forget to use TAB autocomplete 
+
+Let's test if it is installed properly. One of the commands in the sra-toolkit package is `fasterq-dump`
+```
+$ fasterq-dump
+```
+
 
