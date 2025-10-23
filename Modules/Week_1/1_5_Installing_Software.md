@@ -34,3 +34,22 @@ Let's log into ALPINE using [OnDemand](https://curc.readthedocs.io/en/latest/ope
 - To access the LINUX command line on ALPINE, go to the Clusters menu. Select >_Alpine Shell
 
 ## Loading Modules 
+
+Follow along to load the sra-toolkit using the modules system.
+
+- First, let's explore a little of where we are ...
+
+```
+$ whoami
+$ hostname
+$ pwd
+$ curc-quota 
+```
+
+- 'curc-quota' should give you your disk usage. 
+
+
+
+
+
+
