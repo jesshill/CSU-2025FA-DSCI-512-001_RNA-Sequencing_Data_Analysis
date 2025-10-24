@@ -38,7 +38,6 @@ Let's log into ALPINE using [OnDemand](https://curc.readthedocs.io/en/latest/ope
 Follow along to load the sra-toolkit using the modules system.
 
 First, let's explore a little of where we are ...
-
 ```
 $ whoami
 $ hostname
@@ -76,11 +75,133 @@ The one we want is `sra-toolkit/3.0.0`. To load it, do the following:
 $ module load sra-toolkit
 ```
 
-**!!! Quick Tip** Don't forget to use TAB autocomplete 
+**!!! Quick Tip** Don't forget to use TAB autocomplete. 
 
 Let's test if it is installed properly. One of the commands in the sra-toolkit package is `fasterq-dump`
 ```
 $ fasterq-dump
 ```
 
+If you received `command not found` sra-toolkit is NOT installed
+
+If you received a printout of instructions, sra-toolkit IS installed
+
+**!!! Quick Tip** for working with modules
+
+```
+$ module spider <term>  # search for a term
+$ module spider python # note there are multiple versions you could choose
+$ module unload <modulename> # uninstall a module
+$ module purge # uninstall all modules
+```
+
+## Initiate a virtual conda environment 
+
+Another way of installing software is through a **conda virtual environment**. Virtual environments can contain their own combinations of installed software of different versions. In this way, you can switch between different environments for different projects. This is one of the many ways the community is trying to make research more **reproducible**.
+
+**!!! Exercise:** We first need to set up a configuration file in our home directory. We will start a new configuration file specifically for the conda software. This will tell conda where to save and install programs.
+
+Follow along with these steps:
+```
+# Ensure you are on a compile node
+$ hostname
+ 
+# if you see anything with 'login', execute acompile
+ 
+# see if you are not in your home directory
+$ pwd 
+ 
+#if you are not in your home directory, use the cd command with no argument to go there.
+ 
+#now, let's look and see if you already have a .condarc file. Some of you may
+$ ls -alh
+```
+
+If you have a `.condarc` file, just look inside of it with `more` or `head` and see what it says.
+
+If you do not have a `.condarc`, file, let's make one ...
+```
+$ pwd # make double triple sure you're in your home directory or this won't work
+$ nano .condarc
+```
+
+Now copy and paste the following code into your file:
+```
+pkgs_dirs:
+  - /projects/$USER/.conda_pkgs
+envs_dirs:
+  - /projects/$USER/software/anaconda/envs
+ 
+# Exit out of nano using
+# CTRL + X
+# Type Y
+# Return
+ 
+$ more .condarc     # do this to check your .condarc file
+```
+
+Yay! If you now have a `.condarc` file and see the four lines of code within it specifying your package and environmental paths, you are good to go! You won't need to do this step again on ALPINE.
+
+**!!! Exercise:** Next, we will activate and explore **conda**. 
+
+Conda is a module. To activate conda, use the `module load` command:
+```
+$ hostname # double check you're on a compile node
+$ module avail
+$ module load anaconda
+```
+
+We can list all the virtual conda environments we can currently load:
+```
+$ conda env list
+
+# conda environments:
+#
+base                   *  /curc/sw/anaconda3/2023.09
+ATOC_NWP                 /curc/sw/anaconda3/2023.09/envs/ATOC_NWP
+bash_spr23               /curc/sw/anaconda3/2023.09/envs/bash_spr23
+pyomp_2022               /curc/sw/anaconda3/2023.09/envs/pyomp_2022
+synoptic_f23             /curc/sw/anaconda3/2023.09/envs/synoptic_f23
+DSCI510                  /projects/.colostate.edu/jesshill/software/anaconda/envs/DSCI510
+FuSeq                    /projects/.colostate.edu/jesshill/software/anaconda/envs/FuSeq
+Picard                   /projects/.colostate.edu/jesshill/software/anaconda/envs/Picard
+RNAseq                   /projects/.colostate.edu/jesshill/software/anaconda/envs/RNAseq
+py3.7                    /projects/.colostate.edu/jesshill/software/anaconda/envs/py3.7
+scRNAseq                 /projects/.colostate.edu/jesshill/software/anaconda/envs/scRNAseq
+                         /projects/jesshill@colostate.edu/software/anaconda/envs/DSCI510
+                         /projects/jesshill@colostate.edu/software/anaconda/envs/RNAseq
+                         /projects/jesshill@colostate.edu/software/anaconda/envs/py3.7
+```
+
+The output shows us the default environments that the personnel at CU Boulder have kindly initiated for us to use. It also shows us the environments that we have created. The one we are currently using is marked by an asterisk. Note also, that **(base)** shows up before your prompt... another indication that conda is active and working. 
+
+**!!! Exercise:** Lets build our own custome environment
+
+We want to build a custom virtual environment for this class. To do so...
+```
+$ hostname.      # Ensure first that you're on a compile node.
+$ conda create -n 2025dsci
+ 
+# You will be asked if you want to proceed. Type y
+# When your environment is created, check that it exists:
+ 
+# Check it
+$ conda env list
+```
+
+you should now see a new virtual environment has appeared called `2025dsci`
+
+To navigate into your new environment, do this...
+```
+$ conda activate 2025dsci
+$ conda env list # This shows you which environments are available and selected
+$ conda list  # This shows the software currently installed in your active environment
+ 
+# Another key you're on the right track... Your prompt should now start with your conda environment when active
+(2025dsci) [jesshill@colostate.edu@c3cpu-a2-u32-1 ~]$ 
+```
+
+Yay! You should now have your environment 2025dsci installed and activated. 
+
+**!!! Exercise:** Lets
 
