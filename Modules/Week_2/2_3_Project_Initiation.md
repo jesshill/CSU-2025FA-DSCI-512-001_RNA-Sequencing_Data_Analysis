@@ -25,3 +25,30 @@ Here are the different file storage spaces available:
 <p align="center">
 <img width="700" alt="file storage" src="https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Images/file_storage.png">
 </p>
+
+**!!! Exercise:** Let's start our project.
+
+We will be using our scratch space to perform the projects in this class. That means, everything we do will be deleted 90 days from now!
+
+```
+# Go to your scratch directory.
+$ cd /scratch/alpine/<eID>@colostate.edu   # Substitute <eID> with your eID
+ 
+# Create a directory for this class. Call it **DSCI512**
+$ mkdir DSCI512
+ 
+# Move into that directory
+$ cd DSCI512
+ 
+# Within that directory start a new project
+$ mkdir PROJ01_GomezOrte
+ 
+# Move into that directory
+$ cd PROJ01_GomezOrte
+ 
+# Create three new subdirectories as follows
+$ mkdir 01_input 02_scripts 03_output
+```
+
+**YAY!** Now we have a place to do our work!
+
