@@ -10,7 +10,9 @@ Currently, we are in our home directory `/home/jesshill@colostate.edu/`. The ALP
 
 ### The Alpine System: 
 
-picture here
+<p align="center">
+<img width="500" alt="..." src="...">
+</p>
 
 ### Alpine File Storage: 
 
