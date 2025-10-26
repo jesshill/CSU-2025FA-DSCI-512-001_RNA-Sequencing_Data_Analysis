@@ -6,11 +6,13 @@ If your grant is supported by US government funds, you must deposit your data in
 
 Before we start, we'll need to just configure SRA Tools. We will only need to do this once.
 
-Let's ensure we all have the proper version…
+Let's ensure we all have the proper version ...
 
-:!: EXERCISE: Let's load the SRAtoolkit module
+**!!! EXERCISE:** Let's load the SRAtoolkit module
 
+```
 
+```
 
 
 Continue on to [Project Initiation](2_3_Project_Initiation.md) 
