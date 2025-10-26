@@ -260,5 +260,9 @@ $ conda install -c bioconda <SOFTWARE1> <SOFTWARE2>
 $ conda install -c <SOFTWARE1> <SOFTWARE2>
 ```
 
-For more information 
+For more information: [Installing software](https://curc.readthedocs.io/en/latest/software/python.html) 
+
+For a list of all avialable bioconda software: [Bioconda](https://bioconda.github.io/conda-package_index.html) 
+
+For a list of all availble conda software: [Anaconda](https://anaconda.org/anaconda/repo)
 
