@@ -234,8 +234,31 @@ Yay! You have successfully installed and activated your conda environement!
 
 ## Summary of Conda 
 
-...
+To summarize, we configured our system to install our software in projects. We only need to do that once.
 
+We also created an environment to use in this class. Again, this is something we just do once.
 
+What will we need do we need to do routinely?
 
+Next time you log into ALPINE, You'll do the following tasks:
+1. Switch to the compile node
+2. Load the anaconda module
+3. Activate your 2025dsci environment
+
+```
+$ acompile
+$ module load anaconda
+$ conda activate 2025dsci
+```
+
+What if you want to load more software into this environment?
+
+Use bioconda or conda 
+```
+$ conda install -c bioconda <SOFTWARE1> <SOFTWARE2>
+#OR
+$ conda install -c <SOFTWARE1> <SOFTWARE2>
+```
+
+For more information 
 
