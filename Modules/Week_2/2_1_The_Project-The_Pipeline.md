@@ -26,7 +26,7 @@ Links to relevant videos:
 ## The pipeline for this course:
 
 <p align="center">
-<img width="500" alt="pipeline" src="https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Images/191121_alignment.jpg">
+<img width="700" alt="pipeline" src="https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Images/191121_alignment.jpg">
 </p>
 
 Continue on to [Installing Software II - SRA toolkit](2_2_Installing_Software_2_SRAtoolkit.md) 
