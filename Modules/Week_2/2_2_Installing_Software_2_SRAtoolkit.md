@@ -59,7 +59,7 @@ Type **Capital C** to navigate to the Cache menu
 <img width="500" alt="second screen" src="https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Images/second_screen.png">
 </p>
 
-Check that your /scratch/alpine directory is listed
+Check that your `/scratch/alpine` directory is listed
 
 Type **lowercase x** to Exit
 
