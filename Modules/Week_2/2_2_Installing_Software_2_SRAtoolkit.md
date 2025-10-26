@@ -47,7 +47,9 @@ $ vdb-config -i
 
 This will open up a window like so...
 
-
+<p align="center">
+<img width="500" alt="first screen" src="https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Images/first_screen.png">
+</p>
 
 
 This little applet can be navigated by clicking on letters associated with any letters in red.
