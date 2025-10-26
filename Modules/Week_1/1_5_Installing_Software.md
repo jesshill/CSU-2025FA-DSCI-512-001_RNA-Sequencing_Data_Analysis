@@ -266,3 +266,4 @@ For a list of all avialable bioconda software: [Bioconda](https://bioconda.githu
 
 For a list of all availble conda software: [Anaconda](https://anaconda.org/anaconda/repo)
 
+Continue on to [RNAseq best practices](1_6_241107_RNAseqBestPractices.md)
