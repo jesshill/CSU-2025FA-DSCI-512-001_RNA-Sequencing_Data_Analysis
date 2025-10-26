@@ -11,5 +11,5 @@
 ## The general data structure of the project: 
 
 <p align="center">
-<img width="500" alt="dataset structure" src="...">
+<img width="500" alt="dataset structure" src="https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Images/dataset_structure.jpg">
 </p>
