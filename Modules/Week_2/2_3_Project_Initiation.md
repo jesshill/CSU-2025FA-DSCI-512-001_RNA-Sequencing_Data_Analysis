@@ -11,7 +11,7 @@ Currently, we are in our home directory `/home/jesshill@colostate.edu/`. The ALP
 ### The Alpine System: 
 
 <p align="center">
-<img width="500" alt="..." src="...">
+<img width="500" alt="alpine map" src="https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Images/alpine_map.jpg">
 </p>
 
 ### Alpine File Storage: 
