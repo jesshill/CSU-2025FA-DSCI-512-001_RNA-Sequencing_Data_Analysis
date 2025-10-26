@@ -9,10 +9,25 @@ Before we start, we'll need to just configure SRA Tools. We will only need to do
 Let's ensure we all have the proper version ...
 
 **!!! EXERCISE:** Let's load the SRAtoolkit module
-
+```
+$ acompile
+$ module list             # this lists what you have installed already
+$ module spider sra       # this searches for things that have 'sra' int hem
+$ module load sra-toolkit # this installs the pre-loaded sra-toolkit
+$ module list             # this lists what you have installed
 ```
 
+**!!! HINT:** If you're not seeing sra-toolkit, ensure that you are on the compile node:
 ```
+$ hostname #should not say login
+$ acompile # to switch to to a compile node
+```
+
+Great! Now, if you just executed that command, double check that you have the proper version with
+```
+$ fasterq-dump
+```
+
 
 
 Continue on to [Project Initiation](2_3_Project_Initiation.md) 
