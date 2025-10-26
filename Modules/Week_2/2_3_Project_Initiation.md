@@ -23,5 +23,5 @@ Whereas the nodes are analogous to CPU and memory on your home laptop, the files
 Here are the different file storage spaces available:
 
 <p align="center">
-<img width="700" alt="file storage" src="...">
+<img width="700" alt="file storage" src="https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Images/file_storage.png">
 </p>
