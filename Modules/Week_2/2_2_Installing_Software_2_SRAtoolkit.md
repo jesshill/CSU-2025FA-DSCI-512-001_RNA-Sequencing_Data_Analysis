@@ -51,16 +51,23 @@ This will open up a window like so...
 <img width="500" alt="first screen" src="https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Images/first_screen.png">
 </p>
 
-
 This little applet can be navigated by clicking on letters associated with any letters in red.
-Type Capital C to navigate to the Cache menu
-Check that your /scratch/summit directory is listed
-Type lowercase x to Exit
+
+Type **Capital C** to navigate to the Cache menu
+
+<p align="center">
+<img width="500" alt="second screen" src="https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Images/second_screen.png">
+</p>
+
+Check that your /scratch/alpine directory is listed
+
+Type **lowercase x** to Exit
+
 For more information on how to navigate vdb-config, check Set up of fasterq-dump
 
+## Reviewing SRA-Toolkit Usage
 
-
-
+...
 
 
 
