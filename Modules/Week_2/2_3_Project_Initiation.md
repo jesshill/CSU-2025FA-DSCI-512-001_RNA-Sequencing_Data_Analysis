@@ -52,3 +52,4 @@ $ mkdir 01_input 02_scripts 03_output
 
 **YAY!** Now we have a place to do our work!
 
+Continue on to [Running Jobs with SLURM](2_4_Running_Jobs_with_SLURM.md)
