@@ -14,6 +14,31 @@
 
 ## The ALPINE System: 
 
-picture
+<p align="center">
+<img width="700" alt="alpine map" src="https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Images/alpine_map.jpg">
+</p>
 
 ### Where do we run jobs when we are working on ALPINE?
+
+- For small jobs (single node) - these can run directly from the command line
+- Try to avoid running jobs on the **login node**
+  - acompile node is not a login node
+- For larger jobs, we submit the job to a **compute node**
+
+### How do we submit a job to the compute node?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
