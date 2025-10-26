@@ -30,5 +30,3 @@ Links to relevant videos:
 </p>
 
 Continue on to [Installing Software II - SRA toolkit](2_2_Installing_Software_2_SRAtoolkit.md) 
-
-Continue on to [Project Initiation](2_3_Project_Initiation.md) 
