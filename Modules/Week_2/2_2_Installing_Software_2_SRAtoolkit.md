@@ -9,6 +9,7 @@ Before we start, we'll need to just configure SRA Tools. We will only need to do
 Let's ensure we all have the proper version ...
 
 **!!! EXERCISE:** Let's load the SRAtoolkit module
+
 ```
 $ acompile
 $ module list             # this lists what you have installed already
@@ -18,15 +19,48 @@ $ module list             # this lists what you have installed
 ```
 
 **!!! HINT:** If you're not seeing sra-toolkit, ensure that you are on the compile node:
+
 ```
 $ hostname #should not say login
 $ acompile # to switch to to a compile node
 ```
 
 Great! Now, if you just executed that command, double check that you have the proper version with
+
 ```
 $ fasterq-dump
 ```
+
+**!!! EXERCISE:** Next, let's all work together to ensure that SRA Tools will use the proper temp directory for its download. This directory requires 100 G of space. However, the way that SRA Tools sets up by default, it lists sets the temp directory within your home directory. Because we only have 2G of space there, this is not going to work. Let's change the temp directory...
+
+```
+$ mkdir -p /scratch/alpine/$USER/ncbi/public
+$ vdb-config -s /repository/user/default-path="/scratch/alpine/$USER/ncbi"
+$ vdb-config -s /repository/user/main/public/root="/scratch/alpine/$USER/ncbi/public"
+```
+
+Let's double check that this worked using the vdb-config interactive browser:
+
+```
+$ vdb-config -i
+```
+
+This will open up a window like so...
+
+
+
+
+This little applet can be navigated by clicking on letters associated with any letters in red.
+Type Capital C to navigate to the Cache menu
+Check that your /scratch/summit directory is listed
+Type lowercase x to Exit
+For more information on how to navigate vdb-config, check Set up of fasterq-dump
+
+
+
+
+
+
 
 
 
