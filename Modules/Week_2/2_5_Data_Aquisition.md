@@ -158,7 +158,9 @@ There are two ways to automate downloading.
 
 **LOOPS:** The first is to **loop** over the list of samples and download each, in succession. In this model, when the first sample completes its download, the download of the next will start. This can be done using a while, for, or while read loop structure. Because of the way fasterq-dump is written, we can use multiple tasks for this process, improving its efficiency. If each file takes 4 minutes to download using 12 tasks, the whole job of downloading all 18 samples will take (4 min x 18 samples) 72 minutes, or an hour and 12 minutes.
 
-To see an example of this type of code see: [Data Acquisition using Loops](...).
+To see an example of Data aquisition using loops type of code see below...
+
+add inset here
 
 **ARRAYS:** The second way to automate downloading is to use an **array** structure to download each file simultaneously. In this model, we start all the downloads at the same time. We probably don't need as many tasks per download, so let's go with 4 tasks and it takes 10 minutes to download each sample. Because all the downloading will happen, simultaneously, or **in parallel**, the entire job will take 10 minutes. This sounds way better. Let's do it...
 
