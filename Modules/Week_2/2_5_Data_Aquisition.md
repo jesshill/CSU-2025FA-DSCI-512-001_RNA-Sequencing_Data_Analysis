@@ -34,7 +34,7 @@ When you publish your own RNA-seq data, you will be required by the journal to d
 - **Second**, I search for **GEO** or **GSE** in the document and find this reference in the materials and methods section: 
 
 <p align="center">
-<img width="700" alt="alpine map" src="...">
+<img width="700" alt="GEO info" src="https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Images/GEO_info.png">
 </p>
 
 
