@@ -1,5 +1,6 @@
-...
+# Upcoming Homeworks 
 
+Homework #2 & 3 focus on learning R via Swirl.
 
 
 
