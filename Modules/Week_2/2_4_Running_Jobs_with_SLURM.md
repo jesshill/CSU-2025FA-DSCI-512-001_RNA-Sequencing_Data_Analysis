@@ -38,9 +38,16 @@
 
 ## Quick SLURM Intro 
 
-...
+The job sharing utility that is installed on ALPINE is called **SLURM** and we use it by writing and executing **batch scripts**. Batch scripts are just specialized bash scripts that are executed using the command `sbatch`. Batch scripts do everything that bash scripts do, but in addition, they request a certain amount of the supercomputer for use and request a certain amount of time on that hardware. When we execute batch scripts, they don't run right away. Instead, they get in the queue and are assigned to a node based on the requested hardware, requested time, and availability.
 
+**!!! Exercise:** Follow along. Let's do some SLURM practice.
 
+- First, let's navigate to the space `/scratch/alpine/$USER`
+- Let's make a new directory called `test_slurm`
+- `cd` into the `test_slurm` sub-directory
+- Next, let's make a practice shell script.
+- Start a file called using `$ touch testscript.sh`
+- Open `testscript.sh` by navigating to DASHBOARD, FILES, and editing the file. OR you can use nano.
 
 
 
