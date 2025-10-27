@@ -160,7 +160,16 @@ There are two ways to automate downloading.
 
 To see an example of Data aquisition using loops type of code see below...
 
-add inset here
+<details>
+  <summary>Click to expand/collapse</summary>
+
+---
+
+...
+
+---
+
+</details>
 
 **ARRAYS:** The second way to automate downloading is to use an **array** structure to download each file simultaneously. In this model, we start all the downloads at the same time. We probably don't need as many tasks per download, so let's go with 4 tasks and it takes 10 minutes to download each sample. Because all the downloading will happen, simultaneously, or **in parallel**, the entire job will take 10 minutes. This sounds way better. Let's do it...
 
