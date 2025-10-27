@@ -227,15 +227,32 @@ echo "world"
 sleep 30
 ```
 
+Real runs or intensive runs: 
 
+- **amilan** nodes have either 32, 48, or 64 cores. However, there aren't many with 64 cores, so if you run a job with `–nodes=1 and –ntasks=64` you will need to wait until that resource is available. It might be a long wait
+- Try requesting **amilan** nodes with a max of 32 ntasks for best performance
+- The max time you can request in 24 hours
+- If you're waiting for your job to start and want to get an estimate of when it will start, try your `sa` command alias
 
+#### The tester run
 
+This will run right away and is great for testing if things work. (Remember: Max nodes for a testing run = 2; Max processes for a testing run = 24 total; Max time is 30 min)
 
+```
+#!/usr/bin/env bash
+ 
+#SBATCH --nodes=1
+#SBATCH --ntasks=2
+#SBATCH --time=00:10:00
+#SBATCH --partition=atesting
+#SBATCH --output=log-download-%j.out
+ 
+echo "hello"
+sleep 30
+echo "world"
+sleep 30
+```
 
-
-
-
-
-
+Continue on to 
 
 
