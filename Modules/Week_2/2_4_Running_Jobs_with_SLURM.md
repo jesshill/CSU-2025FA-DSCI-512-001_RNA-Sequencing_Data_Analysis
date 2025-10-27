@@ -27,14 +27,18 @@
 
 ### How do we submit a job to the compute node?
 
+- We use the **job scheduler** called **SLURM**
+- A [job scheduler](https://en.wikipedia.org/wiki/Job_scheduler) is a specialized piece of software used in **High Performance Computing** to send jobs to specialized nodes. 
 
+### Wait, what is a node again?
 
+- **Nodes** are the individual, small computing units of which a supercomputer is comprised. Individual nodes are like mini-computers, each with its own CPUs, memory, and a bit of storage space.
+- **Types of Compute Nodes** - Compute nodes are the nodes on the ALPINE system where we run jobs. They come in a few different types - **GPU** (graphical processing units), **HighMEM** (high memory nodes), and **Haswell** (typical, garden-variety, CPU)
+- **Node design** - Each compute node can support multiple tasks. These tasks are referred to as either **processes** or **threads** or **cores**. This is similar to having a quad-CPU in your laptop that can support 4x processes at a time. The Haswell Nodes on ALPINE can support up to 24 processes. On ALPINE, each compute node will support 64 processes.
 
+## Quick SLURM Intro 
 
-
-
-
-
+...
 
 
 
