@@ -272,7 +272,7 @@ Quality scoring range:
 - **20 - 30**: moderate quality
 - **> 30**: high quality
 
-Each possible quality score is encoded by an individual character. [This is the code table]()
+Each possible quality score is encoded by an individual character. [This is the code table](https://www.drive5.com/usearch/manual/quality_score.html)
 
 Continue on to [Pre-Processing & QC]()
 
