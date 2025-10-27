@@ -47,6 +47,36 @@ When you publish your own RNA-seq data, you will be required by the journal to d
 <img width="700" alt="data aquisition" src="https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Images/data_acquisition.png">
 </p>
 
+## Test the SRA-Toolkit
+
+Let's test that sra-tools is working
+
+```
+$ module load sra-toolkit #if you haven't already
+$ fasterq-dump --help #test that it works
+```
+
+## Download a single file
+
+Say we want to download a single .fastq file from a dataset. We'll use **fasterq-dump** within the **sra-tools** suite of tools to do this.
+
+First, I look up the SRR number of the .fastq file I want to download. Let's pick the first on this SRA Run Selector page.
+
+<p align="center">
+<img width="700" alt="SRA" src="https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Images/SRA.png">
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
