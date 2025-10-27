@@ -200,8 +200,32 @@ $ sa
 $ suserc
 ```
 
-**!!! Exercise:** Try running 
+**!!! Exercise:** Try running `testscript.sbatch` again, this time with your new command aliases!
 
+## Some hackable sbatch scripts
+
+The example script above is great for a nice short, quick run. It's capabilities will be similar to a laptop but allow for a 2 hour job to complete.
+
+#### The intensive run
+
+This run takes advantage of a full node but may take a while to start. Remember: Max cores per Haswell node = 24; Max time = 24 hours)
+
+```
+#!/usr/bin/env bash
+ 
+#SBATCH --nodes=1
+#SBATCH --ntasks=24
+#SBATCH --time=12:00:00
+#SBATCH --partition=amilan
+#SBATCH --mail-type=end
+#SBATCH --mail-user=tstark@colostate.edu # replace this with your own e-mail to receive an e-mail update when this job is complete
+#SBATCH --output=log-download-%j.out
+ 
+echo "hello"
+sleep 30
+echo "world"
+sleep 30
+```
 
 
 
