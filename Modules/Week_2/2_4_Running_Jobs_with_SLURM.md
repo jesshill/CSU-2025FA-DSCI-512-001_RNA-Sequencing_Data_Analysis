@@ -76,8 +76,68 @@ To run jobs using SLURM, we take a typical `.sh` script and convert it to an `.s
 
 Sbatch scripts look like so...
 
+```
+#!/bin/usr/env bash
+ 
+## Directives go here...
+#SBATCH <SLURM commands>
+#SBATCH <SLURM commands>
+#SBATCH <SLURM commands>
+#SBATCH <SLURM commands>
+#SBATCH <SLURM commands>
+#SBATCH <SLURM commands>
+ 
+## Software is loaded here...
+module purge
+module load <desired software>
+ 
+## Your regular old shell script goes here...
+echo "hello"
+sleep 30
+echo "world"
+sleep 30
+```
 
+**!!! Exercise:** Copy the `.sh` script into an `.sbatch` script called `testscript.sbatch`
 
+```
+$ cp testscrip.sh testscript.sbatch
+```
 
+**!!! Exercise:** open `testscript.sbatch` in a text editor and convert it to an `.sbatch` script by adding the following directives:
 
+```
+#!/usr/bin/env bash
+ 
+#SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --time=0:1:30
+#SBATCH --partition=atesting
+#SBATCH --output=sample-%j.out
+ 
+## Software is loaded here...
+module purge
+ 
+## Code
+echo "hello"
+sleep 30
+echo "world"
+sleep 30
+```
 
+Submit this script to the SLURM job scheduler using this command:
+
+```
+$ sbatch testscript.sbatch
+```
+
+Use the following commands to interact with the progress of your script:
+
+```
+$ squeue -u $USER    # to see all the scripts you, the user, are running
+$ sacct -u $USER              # See some stats about running or previously run jobs
+$ sacct -X --format JobID, JobName,AllocCPUS,State,ExitCode,Elapsed,TimeLimit,Submit,Start,End  # A nicely formatted status output
+$ scancel <jobID#>   # to cancel a script
+```
+
+Do you see a log file that was created? Peek into it to explore it.
