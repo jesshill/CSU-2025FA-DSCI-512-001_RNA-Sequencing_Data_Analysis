@@ -253,6 +253,4 @@ echo "world"
 sleep 30
 ```
 
-Continue on to 
-
-
+Continue on to [Running Jobs with SLURM](2_5_Data_Aquisition.md)
