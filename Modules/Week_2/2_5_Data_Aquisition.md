@@ -44,7 +44,7 @@ When you publish your own RNA-seq data, you will be required by the journal to d
 - **Fourth**, we want to link to the SRA repository data by clicking on SRA Run Selector at the bottom of the page, here:
 
 <p align="center">
-<img width="700" alt="data aquisition" src="...">
+<img width="700" alt="data aquisition" src="https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Images/data_acquisition.png">
 </p>
 
 
