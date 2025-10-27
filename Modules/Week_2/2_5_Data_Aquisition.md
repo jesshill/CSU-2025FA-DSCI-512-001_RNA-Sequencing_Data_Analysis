@@ -158,14 +158,82 @@ There are two ways to automate downloading.
 
 **LOOPS:** The first is to **loop** over the list of samples and download each, in succession. In this model, when the first sample completes its download, the download of the next will start. This can be done using a while, for, or while read loop structure. Because of the way fasterq-dump is written, we can use multiple tasks for this process, improving its efficiency. If each file takes 4 minutes to download using 12 tasks, the whole job of downloading all 18 samples will take (4 min x 18 samples) 72 minutes, or an hour and 12 minutes.
 
-To see an example of Data aquisition using loops type of code see below...
+To see an example of **Data acquisition using loops** type of code see below...
 
 <details>
   <summary>Click to expand/collapse</summary>
 
 ---
 
-...
+### Data acquisition using loops
+
+Using a `for`, `while`, or another type of loop can help to automate the downloading process. Using these loops, the download of each sample will happen in the same way, one after another.
+
+Here is one method:
+
+**Step 1:** Make a file that lists all the samples to download:. Create a file called `SRR_Acc_List_GomezOrte.txt`
+
+```
+$ more SRR_Acc_List_GomezOrte.txt
+SRR5832182
+SRR5832183
+SRR5832184
+SRR5832185
+SRR5832186
+SRR5832187
+SRR5832188
+SRR5832189
+SRR5832190
+SRR5832191
+SRR5832192
+SRR5832193
+SRR5832194
+SRR5832195
+SRR5832196
+SRR5832197
+SRR5832198
+SRR5832199
+```
+
+**Step 2:** Copy and paste the following code into a file called `automateSRA_wLoops.sbatch`.
+
+```
+#!/usr/bin/env bash
+ 
+ 
+#SBATCH --nodes=1
+#SBATCH --ntasks=12
+#SBATCH --time=02:00:00
+#SBATCH --partition=amilan
+#SBATCH --mail-type=end
+#SBATCH --mail-user=tstark@colostate.edu #REPLACE THIS E-MAIL WITH YOUR E-MAIL
+#SBATCH --output=log-download-%j.out
+ 
+# EXCUTE code with: $ sbatch automateSRA.sbatch <file_listing_SRR_files.txt>
+ 
+# INSTALL software
+module purge
+module load sra-toolkit
+ 
+# RUN SCRIPT
+  # Loop over each SRR file and import each fastq file:
+  # Note - $SLURM_NTASKS is an environmental variable set by the #SBATCH line with --ntasks. So it dereferences the number that is specified in that line of code. In this case, it dereferences the number 12. 
+ 
+while read line
+do
+   echo -e $line
+   echo "fasterq-dump -e $SLURM_NTASKS --split-files $line"
+   time fasterq-dump -e $SLURM_NTASKS --split-files $line
+   echo "vdb-validate $line"
+   vdb-validate $line
+done < $1
+```
+
+**Step 3:** Execute the code with
+
+```
+$ sbatch automateSRA_wLoops.sbatch SRR_Acc_List_GomezOrte.txt 
+```
 
 ---
 
