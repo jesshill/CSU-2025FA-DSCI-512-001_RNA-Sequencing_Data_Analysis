@@ -125,10 +125,10 @@ $ cd 01_input
 </p>
 
 - Navigate to the Gomez Orte SRA page.
-- Click on Accession List
+- Click on **Accession List**
 - Download it somewhere on your computer
 - Open the file
-- Copy and paste the contents of that file into a new file on ALPINE called SRR_Acc_List_GomezOrte.txt (you can use nano to do this).
+- Copy and paste the contents of that file into a new file on ALPINE called `SRR_Acc_List_GomezOrte.txt` (you can use nano to do this).
 
 ```
 $ more SRR_Acc_List_GomezOrte.txt
@@ -151,3 +151,107 @@ SRR5832197
 SRR5832198
 SRR5832199
 ```
+
+## Two ways to automate downloading
+
+There are two ways to automate downloading.
+
+**LOOPS:** The first is to **loop** over the list of samples and download each, in succession. In this model, when the first sample completes its download, the download of the next will start. This can be done using a while, for, or while read loop structure. Because of the way fasterq-dump is written, we can use multiple tasks for this process, improving its efficiency. If each file takes 4 minutes to download using 12 tasks, the whole job of downloading all 18 samples will take (4 min x 18 samples) 72 minutes, or an hour and 12 minutes.
+
+To see an example of this type of code see: [Data Acquisition using Loops](...).
+
+**ARRAYS:** The second way to automate downloading is to use an **array** structure to download each file simultaneously. In this model, we start all the downloads at the same time. We probably don't need as many tasks per download, so let's go with 4 tasks and it takes 10 minutes to download each sample. Because all the downloading will happen, simultaneously, or **in parallel**, the entire job will take 10 minutes. This sounds way better. Let's do it...
+
+Copy and paste this following short script into the same directory and call it `automateSRA.sbatch`. This will automate the process of downloading every sample in the SRR list using **fasterq-dump**.
+
+```
+#!/usr/bin/env bash
+ 
+ 
+#SBATCH --nodes=1
+#SBATCH --ntasks=4
+#SBATCH --time=00:20:00
+#SBATCH --partition=amilan
+#SBATCH --output=log-download-%A.%a.out
+ 
+# Execute code with: $ sbatch --array=1-n automateSRA.sbatch <file>
+# Make sure that in --array=0-n, the number n matches the number of lines in <file>
+# The format of <file> is a list of SRR#s with each SRR# on its own line.
+ 
+ 
+myinfile=$1
+ARR=($(cat $myinfile))
+ 
+line=${ARR[ $SLURM_ARRAY_TASK_ID ]}
+echo -e $line
+echo "fasterq-dump -e $SLURM_NTASKS --split-files $line"
+time fasterq-dump -e $SLURM_NTASKS --split-files $line
+echo "vdb-validate $line"
+vdb-validate $line
+```
+
+Now, just execute the program like so... 
+
+```
+$ sbatch --array=0-17 automateSRA.sbatch SRR_Acc_List_GomezOrte.txt 
+```
+
+**NOTE:** We are signed up for a special “reservation”. This means that because our class is an official sanctioned ALPINE class, we have been given priority on our jobs during our classtime. To take advantage of this during classtime, run your job with our special priority access code like so:
+
+```
+$ sbatch --account=csu99_alpine1 --array=0-17 automateSRA.sbatch SRR_Acc_List_GomezOrte.txt 
+```
+
+**NOTE:** You can also download just a subset of SRR files.
+
+**NOTE:** What does that term `$SLURM_NTASKS` mean? This is an environmental variable that dereferences whatever number is written in the line `#SBATCH –ntasks=4`. So, in this case `$SLURM_NTASKS` dereferences to 4. And this is how you'll need to sync up the resources you request with the resources you tell the software you have available to use. These numbers must match. You can do it by hand, or you can use the `$SLURM_NTASKS` variable.
+
+## Finish it up
+
+Best practices are to write a README file to keep track of what you did. Make sure you include...
+
+- The date
+- Your name
+- The purpose for downloading the dataset (believe me, it's easy to forget)
+- Also consider downloading the metadata file from SRA Selector page and saving that in the same directory.
+
+## Explore the data from the Gómez-Orte, et al., 2017 study
+
+**YAY!** We have successfully obtained the data for this class.
+
+#### Exploring the data: 
+
+- Let's explore what we obtained
+- Using `more`, read the metadata file `metadata_gomezOrte.txt`
+- Using `more`, peek into some of the .fastq files
+- Using `wc`, explore how big these files are
+
+#### FASTQ Data
+
+Sequencing data is stored in the fastq standardized data format:
+
+```
+@SRR5832182.1 HISEQ-MFG:180:hw5f3bcxx:2:1101:1205:2195 length=101
+CGCGAACAGTCCTCAAATCGGGGATCGAAAAAGGATTCGTGGAATCACAGTATTTTTATGTATAATTTCTTCCACCGAAGAGGGAGCAACAAGAGAGCGGC
++SRR5832182.1 HISEQ-MFG:180:hw5f3bcxx:2:1101:1205:2195 length=101
+DDDDDHHIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIGHHHIEHIIIIIIIIIIFHIIIHIIIIIHIIIIIIIIIIIIIIIIGHHIIIIIHIIHIIIIH
+```
+
+In this format, each molecule sequenced on the sequencing instrument contains four rows of information. Each molecule sequenced is referred to as a **read**.
+
+| Row # | Information |
+| ----- | ----------- |
+| 1 | Read information (sample name, instrument, coordinates or name, read length |
+| 2 | ATGC DNA sequence obtained |
+| 3 | Read information repeated |
+| 4 | Quality scores |
+
+All the reads (tens of millions) are concatenated together in groups of 4-rows each in the .fastq file.
+
+For paired-end sequencing, two matched .fastq files are obtained. Typically, they are matched together based on their file names... `Sample1_1.fastq` & `Sample1_2.fastq`.
+
+#### Quality Scores
+
+
+
+
