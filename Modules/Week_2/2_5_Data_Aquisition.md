@@ -28,9 +28,12 @@ When you publish your own RNA-seq data, you will be required by the journal to d
 
 ## Obtain the Gomez-Orté Dataset Information
 
+**!!! Exercise:** Let's download one of the Gomez-Orté files together.
 
+- **First**, I consult the Gomez-Orté manuscript: [Gomez-Orté et al., 2017](https://pmc.ncbi.nlm.nih.gov/articles/PMC5839384/)
+- **Second**, I search for **GEO** or **GSE** in the document and find this reference in the materials and methods section: 
 
-
+picture 
 
 
 
