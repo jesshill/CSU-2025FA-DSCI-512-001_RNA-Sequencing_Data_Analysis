@@ -141,3 +141,77 @@ $ scancel <jobID#>   # to cancel a script
 ```
 
 Do you see a log file that was created? Peek into it to explore it.
+
+**???** What just happened? 
+
+**???** What do all the #SBATCH lines mean? 
+
+Everything after an `#SBATCH` is a **SLURM directive**. Think of these like **options**. You're telling SLURM details about how you want your script to be run.
+
+```
+#SBATCH --nodes=1   <-- Requests 1 node
+#SBATCH --ntasks=1  <-- Requests 1 core (can be up to 64 per single node)
+#SBATCH --time=0:1:30   <-- Requests 1 minute & 30 seconds of time. Job will stop then
+#SBATCH --partition=atesting  <-- Requests a "testing partition"
+#SBATCH --output=sample-%j.out <-- saves the output in a file named sample-%j.out where %j is a variable where the job number will output
+```
+
+More info: 
+- Research Computing at Boulder - [Guide to running batch jobs](https://curc.readthedocs.io/en/latest/running-jobs/batch-jobs.html)
+- Research Computing at Boulder - [Guide to SLURM directives](https://curc.readthedocs.io/en/latest/running-jobs/job-resources.html) 
+
+## Making SLURM easier to use
+
+Because the `squeue -u $USER` command is cumbersome to type, let's make some aliases of shortcut commands.
+
+**!!! Exercise:** Let's navigate to our home directory and add some aliases to our `.bashrc` file
+
+```
+# cd with no argument returns you to your home directory
+$ cd 
+$ pwd
+```
+
+Go to the DASHBOARD. Select FILES. Edit the file `.bashrc`
+
+Copy and paste the following lines of code to the end of the `.bashrc` file:
+
+```
+#Alises
+alias scheck="squeue -u $USER"
+alias sa='sacct -X --format JobID,JobName,AllocCPUS,State,ExitCode,Elapsed,TimeLimit,Submit,Start,End'
+alias suser="sacct -u $USER"
+```
+
+- Save the file
+- Close it
+- Return to the prompt and the home directory
+- To activate your new `.bashrc`, source it...
+
+```
+$ source .bashrc
+```
+
+Now test your new aliases: 
+
+```
+$ scheck
+$ sa
+$ suserc
+```
+
+**!!! Exercise:** Try running 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
