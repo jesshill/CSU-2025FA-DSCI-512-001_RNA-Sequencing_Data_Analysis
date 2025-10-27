@@ -274,12 +274,6 @@ Quality scoring range:
 
 Each possible quality score is encoded by an individual character. [This is the code table](https://www.drive5.com/usearch/manual/quality_score.html)
 
+Continue on to [...]()
+
 Continue on to [Pre-Processing & QC]()
-
-
-
-
-
-
-
-
