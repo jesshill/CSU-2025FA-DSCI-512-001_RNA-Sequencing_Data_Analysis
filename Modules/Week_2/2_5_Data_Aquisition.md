@@ -252,6 +252,34 @@ For paired-end sequencing, two matched .fastq files are obtained. Typically, the
 
 #### Quality Scores
 
+OK, those quality scores look weird. What do they mean? These are **Phred quality scores (Q)** that were originally developed by the program Phred to measure base-calling reliability from Sanger sequencing chromatograms.
+
+If Phred assigns a quality score of 30 to a base, the chances that this base is called incorrectly are 1 in 1000.
+
+Phred quality scores are logarithmically linked to error probabilities
+
+| Phred Quality Score | Probability of incorrect base call | Base call accuracy | 
+| ----- | ----------- | --- |
+| 10 | 1 in 10 | 90% |
+| 20 | 1 in 100 | 99% |
+| 30 | 1 in 1000 | 99.9% |
+| 40 | 1 in 10,000 | 99.99% |
+| 50 | 1 in 100,000 | 99.999% |
+| 60 | 1 in 1,000,000 | 99.9999% |
+
+Quality scoring range:
+- **< 20**: poor quality
+- **20 - 30**: moderate quality
+- **> 30**: high quality
+
+Each possible quality score is encoded by an individual character. [This is the code table]()
+
+Continue on to [Pre-Processing & QC]()
+
+
+
+
+
 
 
 
