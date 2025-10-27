@@ -37,6 +37,23 @@ When you publish your own RNA-seq data, you will be required by the journal to d
 <img width="700" alt="GEO info" src="https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Images/GEO_info.png">
 </p>
 
+- **Third**, I google search **GSE101524** to find its NCBI GEO Entry: [GSE101524](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE101524).
+  - Go ahead and navigate to that page and explore the content.
+  - There are 18 samples to download (each link to their own description page)
+  - There is additional information about the experiment.
+- **Fourth**, we want to link to the SRA repository data by clicking on SRA Run Selector at the bottom of the page, here:
+
+<p align="center">
+<img width="700" alt="data aquisition" src="...">
+</p>
+
+
+
+
+
+
+
+
 
 
 
