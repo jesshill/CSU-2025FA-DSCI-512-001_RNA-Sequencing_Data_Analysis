@@ -49,6 +49,34 @@ The job sharing utility that is installed on ALPINE is called **SLURM** and we u
 - Start a file called using `$ touch testscript.sh`
 - Open `testscript.sh` by navigating to DASHBOARD, FILES, and editing the file. OR you can use nano.
 
+### Write the following code into `testscript.sh`
+
+```
+#!/usr/bin/env bash
+ 
+echo "hello"
+sleep 30
+echo "world"
+sleep 30
+```
+
+This script is run with the command:
+
+```
+$ bash testscript.sh
+```
+
+OK, this feels familiar. The script prints Hello, waits 30 seconds, then prints world, then waits 30 seconds.
+
+To run jobs using SLURM, we take a typical `.sh` script and convert it to an `.sbatch` script. To turn a bash script into an sbatch script we just need to do a few things...
+
+1. change the file extension
+2. add directives
+3. execute with the command `$ sbatch <yourscript.sbatch>`
+
+Sbatch scripts look like so...
+
+
 
 
 
