@@ -1,4 +1,6 @@
 ...
 
 
-Continue on to [Pre-Processing & QC](2_7_Pre-processing_and_QC.md) 
+
+
+Continue on to [Data Aquisition](2_6_Data_Aquisition.md)
