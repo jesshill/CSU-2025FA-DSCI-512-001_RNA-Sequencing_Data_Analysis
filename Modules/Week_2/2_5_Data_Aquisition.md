@@ -33,8 +33,9 @@ When you publish your own RNA-seq data, you will be required by the journal to d
 - **First**, I consult the Gomez-Orté manuscript: [Gomez-Orté et al., 2017](https://pmc.ncbi.nlm.nih.gov/articles/PMC5839384/)
 - **Second**, I search for **GEO** or **GSE** in the document and find this reference in the materials and methods section: 
 
-picture 
-
+<p align="center">
+<img width="700" alt="alpine map" src="...">
+</p>
 
 
 
