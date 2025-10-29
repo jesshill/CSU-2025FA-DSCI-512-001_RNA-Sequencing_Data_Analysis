@@ -258,4 +258,4 @@ done
   - [Bash guide for beginners (but is more advanced)](...)
 - Note that this script will run a little bit different than our first by recycling the SRR ID in the output file.
 
-Continue on to [Automation](../WeeK_3/3_1_Automation.md)
+Continue on to [Automation](../Week_3/3_1_Automation.md)
