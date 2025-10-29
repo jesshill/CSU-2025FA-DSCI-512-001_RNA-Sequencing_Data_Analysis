@@ -253,9 +253,9 @@ done
 - Depending on how you copy-and-paste this script, the slashes may not incorporate properly. A back slash as it is written is just a way to wrap a single line of a command around a carriage return. It can make it easier to read. However, if it is causing problems, remove the back slashes
 - So, now you can see that we can use bash arrays and loop over them to make this process more efficient and prevent errors in coding.
 - Review and learn more about loops here:
-  - [DSCI510 for loops](...)
-  - [Ryan's tutorials on loops](...)
-  - [Bash guide for beginners (but is more advanced)](...)
+  - [DSCI510 for loops](https://github.com/jesshill/CSU-2025FA-DSCI-510-001_LINUX_as_a_computational_platform/blob/main/Modules/Week4/4-3_Loops.md)
+  - [Ryan's tutorials on loops](https://ryanstutorials.net/bash-scripting-tutorial/bash-loops.php)
+  - [Bash guide for beginners (but is more advanced)](https://tldp.org/LDP/Bash-Beginners-Guide/html/chap_09.html)
 - Note that this script will run a little bit different than our first by recycling the SRR ID in the output file.
 
 Continue on to [Automation](../Week_3/3_1_Automation.md)
