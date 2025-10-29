@@ -189,7 +189,9 @@ fastp -i ../01_input/tester_SRR5832182_1.fastq \
 
 ### Adapters can be sequenced on the opposite end of a short insert
 
-
+<p align="center">
+<img width="700" alt="..." src="...">
+</p>
 
 
 
