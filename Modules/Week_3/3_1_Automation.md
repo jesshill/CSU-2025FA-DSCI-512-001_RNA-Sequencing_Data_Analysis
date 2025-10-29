@@ -57,6 +57,6 @@ A quick description of vocabulary:
 - **conditions** - There are two types of conditions in this study... diet and temperature
 - **reps** - There are three reps for each condition combination
 
-** Yay!** Let's see how we will automate the entire pipeline here:
+**Yay!** Let's see how we will automate the entire pipeline here:
 
 Continue on to [Automation 2](3_2_Automation_2.md)
