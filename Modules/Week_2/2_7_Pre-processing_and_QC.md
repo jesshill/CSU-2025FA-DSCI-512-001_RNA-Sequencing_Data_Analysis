@@ -25,8 +25,8 @@ We can do all of these tasks with the toolkit **fastp**
 
 ### Helpful fastp references
 
-- [fastp github repository]() ...
-- fastp publication: ...
+- [fastp github repository](https://github.com/OpenGene/fastp)
+- [fastp publication](https://academic.oup.com/bioinformatics/article/34/17/i884/5093234?login=true)
 
 ```
 $ fastp
