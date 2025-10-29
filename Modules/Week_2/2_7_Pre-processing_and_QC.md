@@ -193,6 +193,69 @@ fastp -i ../01_input/tester_SRR5832182_1.fastq \
 <img width="700" alt="adapter removal" src="https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Images/adapter_removal.jpg">
 </p>
 
+Concatamers of primers and adapters can also occur.
 
+### Adapters can be sequenced on the opposite end of a short insert
 
+**!!! Exercise:** Explore your results
 
+- Within the terminal, navigate to `~/PROJ01_GomezOrte/03_output`
+- Explore the output
+- Using the file navigator panel, navigate to the same output directory.
+- **Right-click on the .html file** and download it to your local computer.
+- Open the .html file to explore it.
+
+*Note: All these metrics look spectacular in these samples. It appears that the adapters were removed previous to the authors uploading them (as noted in the fastp output). I don't typically do this. I submit my sequences to the repositories unprocessed.*
+
+## Running fastp a second time with looping
+
+OK, that was just the first run of the tester files. What if we want to do the whole list of files?
+
+We'll need to incorporate a loop into our bash script. Let's make a new script called:
+
+- **preProcessingWithLooping.sbatch**
+
+```
+#!/usr/bin/env bash
+ 
+ 
+#SBATCH --nodes=1
+#SBATCH --ntasks=12
+#SBATCH --time=06:00:00
+#SBATCH --partition=shas
+#SBATCH --mail-type=end
+#SBATCH --mail-user=<eID>@colostate.edu
+#SBATCH --output=log-download-%j.out
+ 
+ 
+# execute fastp on two paired-end reads of tester files
+ 
+# Initiate a bash array called SRRIDs with two elements
+SRRIDs="tester_SRR5832182 tester_SRR5832183"
+ 
+# Loop through the SSRID array and run fastp on each:
+for SRRID in $SRRIDs
+do
+     echo -e $SSRID
+ 
+     fastp -i ../01_input/${SRRID}_1.fastq \
+     -I ../01_input/${SRRID}_2.fastq \
+     -o ../03_output/${SRRID}_trim_1.fastq \
+     -O ../03_output/${SRRID}_trim_2.fastq \
+     -h ../03_output/${SRRID}_report.html \
+     -j ../03_output/${SRRID}_report.json \
+     --detect_adapter_for_pe \
+     --thread $SLURM_NTASKS \
+     -g -x -p
+done
+```
+
+- Depending on how you copy-and-paste this script, the slashes may not incorporate properly. A back slash as it is written is just a way to wrap a single line of a command around a carriage return. It can make it easier to read. However, if it is causing problems, remove the back slashes
+- So, now you can see that we can use bash arrays and loop over them to make this process more efficient and prevent errors in coding.
+- Review and learn more about loops here:
+ - [DSCI510 for loops](...)
+ - [Ryan's tutorials on loops](...)
+ - [Bash guide for beginners (but is more advanced)](...)
+- Note that this script will run a little bit different than our first by recycling the SRR ID in the output file.
+
+Continue on to [...]()
