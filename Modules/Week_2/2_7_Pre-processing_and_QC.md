@@ -183,9 +183,9 @@ fastp -i ../01_input/tester_SRR5832182_1.fastq \
 - Our goal was to **assess the quality** of the reads before & after filtering
  - Overall, this data looks very good. The quality is quite high throughout, both before and after filtering
 - Our goal was to remove **adapters** and other **sequences** that will not align to the genome.
- - **adapters and primers** introduced during library prep
- - **polyA tails**
- - **polyG sequences** - this one is weird. In some Illumina sequencing machines, “G” is denoted by no fluorophore. So these inaccurate polyG reads can accumulate if polymerase fails on a given cluster.
+  - **adapters and primers** introduced during library prep
+  - **polyA tails**
+  - **polyG sequences** - this one is weird. In some Illumina sequencing machines, “G” is denoted by no fluorophore. So these inaccurate polyG reads can accumulate if polymerase fails on a given cluster.
 
 ### Adapters can be sequenced on the opposite end of a short insert
 
@@ -258,4 +258,4 @@ done
   - [Bash guide for beginners (but is more advanced)](...)
 - Note that this script will run a little bit different than our first by recycling the SRR ID in the output file.
 
-Continue on to [...]()
+Continue on to [Automation](3_1_Automation.md)
