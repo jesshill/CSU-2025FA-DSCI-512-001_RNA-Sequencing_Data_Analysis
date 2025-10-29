@@ -190,7 +190,7 @@ fastp -i ../01_input/tester_SRR5832182_1.fastq \
 ### Adapters can be sequenced on the opposite end of a short insert
 
 <p align="center">
-<img width="700" alt="..." src="...">
+<img width="700" alt="adapter removal" src="https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Images/adapter_removal.jpg">
 </p>
 
 
