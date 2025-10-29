@@ -127,8 +127,65 @@ By default, fastp tries to discern the adapter and primer sequences based on ove
 - Execute your code using `sbatch preProcess_fastp.sbatch`
 - Check for your output in the output directory
 
+<details>
+  <summary>Click to see the answer</summary>
+
+---
+
+```
+#!/usr/bin/env bash
+ 
+#SBATCH --nodes=1
+#SBATCH --ntasks=2
+#SBATCH --time=00:15:00
+#SBATCH --partition=atesting
+#SBATCH --output=log-preprocess-%j.out
+ 
+ 
+# Execute fastp
+fastp -i ../01_input/tester_SRR5832182_1.fastq -I ../01_input/tester_SRR5832182_2.fastq -o ../03_output/tester_EG01_trim_1.fastq -O ../03_output/tester_EG01_trim_2.fastq -h ../03_output/test_EG01_report.html -j ../03_output/test_EG01_report.json --detect_adapter_for_pe --thread 2 -gxp
+```
+
+**Hot tip!** You can wrap your long line of code into multiple lines that are interpretted as one line by the shell using `\`
+
+- This doesn't always work for all browsers.
+- You need to make sure that you don't have any white space after the `\`
+
+```
+#!/usr/bin/env bash
+ 
+#SBATCH --nodes=1
+#SBATCH --ntasks=2
+#SBATCH --time=00:15:00
+#SBATCH --partition=atesting
+#SBATCH --output=log-preprocess-%j.out
+ 
+ 
+# Execute fastp
+fastp -i ../01_input/tester_SRR5832182_1.fastq \
+-I ../01_input/tester_SRR5832182_2.fastq \
+-o ../03_output/tester_EG01_trim_1.fastq \
+-O ../03_output/tester_EG01_trim_2.fastq \
+-h ../03_output/test_EG01_report.html \
+-j ../03_output/test_EG01_report.json \
+--detect_adapter_for_pe --thread $SLURM_NTASKS -gxp
+```
+
+---
+
+</details>
 
 
 
+Let's review our goals
+
+Our goal was to filter out low-quality reads
+Our goal was to assess the quality of the reads before & after filtering
+Overall, this data looks very good. The quality is quite high throughout, both before and after filtering
+Our goal was to remove adapters and other sequences that will not align to the genome.
+adapters and primers introduced during library prep
+polyA tails
+polyG sequences - this one is weird. In some Illumina sequencing machines, “G” is denoted by no fluorophore. So these inaccurate polyG reads can accumulate if polymerase fails on a given cluster.
+Adapters can be sequenced on the opposite end of a short insert
 
 
