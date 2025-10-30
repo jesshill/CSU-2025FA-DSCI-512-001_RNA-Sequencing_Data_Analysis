@@ -77,8 +77,97 @@ Other genome files that are useful to download when you download the .fasta file
 - Chromosome length files (.txt)
 - Annotation files (.gtf, .gff)
 
-## BONUS Content: Alignment detailed instructions 
+## Bonus Content: more detailed alignment instructions 
 
-...
+<details>
+  <summary>Click to expand/collapse</summary>
+
+---
+
+**1. Gather input files and information**
+- Here is the HISAT2 usage. It will tell us the input files we need:
+  
+```
+hisat2 [options] -x <hisatpath> -1 <file_1.fastq> -2 <file_2.fastq> -S <outputfilename.sam> 
+ 
+Required input:
+  -x </hisatpath/prefix>          # hisatpath is the path to the location of the hisat2 indexes (~/PROJ02_ce11IndexBuild in our case).
+                                  # prefix is the name of the hisat2 indexes (ce11, in our case)
+                                  # This path and prefix should be in the paths.txt file your wrote earlier
+  -1 <file_1.fastq>               # this is the forward .fastq file 
+  -2 <file_2.fastq>               # this is the reverse .fastq file
+  -S <outputfilename.sam>         # this will be the name of the outputfile
+
+Options:
+  --summary-file <summaryfilename.txt>   # Print out a summary
+  --no-unal                              # Suppress SAM records for reads that failed to align
+  -p <numbers of threads>                # number of cores to use. can automatically be pulled out of the header region using ${SLURM_NTASKS}
+```
+
+- For our purposes, we'll used the smaller tester files that we trimmed last time. These should be located in `03_output` and named something like... `EG01_trim_1.fastq` and `EG01_trim_2.fastq`
+
+**2. Ensure the software can be executed**
+- We will perform this exercise in the same `PROJ01_GomezOrte` directory as before.
+- Navigate to your `02_scripts` sub-directory
+- Start a new script called `alignReads.sbatch`
+- Copy the following into your script file:   
+
+```
+#!/usr/bin/env bash
+ 
+#SBATCH --job-name=hisat2_align 
+#SBATCH --nodes=1                        # this script is designed to run on one node
+#SBATCH --ntasks=4                       # how many cores you want to use (up to 24)
+#SBATCH --time=00:20:00                  # how much time to request
+#SBATCH --qos=amilan                   # modify this to reflect which queue you want to use.
+#SBATCH --output=log_align_%j.txt        # capture  output in a logfile with %j as jobID
+ 
+# hisat2 command
+hisat2
+```
+
+- test your code using:
+
+```
+$ sbatch alignReads.sbatch
+$ squeue -u $USER
+$ scheck
+$ sa
+$ more log_align_<jobID>.txt
+```
+
+- The output should be the usage instructions for hisat2. If you see this, hooray! You are able to execute the code.
+
+**3. write the line of code**
+
+```
+#!/usr/bin/env bash
+ 
+#SBATCH --job-name=hisat2_align 
+#SBATCH --nodes=1                        # this script is designed to run on one node
+#SBATCH --ntasks=4                       # how many cores you want to use (up to 24)
+#SBATCH --time=00:20:00                  # how much time to request
+#SBATCH --qos=atesting                    # modify this to reflect which queue you want to use.
+#SBATCH --output=log_align_%j.txt        # capture  output in a logfile with %j as jobID
+ 
+# hisat2 command line
+ 
+hisat2 \
+--summary-file EG01_summary.txt \
+--no-unal \
+-p ${SLURM_NTASKS} \
+-x ../../PROJ02_ce11IndexBuild/ce11 \
+-1 ../03_output/EG01_trim_1.fastq \
+-2 ../03_output/EG01_trim_2.fastq \
+-S ../03_output/EG01.sam \
+```
+
+**Tip:** Using backslashes `\` is a convenient way of splitting a single long line of code into multiple lines for easier reading.
+
+**Warning:** When using the backslashes `\`, any space characters AFTER the slash will break the code into two lines
+
+---
+
+</details>
 
 Continue on to [Building Indexes](3_4_Building_Indexes.md)
