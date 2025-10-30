@@ -49,7 +49,9 @@ All of these aligners should be available to install on ALPINE using conda... [b
   - HISAT2 is incredibly fast compared to other aligners. How does HISAT2 achieve its speed? HISAT2 splits the genome into chunks and tabulates the contents within each chunk into indexes. The developers analogize this as creating a “table of contents” for the genome. Instead of searching for homology to a given read throughout the genome, the algorithm searches the indexes first and iterates through each genomic possibility.
   - HISAT2 is flexible enough to allow for SNP mismatches. This is important for sequencing human individuals who vary in their genomes at millions of single-nucleotide loci.
 
-picture here
+<p align="center">
+<img width="700" alt="hisat2" src="https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Images/hisat2.png">
+</p>
 
 ### HISAT2 alignment strategy 
 
