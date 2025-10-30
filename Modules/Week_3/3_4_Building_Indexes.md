@@ -58,7 +58,7 @@ $ touch 241119_README_downloads.txt
 
 ## Explore the C. elegans genome 
 
-- In a new internet browser tab, navigate to [UCSC Genome Browser]()
+- In a new internet browser tab, navigate to [UCSC Genome Browser](https://genome.ucsc.edu/)
 - Under **Downloads**, select **Genome Data**
 - Select **Nematodes**
 - Select **C. elegans** (Also navigable: [http://hgdownload.soe.ucsc.edu/downloads.html#c_elegans](http://hgdownload.soe.ucsc.edu/downloads.html#c_elegans))
@@ -90,7 +90,31 @@ $ ls -alh
 # Check the md5 sums:
 $ more md5sum.txt                  # This reads the md5sum file that UCSC included in the directory
 $ md5sum *.fa.gz                   # This checks all the md5sums of the files you downloaded
-$ md5sum *.fa.gz > 241119_sums.txt # This saves all the md5sums of the files you downloaded in a file
-$ diff md5sum.txt  241119_sums.txt # This compares the md5sums you generated to the ones UCSC gave you.
+$ md5sum *.fa.gz > 2511DD_sums.txt # This saves all the md5sums of the files you downloaded in a file
+$ diff md5sum.txt  2511DD_sums.txt # This compares the md5sums you generated to the ones UCSC gave you.
                                    # You shouldn't see anything coming up.
 ```
+
+**Taking Notes:** Ok, now record what you did in your file YYMMDD_README_downloads.txt. You can use history. Make sure you include the download command and make mention that you checked the md5sums.
+
+### Unzip your files 
+
+We need to unzip the files
+
+```
+$ gunzip *.fa.gz
+```
+
+### Concatenate the genome
+
+These days, many genomes are downloadable as a single file. C. elegans was the first animal to have its genome sequenced so it is in the older format with a file for each chromosome. Let's merge the files together into one complete genome file.
+
+To concatenate the separate chromosome files into a whole genome file...
+
+```
+$ cat *.fa > ce11_wholegenome.fa
+```
+
+## Let's build the indexes!
+
+First 
