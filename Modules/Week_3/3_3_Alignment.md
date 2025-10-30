@@ -138,7 +138,7 @@ $ more log_align_<jobID>.txt
 
 - The output should be the usage instructions for hisat2. If you see this, hooray! You are able to execute the code.
 
-**3. write the line of code**
+**3. Write the line of code**
 
 ```
 #!/usr/bin/env bash
