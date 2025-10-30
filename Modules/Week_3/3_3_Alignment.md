@@ -3,7 +3,7 @@
 The full pipeline for this course 
 
 <p align="center">
-<img width="700" alt="pipeline" src="...">
+<img width="700" alt="course pipeline" src="https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Images/course_pipeline.jpg">
 </p>
 
 We are at the Align reads to the reference genome step.
