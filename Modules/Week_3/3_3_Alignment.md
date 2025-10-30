@@ -77,10 +77,10 @@ Other genome files that are useful to download when you download the .fasta file
 - Chromosome length files (.txt)
 - Annotation files (.gtf, .gff)
 
-## Bonus Content: more detailed alignment instructions 
+## Bonus Content...
 
 <details>
-  <summary>Click to expand/collapse</summary>
+  <summary>More detailed alignment instructions: click to expand/collapse</summary>
 
 ---
 
