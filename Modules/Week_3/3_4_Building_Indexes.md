@@ -36,7 +36,7 @@ $ pwd
 $ mkdir PROJ02_ce11IndexBuild
 ```
 
-
+## On the importance of taking notes
 
 
 
