@@ -25,3 +25,23 @@ $ module load anaconda
 $ conda activate 2024dsci
 $ cd /scratch/alpine/<eID@colostate.edu>/DSCI512/
 ```
+
+Start a new project entitled `PROJ02_ce11IndexBuild`
+
+**NOTE:** for this project, we will be making C. elegans version #11 index build. So the abbreviation will be **ce11**. Those are two **ONES**. It is **NOT** the word “cell”.
+
+```
+$ pwd 
+/scratch/alpine/tstark@colostate.edu/DSCI512/
+$ mkdir PROJ02_ce11IndexBuild
+```
+
+
+
+
+
+
+
+
+
+
