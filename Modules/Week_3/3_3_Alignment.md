@@ -2,7 +2,9 @@
 
 The full pipeline for this course 
 
-picture here
+<p align="center">
+<img width="700" alt="pipeline" src="...">
+</p>
 
 We are at the Align reads to the reference genome step.
 Also called mapping, this step takes all the high-quality reads that were output from fastp and searches for their place of origin within the reference genome.
