@@ -62,11 +62,23 @@ All of these aligners should be available to install on ALPINE using conda... [b
 
 ## How do we use HISAT2? 
 
+1. Install software (done)
+2. Prepare the genome
+  - Download genome information (.fasta)
+  - Build indexes – this is like writing the index to a book
+3. Run HISAT2
+  - Input: FASTQ files (two for each read if you’re doing paired-end)
+  - Input: Genome indexes (created above)
+4. Get HISAT2 output
+  - Output: .bam files – alignment files
+  - Output: Log files
 
+Other genome files that are useful to download when you download the .fasta files:
+- Chromosome length files (.txt)
+- Annotation files (.gtf, .gff)
 
+## BONUS Content: Alignment detailed instructions 
 
+...
 
-
-
-
-
+Continue on to [Building Indexes](3_4_Building_Indexes.md)
