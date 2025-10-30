@@ -28,7 +28,7 @@ Here are some examples of aligners you may encounter:
 
 All of these aligners should be available to install on ALPINE using conda... [bioconda](https://bioconda.github.io/index.html).
 
-#### For this class, we will use HISAT2
+## For this class, we will use HISAT2
 
 - Reference manual:
   - [HISAT2 web-manual](http://daehwankimlab.github.io/hisat2/manual/)
@@ -38,6 +38,29 @@ All of these aligners should be available to install on ALPINE using conda... [b
   - [HISAT: a fast spliced aligner with low memory requirements](https://www.nature.com/articles/nmeth.3317)
   - [The latest 2019 HISAT2 publication](https://www.nature.com/articles/s41587-019-0201-4)
  
+### About HISAT2
+
+- **HISAT2** stands for **Hierarchical Indexing for Spliced Alignment of Transcripts**
+- The HISAT2's alignment strategy:
+  - First, map reads that perfectly match to exons
+  - Second, map exon-exon-junction-spanning reads with >15 nt of homology to either exon.
+  - Third, go back and map exon-exon-junction-spanning reads with <15 nt of homology
+- HISAT2's special attributes
+  - HISAT2 is incredibly fast compared to other aligners. How does HISAT2 achieve its speed? HISAT2 splits the genome into chunks and tabulates the contents within each chunk into indexes. The developers analogize this as creating a “table of contents” for the genome. Instead of searching for homology to a given read throughout the genome, the algorithm searches the indexes first and iterates through each genomic possibility.
+  - HISAT2 is flexible enough to allow for SNP mismatches. This is important for sequencing human individuals who vary in their genomes at millions of single-nucleotide loci.
+
+picture here
+
+### HISAT2 alignment strategy 
+
+- Figure: From Kim et al., 2015. HISAT: a fast spliced aligner with low memory requirements. Nature Methods. 12, p357–360.
+- First - M reads are mapped first. Completely aligned to a given exon. All unmapped reads are reserved.
+- Second - using the previously unmapped reads, all 2M_gt_15 reads are mapped. These have more than 15 bp of homology within each exon. The unmapped reads are reserved.
+- Third - using the previously unmapped reads, all the remaining small-anchor and “other” models are tried. These contain 1 - 15 bp of homology to each exon, or they span more than two exons.
+
+## How do we use HISAT2? 
+
+
 
 
 
