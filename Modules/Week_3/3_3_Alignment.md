@@ -25,3 +25,23 @@ Here are some examples of aligners you may encounter:
 | Hisat2 | yes | A Nishimura lab favorite; very fast; user-friendly | [Hisat2](http://daehwankimlab.github.io/hisat2/main/) |
 | Kallisto | yes | Excellent for model organisms with robust reference transcriptomes; Goes straight to tabulating the reads to known transcriptomes; skips some aspects of alignment | [Kallisto](https://pachterlab.github.io/kallisto/) |
 | Trinity or SOAPdenovo-Trans | only if your genome isn't sequenced | These are two alignment tools that can be used if you don't have a reference genome | [Trinity](https://github.com/trinityrnaseq/trinityrnaseq/wiki) and [SOAPdenovo-Trans](https://github.com/aquaskyline/SOAPdenovo-Trans) |
+
+All of these aligners should be available to install on ALPINE using conda... [bioconda](https://bioconda.github.io/index.html).
+
+#### For this class, we will use HISAT2
+
+- Reference manual:
+  - [HISAT2 web-manual](http://daehwankimlab.github.io/hisat2/manual/)
+
+- HISAT2 reference publications:
+  - [Origional 2016 HISAT publication](https://www.nature.com/articles/nprot.2016.095)
+  - [HISAT: a fast spliced aligner with low memory requirements](https://www.nature.com/articles/nmeth.3317)
+  - [The latest 2019 HISAT2 publication](https://www.nature.com/articles/s41587-019-0201-4)
+ 
+
+
+
+
+
+
+
