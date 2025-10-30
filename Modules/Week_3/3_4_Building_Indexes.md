@@ -38,10 +38,59 @@ $ mkdir PROJ02_ce11IndexBuild
 
 ## On the importance of taking notes
 
+For this project, we will take meticulous notes of everything we are doing. If we decide to publish this project, we will need these notes (dates, versions, URLs, etc) for the materials and methods section.
 
+**!!! Exercise:** start a readme file within the directory `PROJ02_ce11IndexBuild`.
 
+```
+$ cd PROJ02_ce11IndexBuild
+$ touch 241119_README_downloads.txt
+```
 
+- Open this file using a text editor. You'll need to ensure your working directory is synced in the file structure on the left panel.
+- Fill it with some content.
+  - Date
+  - Your name
+  - The directory in which you are currently working
+  - Your goal (downloading the C. elegans genome and building hisat2 indices for it.)
 
+**!!! Exam Notes:** You will be asked to keep a running Notebook of all your notes for Homework 4, Homework 5, and the Exam. You will turn this notebook in as Question #6 of the exam.
 
+## Explore the C. elegans genome 
 
+- In a new internet browser tab, navigate to [UCSC Genome Browser]()
+- Under **Downloads**, select **Genome Data**
+- Select **Nematodes**
+- Select **C. elegans** (Also navigable: [http://hgdownload.soe.ucsc.edu/downloads.html#c_elegans](http://hgdownload.soe.ucsc.edu/downloads.html#c_elegans))
+- Under **Feb. 2013 (WS220/ce11)**, select **Sequence data by chromosome**
+- These are the files we want to download! Scroll down to the bottom and you can find links to each file.
+- However, we want to transfer these files over to our directory on ALPINE. To do this, we'll use the instructions written on this page to use the command **rsync** to synchronize the UCSC Genome Browser directory with our ALPINE directory.
 
+## Let's download the genome!
+
+**!!! Exercise:** Download the *C. elegans* genome
+
+**Let's download all the chromosomes of the *C. elegans* genome.**
+
+- We will use the rsync command suggested to us on the UCSC Genome Browser page: [http://hgdownload.soe.ucsc.edu/goldenPath/ce11/chromosomes/](http://hgdownload.soe.ucsc.edu/goldenPath/ce11/chromosomes/)
+
+**!!! Common Pitfall:** Don't forget the period at the end of the rsync command line
+
+```
+# making sure you're in the directory ''/scratch/alpine/<eID@colostate.edu>/DSCI512/PROJ02_ce11IndexBuild''
+$ pwd # should be /scratch/alpine/<eID@colostate.edu>/DSCI512/PROJ02_ce11IndexBuild
+$ rsync -avzP rsync://hgdownload.cse.ucsc.edu/goldenPath/ce11/chromosomes/ .
+$ ls -alh
+```
+
+- Does this seem familiar? We did something similar in DSCI510 [Downloading files from the internet]()
+- Next, let's check whether the files arrived uncorrupted by transit using md5sum.
+
+```
+# Check the md5 sums:
+$ more md5sum.txt                  # This reads the md5sum file that UCSC included in the directory
+$ md5sum *.fa.gz                   # This checks all the md5sums of the files you downloaded
+$ md5sum *.fa.gz > 241119_sums.txt # This saves all the md5sums of the files you downloaded in a file
+$ diff md5sum.txt  241119_sums.txt # This compares the md5sums you generated to the ones UCSC gave you.
+                                   # You shouldn't see anything coming up.
+```
