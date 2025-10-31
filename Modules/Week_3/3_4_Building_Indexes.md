@@ -175,11 +175,11 @@ $ more log_hisat2-build*   # read the output file created
 
 **Now let's add code blocks under each line of pseudocode.**
 
-- This is the best practice for writing a script… plan first, code next. Test each block of code as you go.
+- This is the best practice for writing a script... plan first, code next. Test each block of code as you go.
 
 **Now we need to build some indexes**
 
-- If we look in the HISAT2 manual under the entry for The hisat2-build indexer, we'll find the proper usage for building genome indexes:
+- If we look in the HISAT2 manual under the entry for **The hisat2-build indexer**, we'll find the proper usage for building genome indexes:
 
 
 
