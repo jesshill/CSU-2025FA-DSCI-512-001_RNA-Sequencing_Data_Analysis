@@ -117,4 +117,69 @@ $ cat *.fa > ce11_wholegenome.fa
 
 ## Let's build the indexes!
 
-First 
+**First lets write a script to build the indexes. We'll call it `buildWormIndices.sbatch`**
+
+```
+# Start a script called buildWormIndices.sbatch
+$ touch buildWormIndices.sbatch
+```
+
+If you're in JupyterHub, you can open the file in an editor, by double-clicking it on the file system browser along the left-hand side.
+
+**Copy and paste this code into the program file to initiate it**
+
+```
+#!/usr/bin/env bash
+ 
+#SBATCH --job-name=execute_hisat2-build
+#SBATCH --nodes=1
+#SBATCH --ntasks=4
+#SBATCH --time=00:29:00
+#SBATCH --partition=atesting
+#SBATCH --output=log_hisat2-build_%J.out
+ 
+# Test that you have hisat2 working
+hisat2
+```
+
+Test that the code works. Execute it using:
+
+```
+$ sbatch buildWormIndices.sbatch
+$ scheck     # test it is working
+$ more log_hisat2-build*   # read the output file created
+```
+
+**Quick Tip:** Go to [Research Computing Job Submission](https://curc.readthedocs.io/en/latest/running-jobs/batch-jobs.html) site to learn more about your #SBATCH options on ALPINE.
+
+**Now add some pseudocode about what we want to do**
+
+```
+#!/usr/bin/env bash
+ 
+#SBATCH --job-name=execute_hisat2-build
+#SBATCH --nodes=1
+#SBATCH --ntasks=4
+#SBATCH --time=00:29:00
+#SBATCH --partition=atesting
+#SBATCH --output=log_hisat2-build_%J.txt
+ 
+# Build hisat2 indexes for C. elegans
+ 
+ 
+# Check the build
+ 
+ 
+# Capture version number
+```
+
+**Now let's add code blocks under each line of pseudocode.**
+
+- This is the best practice for writing a script… plan first, code next. Test each block of code as you go.
+
+**Now we need to build some indexes**
+
+- If we look in the HISAT2 manual under the entry for The hisat2-build indexer, we'll find the proper usage for building genome indexes:
+
+
+
