@@ -182,6 +182,82 @@ $ more log_hisat2-build*   # read the output file created
 - If we look in the HISAT2 manual under the entry for **The hisat2-build indexer**, we'll find the proper usage for building genome indexes:
 
 <p align="center">
-<img width="700" alt="..." src="...">
+<img width="700" alt="hisat2 build indexes" src="https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Images/hisat2_buildIndexes.png">
 </p>
 
+**Usage:** hisat2-build [options] <reference_in> <ht2_base>
+
+```
+hisat2-build
+
+options: 
+-p <num>             Number of threads to use. The number in this option MUST match the number in the line #SBATCH --ntasks=<num>
+
+<reference_in>       This is the genome as an .fa file. OR, you can use a list of comma-separated file names of all the chromosomes in your genome.
+<ht2_base>           This is the name of your new genome. It'll just be ce11 (not the word cell, but ce + the number 11)
+```
+
+So, first it'll be just... 
+
+`hisat2-build -p 4`
+
+However, it is good coding practice to pull the number of threads specified in the #SBATCH section using some fancy environmental variables:
+
+`hisat2-build -p ${SLURM_NTASKS}`
+
+You can use `ce11_wholegenome.fa` as the <reference_in> genome.
+
+Then, just add the last element: 
+
+`ce11`
+
+So, your code in buildWormIndices.sbatch should look like this:
+
+```
+#!/usr/bin/env bash
+ 
+#SBATCH --job-name=execute_hisat2-build
+#SBATCH --nodes=1
+#SBATCH --ntasks=4
+#SBATCH --time=00:29:00
+#SBATCH --partition=atesting
+#SBATCH --output=log_hisat2-build_%J.txt
+ 
+# Build hisat2 indexes for C. elegans
+hisat2-build -p ${SLURM_NTASKS} ce11_wholegenome.fa ce11
+ 
+ 
+# Check the build
+echo -e "\n\nINDEX-BUILD: inspecting indexes:"
+hisat2-inspect -s ce11
+ 
+# Capture version number
+echo -e "\n\nINDEX-BUILD: version:"
+hisat2-build --version
+```
+
+**Run it!!!**
+
+- Switch over into a **terminal**.
+- Make sure you are in the same directory as your file `buildWormIndices.sbatch`
+- Then, execute!
+
+```
+$ sbatch buildWormIndices.sbatch
+ 
+# To check on it:
+$ scheck
+ 
+# To watch your index files grow...
+$ ls -alh
+```
+
+**Did it work???** Check it! You should have a log file and **eight** new files that all have names like `ce11.1.ht2`, `ce11.2.ht2`.
+
+- No matter how large your genome is, you'll always have just 8 of these files.
+
+**README time!:** Write down what you did. Some other information you'll want to include in your notebook.
+
+## Write a paths file
+
+When we use this index, the one thing we'll need is the path and the prefix. To make it easy for me to find this information in the future, I like to save a file called paths.txt that contains this information.
