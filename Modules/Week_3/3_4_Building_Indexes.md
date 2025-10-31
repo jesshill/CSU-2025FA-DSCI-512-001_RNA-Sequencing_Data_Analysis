@@ -403,3 +403,26 @@ Here's some more info on it: [https://manpages.ubuntu.com/manpages/resolute/en/m
 ---
 
 </details>
+
+## Review
+
+Just to review. Here is what we did:
+
+1. Downloaded the C. elegans genome from UCSC Genome Browser as individual chromosome fasta files and used checksums to test integrity.
+2. Built the hisat2 indices from the C. elegans genome using hisat2-build.
+3. Checked the builds using
+4. Concatenated the chromosome files together into a ce11_wholegenome.fa file
+5. Obtained a .gtf annotation file.
+Started a paths.txt file that contains all the paths we need for future steps of the analysis process
+
+Go ahead and update your readme file. Be sure to include:
+
+- A summary of what you did (very brief)
+- Any URL locations you used for download
+- A mention of the paths.txt file
+
+Now we are ready to align our reads to the genome.
+
+Next, we'll return to Automation - focusing on editing our script files and running the whole pipeline.
+
+Continue on to [Alignment 2](3_5_Alignment_2.md)
