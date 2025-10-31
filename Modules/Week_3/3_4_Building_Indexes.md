@@ -256,8 +256,12 @@ $ ls -alh
 
 - No matter how large your genome is, you'll always have just 8 of these files.
 
-**README time!:** Write down what you did. Some other information you'll want to include in your notebook.
+**README time!** Write down what you did. Some other information you'll want to include in your notebook.
 
 ## Write a paths file
 
-When we use this index, the one thing we'll need is the path and the prefix. To make it easy for me to find this information in the future, I like to save a file called paths.txt that contains this information.
+When we use this index, the one thing we'll need is the path and the prefix. To make it easy for me to find this information in the future, I like to save a file called `paths.txt` that contains this information.
+
+```
+$ touch paths.txt
+```
