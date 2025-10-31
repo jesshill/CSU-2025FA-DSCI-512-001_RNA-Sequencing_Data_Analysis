@@ -379,5 +379,27 @@ depending on how genes are specified in column #9 of your .gff file
 
 I said “in principle”, this should work. Last year, we learned that in practice, it could be buggy, and Arabidopsis people found that they needed to convert their downloaded .gff files to .gtf files. To do the conversion, go here...
 
-See here for .gff to .gtf conversion. You only need to do that if you have a .gff file!
+<details>
+  <summary>See here for .gff to .gtf conversion. You only need to do that if you have a .gff file!</summary>
 
+---
+
+### .gff to .gtf conversion
+
+[https://github.com/gpertea/gffread](https://github.com/gpertea/gffread)
+
+Download the software for gffread using their instructions.
+
+Here is how it can be run:
+
+```
+gffread <original gff3 filename> -T -o <output gtf file name>
+gffread Arabidopsis_thaliana.TAIR10.49.gff3 -T -o gffread_Arabidopsis.gtf
+(-T -o option will output GTF format instead of GFF3)
+```
+
+Here's some more info on it: [https://manpages.ubuntu.com/manpages/resolute/en/man1/gffread.1.html](https://manpages.ubuntu.com/manpages/resolute/en/man1/gffread.1.html)
+
+---
+
+</details>
