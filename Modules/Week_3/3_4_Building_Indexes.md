@@ -316,3 +316,68 @@ And finally, the last piece of the puzzle is the .gtf of .gff file. This is the 
 
 - Download the [ce11 .gtf file here](https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Data/ce11_annotation_ensembl_to_ucsc.gtf.gz).
 - Upload it to ALPINE using the UPLOAD button on the Dashboard
+
+<p align="center">
+<img width="700" alt="..." src="...">
+</p>
+
+- Download it here, upload it to your ce11 folder
+- check md5sums - (md5sum = 466558e94b59e643cad8b89835ec4f12)
+- Unzip it
+
+```
+$ gunzip ce11_annotation_ensembl_to_ucsc.gtf.gz
+```
+
+- Write down the gtf file path in your `path.txt` file:
+
+```
+# This directory contains the C. elegans hisat2 indices for ce11.
+
+# The path and prefix of this hisat2 build 
+/scratch/alpine/<email>/DSCI512/PROJ02_ce11IndexBuild/ce11
+
+# The path to the whole genome fasta file is:
+/scratch/alpine/<email>/DSCI512/PROJ02_ce11IndexBuild/ce11_wholegenome.fa
+
+# The path to the .gtf annotation file is:
+/scratch/alpine/<email>/DSCI512/PROJ02_ce11IndexBuild/ce11_annotation_ensembl_to_ucsc.gtf
+```
+
+## Additional Content About gtf/gff files for Exam Project
+
+- Best practice is to obtain a .gtf file from the same place you obtained the genome file.
+
+- Downloading from UCSC: 
+  - Many of you will download the .gtf file from UCSC Genome Browser. This works well.
+  - Go to **Downloads**
+  - Select **Download data**
+  - Choose your organism
+  - Select the genome version and click on something like **Genome sequence files and select annotation**
+  - Download the directory called genes
+
+- Example
+
+```
+$ rsync -avzP rsync://hgdownload.cse.ucsc.edu/goldenPath/ce11/bigZips/genes .
+```
+
+- You sometimes have options: NCBI, RefSeq, Ensembl. Each specifies the gene name a little differently. Some include ncRNAs. Some only contain protein-coding sequences. Notice they have slightly different content. Largely, most of the genes are the same.
+
+**Downloading .gff files**
+
+In principle, you can use a .gff file as input instead of a .gtf file. To do this, just double check that in column 9 of your file, gene ID is specified as **gene_id**. If it is not, you can let featureCounts know, but using `-g`
+
+```
+-g 'ID'
+or
+-g ID=gene:
+or 
+-g Name
+depending on how genes are specified in column #9 of your .gff file
+```
+
+I said “in principle”, this should work. Last year, we learned that in practice, it could be buggy, and Arabidopsis people found that they needed to convert their downloaded .gff files to .gtf files. To do the conversion, go here...
+
+See here for .gff to .gtf conversion. You only need to do that if you have a .gff file!
+
