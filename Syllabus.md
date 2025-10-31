@@ -34,12 +34,12 @@ Meeting ID: 959 4557 2799
 |-------|------|-------------|---------|-------------|---------|
 | November 11 | 1 | Course introduction, ALPINE, Intro to RNA-seq | Reading 1 **(due Nov. 18th)** | Assignment 1 **(due Dec. 4th)** | Quiz 1 **(due Nov. 18th)** |
 | November 13 | 1 | Installing Software |  |  |  |
-| November 18 | 2 | The Project and the Pipeline, Installing Software II SRA Toolkit, Project Initiation, Running Jobs with Slurm, Overview of R | Reading 2 **(due Dec. 2nd)** | Assignment 2 **(due Dec. 4th)** | Quiz 2 **(due Dec. 2nd)** |
+| November 18 | 2 | The Project & the Pipeline, Installing Software II SRA Toolkit, Project Initiation, Running Jobs with Slurm, Overview of R | Reading 2 **(due Dec. 2nd)** | Assignment 2 **(due Dec. 4th)** | Quiz 2 **(due Dec. 2nd)** |
 | November 20 | 2 | Data Acquisition, Pre-processing & Quality Control | Reading 3 **(due Dec. 2nd)** | Assignment 3 **(due Dec. 4th)** |  |
 | November 25 | 3 | NO CLASS - BREAK |  |  |  |
 | November 27 | 3 | NO CLASS - BREAK |  |  |  |
-| December 2 | 4 | Automation I, Alignment, Building Indexes |  | Assignment 4 **(due Dec. 4th)** | Quiz 3 **(due Dec. 9th)** |
-| December 4 | 4 | Alignment | Reading 4 **(due Dec. 9th)** | Assignment 5 **(due Dec. 4th)** |  |
+| December 2 | 4 | Automation, Alignment |  | Assignment 4 **(due Dec. 4th)** | Quiz 3 **(due Dec. 9th)** |
+| December 4 | 4 | Building Indexes | Reading 4 **(due Dec. 9th)** | Assignment 5 **(due Dec. 4th)** |  |
 | December 9 | 5 | Tabulation, Differential Expression Analysis | Reading 5 **(due Dec. 16th)** |  |  |
 | December 11 | 5 | Genome Browsers, Announcments, Clean Up |  |  |  |
 | **December 16** | **6** |  |  | **Final Exam Project (due December 16th)** |
