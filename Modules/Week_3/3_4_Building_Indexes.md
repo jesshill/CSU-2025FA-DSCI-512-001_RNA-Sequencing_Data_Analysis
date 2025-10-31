@@ -265,3 +265,54 @@ When we use this index, the one thing we'll need is the path and the prefix. To 
 ```
 $ touch paths.txt
 ```
+
+Open the paths file and write in it:
+
+```
+# This directory contains the C. elegans hisat2 indices for ce11.
+ 
+# The path and prefix of this hisat2 build
+```
+
+Next, figure out how to write the path and index in the following format:
+
+```
+/path/to/this/directory/ce11
+```
+
+Just use `ce11` (ce + eleven). Don't add anything after it.
+
+To figure out the path to write,
+
+```
+$ pwd
+```
+
+Add this to your paths.txt file. It should look something like this...
+
+```
+# This directory contains the C. elegans hisat2 indices for ce11.
+
+# The path and prefix of this hisat2 build 
+/scratch/alpine/<email>/DSCI512/PROJ02_ce11IndexBuild/ce11
+```
+
+**Write the path to your whole genome fasta file**
+
+It should look something like this...
+
+```
+# The path to the whole genome fasta file is:
+/scratch/alpine/<email>/DSCI512/PROJ02_ce11IndexBuild/ce11_wholegenome.fa
+```
+
+## Get the .gtf file
+
+And finally, the last piece of the puzzle is the .gtf of .gff file. This is the annotation file that contains the list of all the genes in the genome, their chromosomal coordinates, and which strand they are on. This will be a very important file. Typically, I download this file from UCSC Genome Browser at the same time as I download the genome (look in the genes folder). However, for whatever reason the UCSC Genome Browser .gtf file had terrible name ID's. It didn't use the name ID's that are typical in the field. For that reason, I downloaded the C. elegans .gtf file from Ensembl, filtered it for only protein coding genes (so it's smaller and faster to use), and then switched the chromosome naming convention so we can use it with the UCSC Genome Browser.
+
+*Typically, I recommend obtaining the .gtf and .gff from the same source to avoid this, but for this class, it works better this way.*
+
+**!!! Exercise** Download the .gtf file.
+
+- Download the [ce11 .gtf file here](https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Data/ce11_annotation_ensembl_to_ucsc.gtf.gz).
+- Upload it to ALPINE using the UPLOAD button on the Dashboard
