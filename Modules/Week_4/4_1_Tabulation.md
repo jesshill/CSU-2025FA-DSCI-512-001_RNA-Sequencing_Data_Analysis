@@ -120,3 +120,17 @@ Yikes! That looks crazy.
 
 ## Intro to tabulation with featureCounts
 
+The next step in our pipeline is to **tabulate the number of reads that map to each gene using featureCounts**.
+
+**featureCounts** simply counts the number of reads that fall within the limits of each “feature”.
+
+**!!! EXERCISE:** How would you design a read-counting program to assign reads to different features? What would you consider to be a “feature”? Would it be an exon, a gene, or a transcript?
+
+<p align="center">
+<img width="700" alt="htseq problem" src="https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Images/htseq_problem.jpg">
+</p>
+
+How would you assign reads to features?
+
+## The featureCounts approach
+
