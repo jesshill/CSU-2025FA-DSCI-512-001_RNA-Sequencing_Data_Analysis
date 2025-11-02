@@ -110,6 +110,13 @@ SRR5832182.4    147     chrIII  10216103        60      101M    =       10215997
 Yikes! That looks crazy.
 
 - Basically, all you need to remember is that the .sam file will retain the sequence and quality scores of any reads that align to the genome. It will add to that information the location in the genome where the pair of (or individual) read(s) map.
-- .sam format - wikipedia
-- .sam lookup FLAG app - each pair of reads, if mapped, will be given a code called a “FLAG”. Enter the FLAG # in this little app to decipher the code.
+- [.sam format - wikipedia](https://en.wikipedia.org/wiki/SAM_(file_format))
+- [.sam lookup FLAG app](https://broadinstitute.github.io/picard/explain-flags.html) - each pair of reads, if mapped, will be given a code called a “FLAG”. Enter the FLAG # in this little app to decipher the code.
 - A .bam (Binary Alignment Map) file is a compressed .sam file. Think of it as a zipped file.
+
+**Warning!** 
+- .sam files are huge! They take up a lot of space.
+- For today we'll keep our .sam files, but eventually, we will want to compress them into .bam files to reduce the amount of space these files take up. That is where our cleanup script will come in.
+
+## Intro to tabulation with featureCounts
+
