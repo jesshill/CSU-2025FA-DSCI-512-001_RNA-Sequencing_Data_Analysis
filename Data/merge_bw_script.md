@@ -1,4 +1,4 @@
-merged multiple bigwig (.bw) files together for upload to UCSC Genome browser using the following script.
+Merged multiple bigwig (.bw) files together for upload to UCSC Genome browser using the following script.
 
 This script uses:
 - [bigwigmerge](https://bioconda.github.io/recipes/ucsc-bigwigmerge/README.html)
