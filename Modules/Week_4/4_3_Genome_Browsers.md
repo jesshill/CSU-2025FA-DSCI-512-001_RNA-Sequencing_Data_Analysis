@@ -55,4 +55,22 @@ Another option is **IGV - Integrative Genomics Viewer**. IGV comes in a web app 
 <img width="700" alt="igv screenshot 2" src="https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Images/IGV-screenshot2.png">
 </p>
 
+**Change the colors**
+
+- Click on **Select Tracks**
+- Click on all square boxes to the left of all the **B.Subtilis** samples
+- Click on the gear icon (settings icon) to the right of any B.Subtilis sample.
+- Click on **Set track color**.
+- A color box will pop up but sometimes it is lower down and you'll need to scroll down to find it.
+- Pick a color.
+- Unselect **Select Tracks**
+
+**Change the order**
+- If you hover over the “tab” or “flap” looking icon to the right of any track, it will turn a darker grey
+- Drag and drop this tab to move the track up or down.
+- Arrange your tracks how you prefer
+
+<p align="center">
+<img width="700" alt="igv screenshot 3" src="">
+</p>
 
