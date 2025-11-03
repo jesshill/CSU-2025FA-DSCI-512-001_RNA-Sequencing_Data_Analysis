@@ -60,17 +60,40 @@ NOTE: if you DON“T have your own counts file, you can “borrow” an old one 
 **Download script**
 
 - Same directory as above
-- Download [241203_GomezOrte_DESeq2.R]() and place it in your `02_scripts` directory
+- Download [241203_GomezOrte_DESeq2.R](https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Data/251110_GomezOrte_DESeq2.R) and place it in your `02_scripts` directory
 
 explore the files you have acquired. 
 
 **Where did these files come from? What will you need for your final exam project?**
 
+- You'll need your `metadata.txt` file. Located on ALPINE under `01_input`
+- You'll need your `counts.txt` file. This is the output from featureCounts. It is saved as... `~/03_output/<DATE>_output/03_feature/counts.txt`
+- You'll hack a copy of this same DESeq2 script to suit your needs.
 
+## RStudio
 
+- Open the script file in Rstudio
+- We will switch over to the DESeq2 script file now.
 
+### Learning objectives:
 
+- Learn about DESeq2 and **what it does**.
+- Know the **five steps** of what DESeq2 does.
+- Understand that DESeq2 does not use a Poisson distribution to model the spread of the data. Instead it uses a **negative binomial distribution** because RNA-seq data naturally is **overdispersed**.
+- Understand why **multiple testing correction** is required and that the **Benjamini-Hochberg Correction** is the type that is used by DESeq2.
+- Know how to read and interpret three types of plots:
+  - [**MA-plot**]()
+  - [**Volcano plot**]()
+  - [**Distance matrix plot**]()
 
+### Citations
+
+Please cite all the software you use in your RNA-seq data analysis in any published works:
+
+fastp, hisat2, featureCounts, samtools, etc
+Please cite R: citing R
+Please cite all R packages you used
+Please acknowledge and citeSUMMIT in your published works: Citing SUMMIT
 
 
 
