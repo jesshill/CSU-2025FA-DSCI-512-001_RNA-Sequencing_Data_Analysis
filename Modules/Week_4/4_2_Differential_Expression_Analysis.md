@@ -91,14 +91,31 @@ explore the files you have acquired.
 
 Please cite all the software you use in your RNA-seq data analysis in any published works:
 
-fastp, hisat2, featureCounts, samtools, etc
-Please cite R: citing R
-Please cite all R packages you used
-Please acknowledge and citeSUMMIT in your published works: Citing SUMMIT
+- fastp, hisat2, featureCounts, samtools, etc.
+- Please cite R: [citing R](https://ropensci.org/blog/2021/11/16/how-to-cite-r-and-r-packages/)
+- Please cite all R packages you used
+- Please acknowledge and cite ALPINE in your published works: [citing ALPINE](https://www.colorado.edu/rc/resources/citations)
 
+### Extra stuff 
 
+**knitr and beautiful output**
 
+you can create beautiful documents with R that are self-contained reports of your analysis.
 
+- Start a new document in Rstudio. Instead of initiating an .R document, initiate an .Rmd document (R markdown).
+- Example Rmarkdown code:
+  - [https://gist.github.com/jeromyanglim/2716336](https://gist.github.com/jeromyanglim/2716336)
+  - [https://rmarkdown.rstudio.com/gallery.html](https://rmarkdown.rstudio.com/gallery.html)
+- [knitr in a knutshell](https://kbroman.org/knitr_knutshell/pages/Rmarkdown.html)
+- The .Rmd file generates the .html report (.pdf) reports are also possible.
+  - [R Markdown cheat sheet](https://rmarkdown.rstudio.com/lesson-15.HTML)
+  - [https://rmarkdown.rstudio.com/lesson-1.html](https://rmarkdown.rstudio.com/lesson-1.html)
+
+**Reproducible research**
+
+Creating beautiful reports is part of the Reproducible research approach.
+
+- Reproducible research guide 
 
 
 
