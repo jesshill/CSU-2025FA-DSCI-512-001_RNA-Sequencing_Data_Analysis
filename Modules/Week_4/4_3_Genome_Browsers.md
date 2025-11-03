@@ -92,3 +92,8 @@ Another option is **IGV - Integrative Genomics Viewer**. IGV comes in a web app 
 - Click on **Save Image**
 - Save a picture or vector file. Note - these vector files don't behave well for me.
 
+## Bonus Content - Visualizing data using UCSC Genome Browser
+
+Info can be found here: [UCSC Genome Browser User's Guide](https://genome.ucsc.edu/goldenpath/help/hgTracksHelp.html)
+
+## V
