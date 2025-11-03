@@ -134,3 +134,139 @@ How would you assign reads to features?
 
 ## The featureCounts approach
 
+**featureCounts** solves this problem by only counting reads if they can uniquely be mapped to a single gene.
+
+featureCounts has two levels of feature organization. **meta-features** are genes. **features** are exons. Each gene has multiple exons. Each exon is associated with only one gene.
+
+“We recommend that reads or fragments overlapping more than one gene are not counted for RNA-seq experiments because any single fragment must originate from only one of the target genes but the identity of the true target gene cannot be confidently determined.” = Liao et al., 2014.
+
+The featureCounts algorithm takes the following input and gives you the following output...
+
+**featureCounts input:**
+
+- .bam/.sam files. Also known as an alignment file.
+- a .gtf/.gff annotation file for your genome
+
+**featureCounts output:**
+
+a counts.txt file containing count data for the entire experiment
+a summary file for the entire experiment
+
+What will the counts file look like?
+
+- The counts file merges multiple .sam files into one counts.txt file:
+
+```
+GeneID     Chr     Start   End     Strand  Length  EG01.sam  EG02.sam.  EG03.sam 
+Gene1      chrI    1234    1345    +       1324     0         0          0 
+Gene2      chrI    2345    3456    +       2345     2345      1021       3452 
+Gene3      chrI    5456    8467    +       1234     234       134        234 
+```
+
+- Note, these counts files are **digital**
+- The reads per gene are not normalized. If you ordered or received more sequencing for one sample, the gene will have more reads associated with it for that sample.
+- The reads per gene will need to be **normalized to account for read depth**. We will do this later in DESeq2.
+- Just know that at this stage, you can't **eyeball** to see whether some gene is over-expressed in some sample.
+
+**!! NOTE** For our previous steps, like fastp and hisat2, we operated on each sample individually. So, if we have 18 samples in our dataset, the goal would be to run fastp 18 times, once for each sample. featureCounts is different. In this step, we will **merge** together all the samples. We will only run featureCounts once and that single step will take ALL the samples as input. *Here is a visual summary of that concept:*
+
+<p align="center">
+<img width="700" alt="feature counts idea" src="https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Images/featurecounts_idea.jpg">
+</p>
+
+**featureCounts Usage:**
+
+For more detail on featureCounts usage, there is a link to a tutorial at the end of this section. Briefly,
+
+```
+USAGE:
+featureCounts [options] input_file1.sam [input_file2.sam] ... 
+ 
+OPTIONS:
+     -p                     # paired-end sequencing   #Default is for single-end
+     -T <number>            # number of threads (use ${SLURM_NTASKS})
+     -a <annotation_file>   # this will be your .gtf file (use the path link you wrote down)
+     -o <output_file.txt>   # choose an output file name (../03_output/GomezOrte_feature_counts.txt)
+```
+
+**Questions:** What is the featureCounts output? Where is it? Explore the output.
+
+**Questions:** How many reads were successfully mapped? How many alignments were unsuccessfully assigned to a gene? How long did it take?
+
+**NOTE:** featureCounts does not use multi-mapping reads in the final tabulation. All reads must be uniquely mapped to be counted.
+
+**NOTE:** For fastp and hisat2, we used loops to run each sample separately. However, for featureCounts, all the samples are combined together into a single line of code. So, if you have 8 samples, fastp will run 8x times, then hisat2 will run 8x times, but featureCounts will only run once. When featureCounts runs, it will merge all the samples together.
+
+## One last task - Merge the Feature Counts files 
+
+One last thing to do is to merge the featureCounts output files together into a single file that the DESeq2 R software can use.
+
+To do this... 
+
+- Navigate to our 02_scripts folder and locate the small script called `merge_counts_files.sh`.
+- Open `merge_counts_files.sh` in a text editor
+- Edit the section called `MODIFY THIS SECTION` to fit your output folder date and your metadata file.
+
+```
+#!/usr/bin/env bash
+ 
+################################################
+# PROGRAM:
+# merge_counts_files.sh
+#
+# DESCRIPTION:
+# Run this at the end to merge all your counts files together
+#
+# AUTHOR:
+# Erin Osborne Nishimura
+#
+# START DATE:
+# November 19,2024
+#
+#
+# Usage statement: 
+# bash merge_counts_files.sh
+ 
+########################
+# MODIFY THIS SECTION
+########################
+ 
+#Select the proper date for the output file you'd like to merge:
+day=`date +%Y-%m-%d`
+#OR
+#day='2024-11-20'
+ 
+ 
+# Select the metadata file. Replace <metadata.txt> with your metadata path and file. 
+# Mine looks like: metadata=../01_input/metadata_gomezOrte.txt
+metadata=<metadata.txt>
+```
+
+- Next, run the code with a quick shell line... 
+
+```
+$ bash merge_counts_files.sh
+```
+
+- Check within the 03_featureCounts subdirectory that there is now a merged file called `2024-11-<day>_merged_counts.txt`
+- Download the merged file to your local computer...
+
+<p align="center">
+<img width="700" alt="old screen shot" src="https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Images/old_screenshot.png">
+</p>
+
+- Download your metadata file to your local computer, too. 
+
+
+## Bonus content...
+
+<details>
+  <summary>featureCount detailed instructions</summary>
+
+---
+
+Content here
+
+---
+
+</details>
