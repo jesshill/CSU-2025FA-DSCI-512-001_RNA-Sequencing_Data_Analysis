@@ -18,7 +18,7 @@ chrIII  13783801
 chrM    13794
 ```
 
-Here is the code I wrote to do the merging:
+Here is the code to do the merging:
 
 ```
 #!/bin/bash
