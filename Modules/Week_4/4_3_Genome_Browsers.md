@@ -12,10 +12,10 @@ Another option is **IGV - Integrative Genomics Viewer**. IGV comes in a web app 
 
 ### Prepping .bw files for upload
 
-- Behind the scenes, I downloaded all the .bw files.
-- I merged them together using this script: merge_bw script
-- I placed the merged files in an http-viewable location.
-- I used UCSC Genome Browser's **upload tracks** to link to my files.
+- Behind the scenes, downloaded all the .bw files.
+- Merged them together using this script: [merge_bw script](https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Data/merge_bw_script.md)
+- Placed the merged files in an http-viewable location.
+- Used UCSC Genome Browser's **upload tracks** to link to my files.
 
 ### Exercise 
 
@@ -34,5 +34,6 @@ Another option is **IGV - Integrative Genomics Viewer**. IGV comes in a web app 
 <img width="700" alt="igv screenshot" src="https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Images/IGV-screenshot.png">
 </p>
 
+- Search for “elegans” and pick the one for “roundworm”.
 
-
+**Upload your tracks** 
