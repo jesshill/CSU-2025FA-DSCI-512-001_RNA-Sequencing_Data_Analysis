@@ -14,7 +14,7 @@ Another option is **IGV - Integrative Genomics Viewer**. IGV comes in a web app 
 
 - Behind the scenes, downloaded all the .bw files.
 - Merged them together using this script: [merge_bw script](https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Data/merge_bw_script.md)
-- Placed the merged files in an http-viewable location.
+- Placed the merged files in an http-viewable location (i.e., [Galaxy server](https://usegalaxy.org/))
 - Used UCSC Genome Browser's **upload tracks** to link to my files.
 
 ### Exercise 
