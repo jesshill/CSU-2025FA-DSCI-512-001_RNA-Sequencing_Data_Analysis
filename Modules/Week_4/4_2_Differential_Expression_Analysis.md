@@ -96,7 +96,7 @@ Please cite all the software you use in your RNA-seq data analysis in any publis
 - Please cite all R packages you used
 - Please acknowledge and cite ALPINE in your published works: [citing ALPINE](https://www.colorado.edu/rc/resources/citations)
 
-### Extra stuff 
+## Extra stuff 
 
 **knitr and beautiful output**
 
@@ -115,11 +115,24 @@ you can create beautiful documents with R that are self-contained reports of you
 
 Creating beautiful reports is part of the Reproducible research approach.
 
-- Reproducible research guide 
+- [Reproducible research guide](https://geanders.github.io/RProgrammingForResearch/reproducible-research-1.html)
 
+## Recommended future training series
 
+- If you are going to continue to learn R, I highly recommend the Hadley Wickham R packages that make up **tidyverse** especially the **dplyr** package. These packages make coding in R so much more relaxing and enjoyable. [tidyverse](https://tidyverse.org/)
+- You have access to DataCamp until the end of January. There are more R learning tools there. If you join the Bioinformatics club, you can continue to have access to Datacamp for as long as they let us.
+- [Cookies and Coding (R series)](https://libguides.colostate.edu/coding-cookies)
+- [Check here for next semester's ALPINE training (installation, parallelization, etc)](https://www.colorado.edu/rc/events)
+- [ALPINE past training materials](https://github.com/ResearchComputing)
 
+**Final Advice**
 
+If something isn't working, don't get bogged down, just e-mail someone:
+- coding buddies, collaborators
+- [Bioinformatics Club](https://ramlink.campuslabs.com/engage/organization/bioinformatics)
+- rc-help@colorado.edu
+- SRA toolkit people
+- NCBI GEO people
+- UCSC Genome people
 
-
-
+Continue on to [DESeq2 slides](https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Modules/Week_4/241203_deseq2_slides.pdf)
