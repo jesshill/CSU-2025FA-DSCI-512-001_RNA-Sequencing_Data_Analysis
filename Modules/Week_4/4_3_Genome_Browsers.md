@@ -37,3 +37,22 @@ Another option is **IGV - Integrative Genomics Viewer**. IGV comes in a web app 
 - Search for “elegans” and pick the one for “roundworm”.
 
 **Upload your tracks** 
+
+- To add new tracks, go to **Tracks** and **Local File**...
+  - Select ALL your files - all the _merged.bw files and the .gtf file.
+
+**Customize the look and feel** 
+
+- **Group Autoscale**
+- The most important thing is to link your tracks so they scale their y-axes together. This allows you to compare their heights. If you don't do this, the default is to set the “tallest” point in the field of view to the max height.
+- Click on **Select Tracks**. It's a button on the top right.
+- Click on all square boxes to the left of each .bw track
+- Click on the gear icon (settings icon) to the right of ANY one of the .bw tracks.
+- Click on **Group Autoscale**
+- Unselect **Select Tracks**
+
+<p align="center">
+<img width="700" alt="igv screenshot 2" src="https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Images/IGV-screenshot2.png">
+</p>
+
+
