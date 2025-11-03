@@ -104,5 +104,52 @@ IGV (Integrated Genome Viewer) is a stand-alone, downloadable program you can us
 
 [https://igv.org/doc/desktop/](https://igv.org/doc/desktop/)
 
-#### Prepping .bw files for upload: 
+#### Prepping .bw files for upload 
 
+As part of the `RNAseq_analyzer.sh` pipeline, I wrote in steps to convert .sam files to sorted .bam files and to generate .bam index files.
+
+- **file.sam –> file.bam** This compresses the .sam file into a binary file
+- **file.bam –> file_sort.bam** This sorts the .bam file by chromosome location
+- **file_sort.bam.bai** This makes a simple indexing reference file for the sorted .bam file
+- **file.bam –> file.bw** This creates a bigwig file
+
+These files can be downloaded from your location on summit (direct download, rsync, or cyberduck). They can then be opened with IGV.
+
+First, we'll go through how to do this using IGV.
+
+### IGV Exercise
+
+- From the drop-down menu, select C. elegans (ce11)
+- From JupyterHub, download EG01_sort.bam and EGO01_sort.bam.bai. You can do this by navigating to these files in the file structure, right-clicking on them, and selecting Download.
+- In IGV: From File, select Load from File
+- Within elect your EGO01_sort.bam file, making sure that the file EGO01_sort.bam.bai is located in the same directory.
+- Repeat the process for one or two other samples.
+
+**A cautionary note about .bam files and scaling**
+
+You can not compare the heights of any genome browser plots until you have normalized their heights. This is because the height of each plot is proportional to the number of fragments that were sequenced overall. Until you normalize, .bam files from samples that were sequenced to 50 million reads will look twice as tall as those sequenced to 25 million reads.
+
+**To normalize the samples:**
+
+- Go to **View**
+- Go to **Preferences**
+- Go to **Tracks**
+- Go to **Normalize Coverage Data**
+- Click on **Normalize Coverage Data**
+- Navigate to the **SAVE** box that is typically not visible at the bottom of the window.
+- Click **SAVE**
+
+**To remove autoscaling**
+
+- Right click on the header for the track called **sample01_sort.bam Coverage**
+- Unclick **autoscale**
+- Click on **Set Data Range**...
+- Select the desired height
+
+**Exercise**
+
+- Play around with the browser.
+- Check out cool genes: gst-7, nex-1,
+- Read about interesting genes you find.
+
+[DESeq2]()
