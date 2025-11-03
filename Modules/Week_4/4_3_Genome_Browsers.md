@@ -83,6 +83,9 @@ Another option is **IGV - Integrative Genomics Viewer**. IGV comes in a web app 
 - Zoom in or out using the - to + scale on the far top right
 - Scootch the browser using drag and drop behavior
 
+<p align="center">
+<img width="700" alt="igv screenshot 4" src="https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Images/IGV-screenshot4.png">
+</p>
 
 **Try downloading an image file:**
 
