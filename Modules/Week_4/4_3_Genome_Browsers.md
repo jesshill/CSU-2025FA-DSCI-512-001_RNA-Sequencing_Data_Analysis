@@ -92,8 +92,17 @@ Another option is **IGV - Integrative Genomics Viewer**. IGV comes in a web app 
 - Click on **Save Image**
 - Save a picture or vector file. Note - these vector files don't behave well for me.
 
-## Bonus Content - Visualizing data using UCSC Genome Browser
+## Bonus Take-Home Content 
+
+### Visualizing data using UCSC Genome Browser
 
 Info can be found here: [UCSC Genome Browser User's Guide](https://genome.ucsc.edu/goldenpath/help/hgTracksHelp.html)
 
-## V
+### Visualizing data using IGV
+
+IGV (Integrated Genome Viewer) is a stand-alone, downloadable program you can use to browse your RNA-seq generated genomics files.
+
+[https://igv.org/doc/desktop/](https://igv.org/doc/desktop/)
+
+#### Prepping .bw files for upload: 
+
