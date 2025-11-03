@@ -66,11 +66,26 @@ Another option is **IGV - Integrative Genomics Viewer**. IGV comes in a web app 
 - Unselect **Select Tracks**
 
 **Change the order**
+
 - If you hover over the “tab” or “flap” looking icon to the right of any track, it will turn a darker grey
 - Drag and drop this tab to move the track up or down.
 - Arrange your tracks how you prefer
 
 <p align="center">
-<img width="700" alt="igv screenshot 3" src="">
+<img width="700" alt="igv screenshot 3" src="https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Images/IGV-screenshot3.png">
 </p>
+
+**Navigate the browser**
+
+- Check out cool genes
+- In the box that contains the chromosome name and coordinates, you can type in elements you want to search for.
+- Try typing in: cpr-4, clec-47, zip-10, swt-6, asp-6
+- Zoom in or out using the - to + scale on the far top right
+- Scootch the browser using drag and drop behavior
+
+
+**Try downloading an image file:**
+
+- Click on **Save Image**
+- Save a picture or vector file. Note - these vector files don't behave well for me.
 
