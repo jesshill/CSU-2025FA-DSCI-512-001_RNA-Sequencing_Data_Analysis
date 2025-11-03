@@ -82,9 +82,10 @@ explore the files you have acquired.
 - Understand that DESeq2 does not use a Poisson distribution to model the spread of the data. Instead it uses a **negative binomial distribution** because RNA-seq data naturally is **overdispersed**.
 - Understand why **multiple testing correction** is required and that the **Benjamini-Hochberg Correction** is the type that is used by DESeq2.
 - Know how to read and interpret three types of plots:
-  - [**MA-plot**]()
-  - [**Volcano plot**]()
-  - [**Distance matrix plot**]()
+  - [MA-plot](https://en.wikipedia.org/wiki/MA_plot)
+  - [Volcano plot](https://en.wikipedia.org/wiki/Volcano_plot_(statistics))
+  - [Distance matrix plot](https://en.wikipedia.org/wiki/Distance_matrix)
+  - [Heatmaps and hierarchical clustering](http://www.opiniomics.org/you-probably-dont-understand-heatmaps/)
 
 ### Citations
 
