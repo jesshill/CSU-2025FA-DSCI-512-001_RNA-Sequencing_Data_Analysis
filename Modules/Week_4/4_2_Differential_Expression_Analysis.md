@@ -36,13 +36,13 @@ Rstudio is a dedicated **IDE (Integrated Development Environment)** for R. Think
 
 Today we will do everything on your local computer. You won't need to log into ALPINE.
 
-**Start a project on your laptop:**
+**Start a project on your laptop**
 
 - Navigate to a directory on your local laptop/desktop using your Finder (Mac) or Explorer (PC)
 - Start a DESeq2 project
 - Give the project directory a name like DSCI512_DESeq2
 
-**Initiate some sub-directories:**
+**Initiate some sub-directories**
 
 - `01_input`
 - `02_scripts`
@@ -55,14 +55,16 @@ Download these input files from ALPINE:
 - Your merged counts.txt file:
   - `~/DSCI512/PROJ01_GomezOrte/03_output/<DATE>_output/03_feature/2024-<mo>-<da>_merged_counts.txt`
 
-NOTE: if you DON“T have your own counts file, you can “borrow” an old one from [here]()
+NOTE: if you DON“T have your own counts file, you can “borrow” an old one from [here](https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Data/2024-11-20_merged_counts.txt)
 
-**Download script:**
+**Download script**
 
+- Same directory as above
+- Download [241203_GomezOrte_DESeq2.R]() and place it in your `02_scripts` directory
 
+explore the files you have acquired. 
 
-
-
+**Where did these files come from? What will you need for your final exam project?**
 
 
 
