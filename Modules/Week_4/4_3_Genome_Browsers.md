@@ -30,4 +30,9 @@ Another option is **IGV - Integrative Genomics Viewer**. IGV comes in a web app 
 - The human genome is loaded by default. To switch to C. elegans, let's go to the **Genome** menu tab.
 - Typically, I would recommend selecting **Local file** and having you upload the exact fasta file and .gtf file that you used for your RNA-seq analysis. In the interest of time and because we downloaded everything from UCSC, we can do select **UCSC GenArk**...
 
+<p align="center">
+<img width="700" alt="igv screenshot" src="https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Images/IGV-screenshot.png">
+</p>
+
+
 
