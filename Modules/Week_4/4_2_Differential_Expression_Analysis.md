@@ -125,7 +125,7 @@ Creating beautiful reports is part of the Reproducible research approach.
 - [Check here for next semester's ALPINE training (installation, parallelization, etc)](https://www.colorado.edu/rc/events)
 - [ALPINE past training materials](https://github.com/ResearchComputing)
 
-**Final Advice**
+## Final Advice
 
 If something isn't working, don't get bogged down, just e-mail someone:
 - coding buddies, collaborators
