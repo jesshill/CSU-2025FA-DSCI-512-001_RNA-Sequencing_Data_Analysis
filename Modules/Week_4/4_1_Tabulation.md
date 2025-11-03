@@ -257,16 +257,4 @@ $ bash merge_counts_files.sh
 
 - Download your metadata file to your local computer, too. 
 
-
-## Bonus content...
-
-<details>
-  <summary>featureCount detailed instructions</summary>
-
----
-
-Content here
-
----
-
-</details>
+Continue on to [DESeq2](4_2_Differential_Expression_Analysis.md)
