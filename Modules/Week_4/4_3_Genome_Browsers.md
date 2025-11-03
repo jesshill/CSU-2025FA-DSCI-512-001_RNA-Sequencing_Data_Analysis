@@ -121,8 +121,8 @@ First, we'll go through how to do this using IGV.
 
 - From the drop-down menu, select `C. elegans (ce11)`
 - From JupyterHub, download `EG01_sort.bam` and `EGO01_sort.bam.bai`. You can do this by navigating to these files in the file structure, **right-clicking** on them, and selecting **Download**.
-- In IGV: From **File**, select Load from File
-- Within elect your EGO01_sort.bam file, making sure that the file EGO01_sort.bam.bai is located in the same directory.
+- In IGV: From **File**, select **Load from File**
+- Within elect your **EGO01_sort.bam** file, making sure that the file **EGO01_sort.bam.bai** is located in the same directory.
 - Repeat the process for one or two other samples.
 
 **A cautionary note about .bam files and scaling**
