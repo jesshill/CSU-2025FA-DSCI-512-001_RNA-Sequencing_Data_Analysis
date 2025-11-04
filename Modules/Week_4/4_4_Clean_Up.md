@@ -47,5 +47,5 @@ ALPINE maintenance days are on **Wednesdays!**
 **RNA-seq resources**
 - [Kasper Hansen's Statistics for Genomics youtube video](https://www.youtube.com/watch?v=C8RNvWu7pAw&t=2366s)
 - [DESeq2 Vignette](https://bioconductor.org/packages/release/bioc/vignettes/DESeq2/inst/doc/DESeq2.html)
-- ...
+- [Simon Anders CSHL Lecture of DESeq2](https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Data/DESeq2-Anders.pdf)
 
