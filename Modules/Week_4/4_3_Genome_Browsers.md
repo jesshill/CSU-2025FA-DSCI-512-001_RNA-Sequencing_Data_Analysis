@@ -2,9 +2,16 @@
 
 Genome browsers are software that allow you to display RNA-seq or other genomics data. There are many genome browsers available to you to use.
 
-My lab uses **UCSC Genome browser**, a website. Sadly, UCSC Genome browser doesn't have all genomes available. Also sad, using UCSC Genome browser requires a public-facing, HTTP-viewable file space. If you or your lab is interested in setting this up, please contact your IT folks (CNS-IT for the College of Natural Sciences). Even more sad - there is a current conflict with CSU's firewall that is creating a bug.
+A commonly used one is **UCSC Genome browser**, a website. Sadly, UCSC Genome browser doesn't have all genomes available. Using UCSC Genome browser requires a **public-facing, HTTP-viewable file space**. There are a few options for this, which include:
+- [Galaxy](https://usegalaxy.org/): Maximum size limit is 50 GB (uncompressed). 250 GB of storage is available per Galaxy account. 
+- [CyVerse Discovery Environment](https://de.cyverse.org/): 5 GB of space for free, but can be relatively slow to display. Offers a paid subscription service to expand space.
+- [Github](https://github.com/): files limited to 100MB, but very fast.
+- [Figshare](https://figshare.com/): not limited and fast, but every file needs to be uploaded individually and cannot be changed. Optimal for very stable links, e.g. in publications.
+- [DropBox](https://www.dropbox.com/): 2 GB free on their BasicFree plan. Many other paid dropbox plans are available with much more space.
 
-Another option is **IGV - Integrative Genomics Viewer**. IGV comes in a web app form and a downloadable form. The downloadable form has more customization options (bonus material below). Today we'll walk through the web app form of IGV to give you a sense of how to use the software.
+If you or your lab is interested in setting up something specific for your lab, you should contact your IT folks (i.e., CNS-IT for the College of Natural Sciences).
+
+Another option is **IGV - Integrative Genomics Viewer**. IGV comes in a web app form and a downloadable form. The downloadable form has more customization options. We will walk through the web app form of IGV to give you a sense of how to use the software.
 
 [IGV](https://igv.org/)
 
