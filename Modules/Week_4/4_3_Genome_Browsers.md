@@ -159,4 +159,4 @@ You can not compare the heights of any genome browser plots until you have norma
 - Check out cool genes: gst-7, nex-1,
 - Read about interesting genes you find.
 
-[Announcements]()
+[Clean Up](4_4_Clean_Up.md)
