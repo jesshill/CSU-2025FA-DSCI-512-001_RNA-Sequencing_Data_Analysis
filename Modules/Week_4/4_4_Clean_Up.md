@@ -153,7 +153,93 @@ $ rsync -auvz -e 'ssh -p 22' jesshill\@colostate.edu@login.rc.colorado.edu:/scra
 
 **!!!** Common pitfall: Be aware that directory and directory/ with a trailing slash will have different behaviors in rsync. directory will move the whole directory. directory/ with the trailing slash will move only the contents of directory.
 
-For more details and tips on writing a sync script
+<details>
+  <summary>For more details and tips on writing a sync script</summary>
+
+---
+
+### Syncing using rsync
+
+Scratch space on ALPINE is deleted every 90 days. If you would like to avoid this, please work in your project space (250 GB limit) or request petabyte storage space (for a fee).
+
+To avoid having your projects disappear in the poof with no warning, it is important to save your work locally.
+
+There are many strategies to do this. We will discuss one strategy. It may not the best, so consult with your lab and/or the ALPINE help people for advice.
+
+1. Write a shell script in a local directory on your computer.
+2. Run the shell script anytime you are working on ALPINE. You can run the script in the morning and at night.
+3. The script will use rsync. Rsync is a powerful utility for synchronizing and backing up lots of data in complex ways.
+
+**rsync usage:**
+
+```
+rsync -auvz -e 'ssh -p 22' <source> <target> 
+rsync -auvz -e 'ssh -p 22' <source> .
+```
+
+This command will make a copy of all the data in <source> to <target>. <source> and <target> can be different locations on the same computer or locations on remote computers (servers, cloud locations, supercomputers, etc).
+
+Let's break it down...
+
+```
+rsync   this is the command
+-a      archive option. this is a shortcut for many options all bundled into
+        one.
+        It basically allows you to sync things within directories 
+        (recursively) and preserves lots of information about the date of last 
+        modification, permissions, etc.
+-u      update option. Only move files that have changed since the last rsync.
+-v               verbose option. This makes rsync spit out a lot of commentary 
+                 on what it is doing.
+-z               compress option. This compresses the data during transit.
+-e 'ssh -p 22'   This specifies that you want to connect to the remotes server 
+                 using secure shell.
+<source>         source. This is the summit source directory. In the form: eID\@colostate.edu@login.rc.colorado.edu:/scratch/summit/location
+<target>         This is your local space. I just use a dot. 
+                         
+Other helpful options:
+-n               dry run option. When you add -n, nothing actually is moved or 
+                 copied, but it is just a test.
+--exclude <filesOrDirs>  an option that allows you to ignore syncing certain files. 
+                         This can be useful if there is a giant input folder where 
+                         you often unzip and re-zip files.
+```
+
+Here is an example of my script called `rsync_summit.sh`...
+
+```
+#!/bin/bash
+ 
+#Pull work from summit to the local directory
+rsync -auvz -e 'ssh -p 22' jesshill\@colostate.edu@login.rc.colorado.edu:/scratch/alpine/jesshill@colostate.edu/DSCI512_RNAseq .
+```
+
+- To use it, don't forget to replace my eID with yours!
+- When prompted for the password, don't forget to type: password,push
+
+**!!! Exercise:** Make a shell script on your local computer inside the directory where you want to copy/backup your /scratch/summit files.
+
+**!!! Common pitfall:** Be aware that `directory` and `directory/` with a trailing slash will have different behaviors in rsync. `directory` will move the whole directory. `directory/` with the trailing slash will move only the contents of directory.
+
+**!!! Common pitfall:** This may be tricker for PC people than for Mac people.
+
+**!!! Common pitfall:** Match the shebang line to your own configuration by looking up `$ which bash`.
+
+### Moving files using an ftp client
+
+Learn more about moving files here: 
+
+### Secure Coyping using SCP
+
+scp - Secure CoPy
+scp <sourcefile> <target>
+scp <http://address/to/file/file.txt> <.>
+
+Can be used to secure copy onto your local computer or to pull things from alpine or push things to alpine.
+
+---
+
+</details>
 
 ## 4. Unzip on your local computer
 
