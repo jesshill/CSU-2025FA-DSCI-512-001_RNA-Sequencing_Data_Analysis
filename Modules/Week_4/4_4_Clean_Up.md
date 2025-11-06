@@ -164,7 +164,7 @@ Scratch space on ALPINE is deleted every 90 days. If you would like to avoid thi
 
 To avoid having your projects disappear in the poof with no warning, it is important to save your work locally.
 
-There are many strategies to do this. We will discuss one strategy. It may not the best, so consult with your lab and/or the ALPINE help people for advice.
+There are many strategies to do this. We will discuss one strategy. Consult with your lab and/or the ALPINE help people for advice on what would be best for your projects!
 
 1. Write a shell script in a local directory on your computer.
 2. Run the shell script anytime you are working on ALPINE. You can run the script in the morning and at night.
@@ -172,12 +172,14 @@ There are many strategies to do this. We will discuss one strategy. It may not t
 
 **rsync usage:**
 
+The rsync utility can be used to synchronize files and directories across two locations. This can often lead to efficiencies in repeat-transfer scenarios, as rsync only copies files that are different between the source and target locations (and can even transfer partial files when only part of a file has changed). This can be very useful in reducing the amount of copies you may perform when synchronizing two datasets.
+
 ```
 rsync -auvz -e 'ssh -p 22' <source> <target> 
 rsync -auvz -e 'ssh -p 22' <source> .
 ```
 
-This command will make a copy of all the data in <source> to <target>. <source> and <target> can be different locations on the same computer or locations on remote computers (servers, cloud locations, supercomputers, etc).
+This command will make a copy of all the data in <source> to <target>.  <source> and <target> can be different locations on the same computer or locations on remote computers (servers, cloud locations, supercomputers, etc).
 
 Let's break it down...
 
@@ -217,13 +219,22 @@ rsync -auvz -e 'ssh -p 22' jesshill\@colostate.edu@login.rc.colorado.edu:/scratc
 - To use it, don't forget to replace my eID with yours!
 - When prompted for the password, don't forget to type: password,push
 
-**!!! Exercise:** Make a shell script on your local computer inside the directory where you want to copy/backup your /scratch/summit files.
+**!!! Exercise:** Make a shell script on your local computer inside the directory where you want to copy/backup your /scratch/alpine files.
 
-**!!! Common pitfall:** Be aware that `directory` and `directory/` with a trailing slash will have different behaviors in rsync. `directory` will move the whole directory. `directory/` with the trailing slash will move only the contents of directory.
+**!!! Common pitfalls:** 
+- Be aware that `directory` and `directory/` with a trailing slash will have different behaviors in rsync. `directory` will move the whole directory. `directory/` with the trailing slash will move only the contents of directory.
+- This may be tricker for PC people than for Mac people.
+- Match the shebang line to your own configuration by looking up `$ which bash`.
 
-**!!! Common pitfall:** This may be tricker for PC people than for Mac people.
-
-**!!! Common pitfall:** Match the shebang line to your own configuration by looking up `$ which bash`.
+Additional examples: 
+```
+# Synchronizing from a local workstation to Research Computing
+rsync -r <path-to-directory> <username>@dtn.rc.colorado.edu:<target-path>  
+```
+```
+# Synchronizing from Research Computing to a local workstation
+rsync -r <username>@dtn.rc.colorado.edu:<path-to-directory> <target-path>  
+```
 
 ### Moving files using the web-based application Globus
 
