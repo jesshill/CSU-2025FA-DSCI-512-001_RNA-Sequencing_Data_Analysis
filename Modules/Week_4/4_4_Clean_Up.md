@@ -248,13 +248,20 @@ They are interactive sFTP clients to transfer and edit files on remote servers.
 2. Press Enter. Accept your Duo 2-Factor notification. If the connection succeeds you will see your CURC filesystem on the “Remote Site” tab.
 3. Navigate to the file you would like to transfer in either your local filesystem or your CURC filesystem. Right click the file and click “Upload” or “Download”.
 
-### Secure Coyping using SCP
+### Secure Copy utility - scp
 
-scp - Secure CoPy
-scp <sourcefile> <target>
-scp <http://address/to/file/file.txt> <.>
+Can send and fetch data to and from a remote server. 
 
-Can be used to secure copy onto your local computer or to pull things from alpine or push things to alpine.
+In the following examples, replace `<path-to-file>` with the path of the file you wish to copy, `<username>` with your Research Computing username, and `<target-path>` with the full path to the directory you would like to send the file to.
+
+```
+# Copying files from a local workstation to Research Computing
+scp <path-to-file> <username>@dtn.rc.colorado.edu:<target-path>   
+```
+```
+# Copying files from Research Computing to a local workstation
+scp <username>@dtn.rc.colorado.edu:<path-to-file> <target-path>    
+```
 
 ### Reference information 
 
