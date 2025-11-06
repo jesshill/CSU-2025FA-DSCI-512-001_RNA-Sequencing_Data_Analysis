@@ -239,6 +239,15 @@ To move files to and from ALPINE, you can use an sFTP client like Cyberduck or F
 
 They are interactive sFTP clients to transfer and edit files on remote servers. 
 
+**Filezilla example**
+1. Fill in the hostname, username, and password fields at the top of the application window.
+  - Data Transfer Node
+    - Host: sftp://dtn.rc.colorado.edu
+    - Username: your-rc-username
+    - Password: your-rc-password
+2. Press Enter. Accept your Duo 2-Factor notification. If the connection succeeds you will see your CURC filesystem on the “Remote Site” tab.
+3. Navigate to the file you would like to transfer in either your local filesystem or your CURC filesystem. Right click the file and click “Upload” or “Download”.
+
 ### Secure Coyping using SCP
 
 scp - Secure CoPy
