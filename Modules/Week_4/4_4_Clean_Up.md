@@ -154,7 +154,7 @@ $ rsync -auvz -e 'ssh -p 22' jesshill\@colostate.edu@login.rc.colorado.edu:/scra
 **!!!** Common pitfall: Be aware that directory and directory/ with a trailing slash will have different behaviors in rsync. directory will move the whole directory. directory/ with the trailing slash will move only the contents of directory.
 
 <details>
-  <summary>For more details and tips on writing a sync script</summary>
+  <summary>For more details and tips on writing a sync script, as well as other data transfer methods</summary>
 
 ---
 
