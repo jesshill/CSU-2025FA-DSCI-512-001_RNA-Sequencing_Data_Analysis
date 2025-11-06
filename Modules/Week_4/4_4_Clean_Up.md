@@ -225,9 +225,19 @@ rsync -auvz -e 'ssh -p 22' jesshill\@colostate.edu@login.rc.colorado.edu:/scratc
 
 **!!! Common pitfall:** Match the shebang line to your own configuration by looking up `$ which bash`.
 
-### Moving files using an ftp client
+### Moving files using the web-based application Globus
 
-Learn more about moving files here: 
+Globus file transfers are typically initiated through an interactive web application (command-line access to Globus is also available). Globus addresses deficiencies in traditional file-transfer mechanisms by automating large data transfers, resuming failed transfers, distributing large transfers across multiple servers, and brokering direct transfers between remote computing centers. Globus performs an MD5-Checksum for transfer verification.
+
+Globus can be used on macOS, Linux, and Windows OS and is CU Boulder Research Computing's **recommended way of transferring data**. 
+
+### Moving files using an sftp (secure file transfer protocol) client
+
+There is FTP and sFTP, whats the difference? The main difference is security! SFTP clients use an encrypted SSH connection to transfer files securely, while FTP (File Transfer Protocol) clients send data, including usernames and passwords, in plain text. This means SFTP is suitable for sensitive data, while FTP is insecure and should be avoided for any confidential information.
+
+To move files to and from ALPINE, you can use an sFTP client like Cyberduck or Filezilla. Both are free (though there is a paid version of Cyberduck, the free works just fine) multi-platform (macOS, windows, linux) clients. 
+
+They are interactive sFTP clients to transfer and edit files on remote servers. 
 
 ### Secure Coyping using SCP
 
@@ -236,6 +246,10 @@ scp <sourcefile> <target>
 scp <http://address/to/file/file.txt> <.>
 
 Can be used to secure copy onto your local computer or to pull things from alpine or push things to alpine.
+
+### Reference information 
+
+See CURCs [read the docs](https://curc.readthedocs.io/en/latest/compute/data-transfer.html) for more information and examples of usage for different clients! 
 
 ---
 
