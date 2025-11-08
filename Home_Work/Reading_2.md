@@ -41,9 +41,8 @@ Here are some papers if you are a little bit stuck...
 - Herranz, Vandenbrink, Villacampa, Manzano, Poehlman, Feltus, Kiss, and Medina. (2019) RNAseq Analysis of the Response of Arabidopsis thaliana to Fractional Gravity Under Blue-Light Stimulation During Spaceflight. Front Plant Sci. 2019 Nov 26;10:1529.
 - Park et al., (2019) The transcriptome analysis of the Arabidopsis thaliana in response to the Vibrio vulnificus by RNA-sequencing. PLoS One. 2019 Dec 16;14(12):e0225976.
 
-Mouse
-Nardou R, Sawyer E, Song YJ, Wilkinson M, Padovan-Hernandez Y, de Deus JL, Wright N, Lama C, Faltin S, Goff LA, Stein-O'Brien GL, Dölen G. Psychedelics reopen the social reward learning critical period. (2023) Nature. Jun;618(7966):790-798. doi: 10.1038/s41586-023-06204-3.
+**Mouse**
 
-Brady RA, Bruno VM, Burns DL. (2015) RNA-Seq Analysis of the Host Response to Staphylococcus aureus Skin and Soft Tissue Infection in a Mouse Model
-
-Tuipulotu, Netzler, Lun, Mackenzie, and White1. (2017) RNA Sequencing of Murine Norovirus-Infected Cells Reveals Transcriptional Alteration of Genes Important to Viral Recognition and Antigen Presentation. Front. Immunol. 11 August
+- Nardou R, Sawyer E, Song YJ, Wilkinson M, Padovan-Hernandez Y, de Deus JL, Wright N, Lama C, Faltin S, Goff LA, Stein-O'Brien GL, Dölen G. Psychedelics reopen the social reward learning critical period. (2023) Nature. Jun;618(7966):790-798. doi: 10.1038/s41586-023-06204-3.
+- Brady RA, Bruno VM, Burns DL. (2015) RNA-Seq Analysis of the Host Response to Staphylococcus aureus Skin and Soft Tissue Infection in a Mouse Model
+- Tuipulotu, Netzler, Lun, Mackenzie, and White1. (2017) RNA Sequencing of Murine Norovirus-Infected Cells Reveals Transcriptional Alteration of Genes Important to Viral Recognition and Antigen Presentation. Front. Immunol. 11 August
