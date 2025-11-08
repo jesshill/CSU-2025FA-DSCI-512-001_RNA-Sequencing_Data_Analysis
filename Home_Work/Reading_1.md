@@ -10,7 +10,7 @@
   - [Find article here](https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Data/stark_2019.pdf)
 - Write two sentences summarizing what you read.
 - Write one sentence stating something that you learned that you can link to your own research or the work you hope to do in the future.
-- List two papers referenced in this article that are of interest to you.
+- List two papers referenced in this article that are of interest to you and why. 
 
 ## Please also watch these videos:
 
