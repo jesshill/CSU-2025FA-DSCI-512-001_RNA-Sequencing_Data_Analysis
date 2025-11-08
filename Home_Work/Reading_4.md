@@ -20,7 +20,7 @@ For this exercise, familiarize yourself with this study by reading
 1. Briefly summarize Figure 1B and 1C
   - What are these figures trying to illustrate? How are they similar and how are they different?
   - You may need to do some google/wikipedia searching
-  - You may need to consult the DESeq2 Handbook
+  - You may need to consult the [DESeq2 Handbook](https://bioconductor.org/packages/devel/bioc/vignettes/DESeq2/inst/doc/DESeq2.html#heatmap-of-the-sample-to-sample-distances)
 
 2. Select any other figure in the paper and briefly summarize:
   - What is the question that is being addressed in this paper?
