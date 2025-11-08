@@ -33,16 +33,16 @@ Here are some papers if you are a little bit stuck...
 
 **Yeast**
 
-- Maksiutenko EM, Barbitoff YA, Danilov LG, Matveenko AG, Zemlyanko OM, Efremova EP, Moskalenko SE, Zhouravleva GA. (2024) Gene Expression Analysis of Yeast Strains with a Nonsense Mutation in the eRF3-Coding Gene Highlights Possible Mechanisms of Adaptation. Int J Mol Sci. Jun 7;25(12):6308. doi: 10.3390/ijms25126308.
-- Dong Y, Hu J, Fan L, and Chen Q. (2016) RNA-seq-based transcriptomic and metabolomic analysis reveal stress responses and programmed cell death induced by acetic acid in Saccharomyces cerevisiae. Scientific Reports. 7:4.
+- [Maksiutenko EM, Barbitoff YA, Danilov LG, Matveenko AG, Zemlyanko OM, Efremova EP, Moskalenko SE, Zhouravleva GA. (2024) Gene Expression Analysis of Yeast Strains with a Nonsense Mutation in the eRF3-Coding Gene Highlights Possible Mechanisms of Adaptation. Int J Mol Sci. Jun 7;25(12):6308. doi: 10.3390/ijms25126308.](https://pubmed.ncbi.nlm.nih.gov/38928012/)
+- [Dong Y, Hu J, Fan L, and Chen Q. (2016) RNA-seq-based transcriptomic and metabolomic analysis reveal stress responses and programmed cell death induced by acetic acid in Saccharomyces cerevisiae. Scientific Reports. 7:4.](https://www.nature.com/articles/srep42659)
 
 **Arabidopsis**
 
-- Herranz, Vandenbrink, Villacampa, Manzano, Poehlman, Feltus, Kiss, and Medina. (2019) RNAseq Analysis of the Response of Arabidopsis thaliana to Fractional Gravity Under Blue-Light Stimulation During Spaceflight. Front Plant Sci. 2019 Nov 26;10:1529.
-- Park et al., (2019) The transcriptome analysis of the Arabidopsis thaliana in response to the Vibrio vulnificus by RNA-sequencing. PLoS One. 2019 Dec 16;14(12):e0225976.
+- [Herranz, Vandenbrink, Villacampa, Manzano, Poehlman, Feltus, Kiss, and Medina. (2019) RNAseq Analysis of the Response of Arabidopsis thaliana to Fractional Gravity Under Blue-Light Stimulation During Spaceflight. Front Plant Sci. 2019 Nov 26;10:1529.](https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2019.01529/full)
+- [Park et al., (2019) The transcriptome analysis of the Arabidopsis thaliana in response to the Vibrio vulnificus by RNA-sequencing. PLoS One. 2019 Dec 16;14(12):e0225976.](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0225976)
 
 **Mouse**
 
-- Nardou R, Sawyer E, Song YJ, Wilkinson M, Padovan-Hernandez Y, de Deus JL, Wright N, Lama C, Faltin S, Goff LA, Stein-O'Brien GL, Dölen G. Psychedelics reopen the social reward learning critical period. (2023) Nature. Jun;618(7966):790-798. doi: 10.1038/s41586-023-06204-3.
-- Brady RA, Bruno VM, Burns DL. (2015) RNA-Seq Analysis of the Host Response to Staphylococcus aureus Skin and Soft Tissue Infection in a Mouse Model
-- Tuipulotu, Netzler, Lun, Mackenzie, and White1. (2017) RNA Sequencing of Murine Norovirus-Infected Cells Reveals Transcriptional Alteration of Genes Important to Viral Recognition and Antigen Presentation. Front. Immunol. 11 August
+- [Nardou R, Sawyer E, Song YJ, Wilkinson M, Padovan-Hernandez Y, de Deus JL, Wright N, Lama C, Faltin S, Goff LA, Stein-O'Brien GL, Dölen G. Psychedelics reopen the social reward learning critical period. (2023) Nature. Jun;618(7966):790-798. doi: 10.1038/s41586-023-06204-3.](https://pubmed.ncbi.nlm.nih.gov/37316665/)
+- [Brady RA, Bruno VM, Burns DL. (2015) RNA-Seq Analysis of the Host Response to Staphylococcus aureus Skin and Soft Tissue Infection in a Mouse Model](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0124877)
+- [Tuipulotu, Netzler, Lun, Mackenzie, and White1. (2017) RNA Sequencing of Murine Norovirus-Infected Cells Reveals Transcriptional Alteration of Genes Important to Viral Recognition and Antigen Presentation. Front. Immunol. 11 August](https://pubmed.ncbi.nlm.nih.gov/28848558/)
