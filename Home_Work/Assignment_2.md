@@ -41,9 +41,7 @@ Advanced R lessons on Swirl:
 <img width="700" alt="swirl advanced" src="https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Images/swirl_advanced_screenshot.png">
 </p>
 
-If you don't see these advanced lessons, go back to the instructions here.
-
-For refs: [The Swirl Course Network](https://swirlstats.com/scn/title.html)
+If you don't see these advanced lessons, check the reference information: [The Swirl Course Network](https://swirlstats.com/scn/title.html)
 
 ### What to turn in
 
