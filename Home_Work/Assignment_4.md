@@ -88,7 +88,7 @@ SRR5832199_1.fastq      SRR5832199_2.fastq      EG18    18_Bsubtilis_25_3       
 
 [Herranz, Vandenbrink, Villacampa, Manzano, Poehlman, Feltus, Kiss, and Medina. (2019) RNAseq Analysis of the Response of Arabidopsis thaliana to Fractional Gravity Under Blue-Light Stimulation During Spaceflight. Front Plant Sci. 2019 Nov 26;10:1529.](https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2019.01529/full)
 
-- This is a pretty big dataset. I suggest just using a low-gravity & high gravity conditions.
+- This is a pretty big dataset. Suggest just using a low-gravity & high gravity conditions.
 - This download's from a NASA-managed site, not from SRA. You'll need to download the data to your local computer and then upload it to ALPINE manually.
 - Go to “Study Files” and download “Raw Sequence Data” appropriate for the conditions you select to study.
 
