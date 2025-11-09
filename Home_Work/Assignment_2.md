@@ -32,13 +32,13 @@ Later in this course, we will be using modules in R to analyze RNA-seq data. To 
 Base R lessons on Swirl:
 
 <p align="center">
-<img width="700" alt="swirl" src="...">
+<img width="700" alt="swirl" src="https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Images/swirl_screenshot.png">
 </p>
 
 Advanced R lessons on Swirl:
 
 <p align="center">
-<img width="700" alt="swirl advanced" src="...">
+<img width="700" alt="swirl advanced" src="https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Images/swirl_advanced_screenshot.png">
 </p>
 
 If you don't see these advanced lessons, go back to the instructions here.
