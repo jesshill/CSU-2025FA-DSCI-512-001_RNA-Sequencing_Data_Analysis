@@ -15,10 +15,10 @@ Later in this course, we will be using modules in R to analyze RNA-seq data. To 
 
 **If you are new to R:**
 - If you are new to the R language and environment, please take the first Swirl tutorials. Aim to get through Lessons 5 - 8 or continue on from what you learned in Homework #2.
-  5. Missing Values
-  6. Subsetting Vectors
-  7. Matrices & Data Frames
-  8. Logic
+  - 5.) Missing Values
+  - 6.) Subsetting Vectors
+  - 7.) Matrices & Data Frames
+  - 8.) Logic
 - However, the idea here is that we can do self-paced learning. If you need to focus on the first two lessons to really understand them, do that. If you want to jam ahead and learn more, you can do that, too. You can still do the sections of the class that involve R even if you don't get through all the suggested lessons.
 
 **If you are an experienced or advanced R user:**
