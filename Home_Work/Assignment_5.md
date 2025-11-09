@@ -38,3 +38,32 @@ $ rsync -az rsync://ftp.ensemblgenomes.org/all/pub/release-49/plants/fasta/arabi
 - Note: For Ensembl/Ensembl Plants, you don't need the 'rm' or 'sm' chromosome files.
 
 ### Turn in the answers to the following questions
+
+*Once you have successfully built your hisat2 indices (above), please answer the following questions. Do not turn in the questions in your responses.*
+
+1. HISAT2 Index Builds
+
+- What organism did you build indices for?
+- Will you be performing a Final Project using this organism? Briefly, in one sentence or less, describe the project including any links to publications if available. If you are not sure yet, you can just state that.
+
+2. What is the output produced by `hisat2-inspect -s <name>` for your index build? Copy and paste the output as the answer to this question. So, if your build is mm10, what is the output to `hisat2-inspect -s mm10`?
+
+3. Can you find a .gtf or .gff file for your organism? If, so where did you look? If not, what did you already try?
+
+- For more hints on locating .gtf or .gff files, see...
+
+<details>
+  <summary>Get the .gtf file</summary>
+
+---
+
+Content here
+
+---
+
+</details>
+
+4. Let's explore the HISAT2 manual.
+
+- What are the default minimum and maximum intron lengths for HISAT2?
+- Do you expect these default settings to be appropriate for your organism?
