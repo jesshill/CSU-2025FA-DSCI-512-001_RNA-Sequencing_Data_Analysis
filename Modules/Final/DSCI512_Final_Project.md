@@ -28,7 +28,7 @@ For the Final Project, you will customize and run the pipeline [RNAseq_PE_array]
 
 **You will be asked to create some figures and figure legends pertaining to your analysis (Questions 2 - 4) and you will be asked to introduce (Question 1) and discuss (Question 5) your findings.**
 
-**Example Datasets:** [Reading Assignment 2]()
+**Example Datasets:** [Reading Assignment 2](https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Home_Work/Reading_2.md)
 
 ## EXAM QUESTIONS
 
