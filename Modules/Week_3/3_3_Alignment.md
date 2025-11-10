@@ -166,6 +166,30 @@ hisat2 \
 
 **Warning:** When using the backslashes `\`, any space characters AFTER the slash will break the code into two lines
 
+- How do I know if it worked?
+  - If your alignment (HISAT2) run worked properly, you should have...
+    - An EG01.sam file (in the output directory you specified)
+    - An EG01_summary.txt file (in the output directory you specified)
+    - Both the EG01_summary.txt file and the log_align_<eID#>.txt file should contain this report:
+
+```
+5353080 reads; of these:
+  5353080 (100.00%) were paired; of these:
+    139102 (2.60%) aligned concordantly 0 times
+    5083976 (94.97%) aligned concordantly exactly 1 time
+    130002 (2.43%) aligned concordantly >1 times
+    ----
+    139102 pairs aligned concordantly 0 times; of these:
+      3860 (2.77%) aligned discordantly 1 time
+    ----
+    135242 pairs aligned 0 times concordantly or discordantly; of these:
+      270484 mates make up the pairs; of these:
+        164324 (60.75%) aligned 0 times
+        103378 (38.22%) aligned exactly 1 time
+        2782 (1.03%) aligned >1 times
+98.47% overall alignment rate
+```
+
 ---
 
 </details>
