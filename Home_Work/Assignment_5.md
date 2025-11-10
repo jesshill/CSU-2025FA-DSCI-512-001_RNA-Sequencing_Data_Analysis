@@ -61,7 +61,7 @@ The .gtf of .gff file is the annotation file that contains the list of all the g
 
 Typically, it is recommended to obtain the .gtf and .gff from the same source to avoid this.
 
-**Exercise** Download the .gtf file.
+Download the .gtf file.
 - Download the [ce11 .gtf file here](https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Data/ce11_annotation_ensembl_to_ucsc.gtf.gz).
 - Upload it to ALPINE using the UPLOAD button on the Dashboard
 - Download it here, upload it to your ce11 folder
