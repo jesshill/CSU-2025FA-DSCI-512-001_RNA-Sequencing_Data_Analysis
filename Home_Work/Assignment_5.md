@@ -120,7 +120,7 @@ depending on how genes are specified in column #9 of your .gff file
 
 "In principle", this should work. It can be buggy, Arabidopsis people found that they needed to convert their downloaded .gff files to .gtf files. To do the conversion, see below...
 
-***.gff to .gtf conversion**
+**.gff to .gtf conversion**
 
 Download the software for [gffread](https://github.com/gpertea/gffread) using their instructions.
 
