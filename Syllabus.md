@@ -63,7 +63,7 @@ Because this course is so flexible, it puts a lot of responsibility on you to en
 
 Linux as a computational platform (DSCI 510) or familiarity with UNIX/Linux and working from the command line.
 
-Please see the [Course Requirements](Requirements.md) for information on the computer you should bring to class, requesting Alpine access, and required software.
+Please see the [Course Requirements](Computer_Requirements.md) for information on the computer you should bring to class, requesting Alpine access, and required software.
 
 # Textbook
 
