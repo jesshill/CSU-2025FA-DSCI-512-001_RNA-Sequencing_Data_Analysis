@@ -46,7 +46,7 @@ Meeting ID: 959 4557 2799
 
 Bonus content/Additional content that may be helpful: 
 - [Alignment how to](https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Resources/Alignment_how_to.md)
-- [FeatureCount how to](...)
+- [FeatureCount how to](https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Resources/FeatureCount_how_to.md)
 - [Genome Browsers](...)
 - [Moving files](...)
 - [Syncing](...)
