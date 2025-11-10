@@ -50,14 +50,90 @@ $ rsync -az rsync://ftp.ensemblgenomes.org/all/pub/release-49/plants/fasta/arabi
 
 3. Can you find a .gtf or .gff file for your organism? If, so where did you look? If not, what did you already try?
 
-- For more hints on locating .gtf or .gff files, see...
+- For more hints on locating .gtf or .gff files, see the 'Get the .gtf file' below...
 
 <details>
   <summary>Get the .gtf file</summary>
 
 ---
 
-Content here
+The .gtf of .gff file is the annotation file that contains the list of all the genes in the genome, their chromosomal coordinates, and which strand they are on. This will be a very important file. Typically, we download this file from UCSC Genome Browser at the same time as downloading the genome (look in the genes folder). However, for whatever reason the UCSC Genome Browser .gtf file had terrible name ID's. It didn't use the name ID's that are typical in the field. For that reason, you can downloaded the C. elegans .gtf file from Ensembl, filter it for only protein coding genes (so it's smaller and faster to use), and then switch the chromosome naming convention so we can use it with the UCSC Genome Browser.
+
+Typically, it is recommended to obtain the .gtf and .gff from the same source to avoid this.
+
+**Exercise** Download the .gtf file.
+- Download the [ce11 .gtf file here](https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Data/ce11_annotation_ensembl_to_ucsc.gtf.gz).
+- Upload it to ALPINE using the UPLOAD button on the Dashboard
+- Download it here, upload it to your ce11 folder
+- check md5sums - (md5sum = 466558e94b59e643cad8b89835ec4f12)
+- Unzip it
+
+```
+$ gunzip ce11_annotation_ensembl_to_ucsc.gtf.gz
+```
+
+Write down the .gtf file path in your `path.txt` file:
+
+```
+# This directory contains the C. elegans hisat2 indices for ce11.
+
+# The path and prefix of this hisat2 build 
+/scratch/alpine/<email>/DSCI512/PROJ02_ce11IndexBuild/ce11
+
+# The path to the whole genome fasta file is:
+/scratch/alpine/<email>/DSCI512/PROJ02_ce11IndexBuild/ce11_wholegenome.fa
+
+# The path to the .gtf annotation file is:
+/scratch/alpine/<email>/DSCI512/PROJ02_ce11IndexBuild/ce11_annotation_ensembl_to_ucsc.gtf
+```
+
+### Additional content about gtf/gff files
+
+- Best practice is to obtain a .gtf file from the same place you obtained the genome file.
+- Downloading from UCSC
+  - Many of you will download the .gtf file from UCSC Genome Browser. This works well.
+  - Go to **Downloads**
+  - Select **Download data**
+  - Choose your organism
+  - Select the genome version and click on something like **Genome sequence files and select annotation**
+  - Download the directory called genes
+- Example:
+
+```
+$ rsync -avzP rsync://hgdownload.cse.ucsc.edu/goldenPath/ce11/bigZips/genes .
+```
+
+- You sometimes have options: NCBI, RefSeq, Ensembl. Each specifies the gene name a little differently. Some include ncRNAs. Some only contain protein-coding sequences. Notice they have slightly different content. Largely, most of the genes are the same.
+
+### Downloading .gff files
+
+In principle, you can use a .gff file as input instead of a .gtf file. To do this, just double check that in column 9 of your file, gene ID is specified as **gene_id**. If it is not, you can let featureCounts know, but using `-g`
+
+```
+-g 'ID'
+or
+-g ID=gene:
+or 
+-g Name
+depending on how genes are specified in column #9 of your .gff file
+```
+
+"In principle", this should work. It can be buggy, Arabidopsis people found that they needed to convert their downloaded .gff files to .gtf files. To do the conversion, see below...
+
+***.gff to .gtf conversion**
+
+Download the software for [gffread](https://github.com/gpertea/gffread) using their instructions.
+
+An example of how it can be run:
+```
+gffread <original gff3 filename> -T -o <output gtf file name>
+gffread Arabidopsis_thaliana.TAIR10.49.gff3 -T -o gffread_Arabidopsis.gtf
+(-T -o option will output GTF format instead of GFF3)
+```
+
+Here's some more info on it: [http://manpages.ubuntu.com/manpages/trusty/man1/gffread.1.html](https://manpages.ubuntu.com/manpages/trusty/man1/gffread.1.html)
+
+- You only need to do that if you have a .gff file
 
 ---
 
