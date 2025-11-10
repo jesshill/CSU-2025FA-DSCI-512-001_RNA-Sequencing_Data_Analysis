@@ -45,7 +45,7 @@ Meeting ID: 959 4557 2799
 | **December 16** | **6** |  |  | **Final Exam Project (due December 16th)** |
 
 Bonus content/Additional content that may be helpful: 
-- [Alignment how to](...)
+- [Alignment how to](https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Resources/Alignment_how_to.md)
 - [FeatureCount how to](...)
 - [Genome Browsers](...)
 - [Moving files](...)
