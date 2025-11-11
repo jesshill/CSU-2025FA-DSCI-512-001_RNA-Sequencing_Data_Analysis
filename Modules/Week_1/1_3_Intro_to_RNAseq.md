@@ -79,7 +79,7 @@ Images adapted from Stark et al., 2019
 
 ## What is the spatial resolution of RNA-seq? 
 
-#### Single cells
+### Single cells
 
 The original protocols for RNA-seq required 4 micrograms of total RNA preparation. This was a large input requirement. Advancements in the RNA-seq protocol now make it possible to perform RNA-seq on individual cells that contain only tens of picograms of total RNA. By combining these reduced input protocols with microfluidics, individual cells can now have their individual transcriptomes profiled.
 
@@ -101,16 +101,22 @@ Figure from [Macosco et al., 2015, Cell](https://www.cell.com/fulltext/S0092-867
 
 Single-cell resolution RNA-seq is now available through kits and platforms mass-produced by different companies including the 10X Genomics Chromium Platform and Illumiina Sequencing (PIP-seq). However, these high resolution assays still present certain technical challeneges depending on the cell types/organisms being probed. 
 
-#### Whole tissues
+### Whole tissues
 
 New technologies like the [Visium Spatial Transcriptomics from 10x genomics](https://www.10xgenomics.com/landing/spatial/?utm_medium=search&src=search&utm_source=google&lss=google&utm_term=spatial+transcriptomics&useroffertype=website-page&utm_content=website-page&utm_campaign=701VI00000Vjf3lYAB&cnm=701VI00000Vjf3lYAB&cid=701VI00000Vjf3lYAB&usercampaignid=701VI00000Vjf3lYAB&gad_source=1) allow for whole transcriptome spatial gene expression at single cell-scale resolution (or really close to it)! This high resolution spatial gene expression, allows for understanding of tissues, neighborhoods, and cell-cell interactions by integrating gene expression data with histomorphological data. 
 
-**The workflow:** take fresh frozen, fixed frozen, or formalin fixed and parafin embedded tissues and section them for input onto the special slides. Then you permiablize the tissue and capture the RNA for barcoding and library construction on the slide. Then you isolate your libraries from your slide and sequence the sample libraries on a Illumina sequencer. 
+**The workflow:** Take fresh frozen, fixed frozen, or formalin fixed and parafin embedded tissues and section them for input onto the special slides. Then you permiablize the tissue and capture the RNA for barcoding and library construction on the slide. Then you isolate your libraries from your slide and sequence the sample libraries on a Illumina sequencer. 
 
 During the RNA capture and library prep step, you are allowing the tissue slice to lay on slides with 2 specific capture areas that are each coated with a continuous lawn of 2 micron x 2 micron barcoded squares. This allows captured RNA to bind and provide the single cell-scale resolution. See this [video](https://www.10xgenomics.com/blog/more-than-a-tissue-slide-inside-visium-spatial-technology) on how it works.
 
 <p align="center">
-<img width="700" alt="Visuim example" src="...">
+<img width="400" alt="Visuim new slides" src="https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Images/new_HD_slides.png">
+</p>
+
+This is a huge improvement (and actually allows for single cell resoltuion) from the original slides that had barcoded spots that were 55 micron wide, with spots spaced 100 microns apart from each other! 
+
+<p align="center">
+<img width="400" alt="Visuim old slides" src="https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Images/old_slides.png">
 </p>
 
 Continue on to [The RNA-seq Protocol](1_4_241105_RNAseqProtocol.pdf)
