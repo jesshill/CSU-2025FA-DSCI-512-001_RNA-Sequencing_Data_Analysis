@@ -16,7 +16,7 @@
 
 ## The RNA-seq protocol 
 
-See [The RNAseq Protocol](1_4_241105_RNAseqProtocol.pdf)
+See [The RNAseq Protocol](https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Modules/Week_1/1_4_241105_RNAseqProtocol.pdf)
 
 Links to relevant videos: 
 - [NEB Next Ultra Directional Library Prep](https://www.neb.com/tools-and-resources/video-library?device=modal&videoid=%7Bd824c8c5-7942-437c-9086-e93ff3c94a12%7D)
