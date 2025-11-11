@@ -94,10 +94,11 @@ If you received a printout of instructions, sra-toolkit IS installed
 **!!! Quick Tip:** for working with modules
 
 ```
-$ module spider <term>  # search for a term
-$ module spider python # note there are multiple versions you could choose
-$ module unload <modulename> # uninstall a module
-$ module purge # uninstall all modules
+$ module spider <module>      # If you cannot load a module because of dependencies, you can use the module spider to find what dependencies you need to load the module.
+$ module spider <module>      # Searches for a particular software
+$ module spider python        # note there are multiple versions you could choose
+$ module unload <modulename>  # uninstall a module
+$ module purge                # uninstall all modules
 ```
 
 ## Initiate a virtual conda environment 
