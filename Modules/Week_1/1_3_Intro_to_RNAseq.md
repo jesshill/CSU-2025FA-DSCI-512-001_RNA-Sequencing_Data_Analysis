@@ -103,6 +103,12 @@ Single-cell resolution RNA-seq is now available through kits and platforms mass-
 
 #### Whole tissues
 
-New technologies like the [Visium Spatial Transcriptomics from 10x genomics](https://www.10xgenomics.com/landing/spatial/?utm_medium=search&src=search&utm_source=google&lss=google&utm_term=spatial+transcriptomics&useroffertype=website-page&utm_content=website-page&utm_campaign=701VI00000Vjf3lYAB&cnm=701VI00000Vjf3lYAB&cid=701VI00000Vjf3lYAB&usercampaignid=701VI00000Vjf3lYAB&gad_source=1) allow for whole transcriptome spatial gene expression at single cell-scale resolution (or really close to it)! 
+New technologies like the [Visium Spatial Transcriptomics from 10x genomics](https://www.10xgenomics.com/landing/spatial/?utm_medium=search&src=search&utm_source=google&lss=google&utm_term=spatial+transcriptomics&useroffertype=website-page&utm_content=website-page&utm_campaign=701VI00000Vjf3lYAB&cnm=701VI00000Vjf3lYAB&cid=701VI00000Vjf3lYAB&usercampaignid=701VI00000Vjf3lYAB&gad_source=1) allow for whole transcriptome spatial gene expression at single cell-scale resolution (or really close to it)! This high resolution spatial gene expression, allows for understanding of tissues, neighborhoods, and cell-cell interactions by integrating gene expression data with histomorphological data. 
+
+The workflow: take fresh frozen, fixed frozen, or formalin fixed and parafin embedded tissues and section them for input onto the special slides. Then you permiablize the tissue and capture the RNA for barcoding and library construction. Then you sequence the sample libraries. 
+
+
+
+Transcripts are assigned to 2 micron areas ...
 
 Continue on to [The RNA-seq Protocol](1_4_241105_RNAseqProtocol.pdf)
