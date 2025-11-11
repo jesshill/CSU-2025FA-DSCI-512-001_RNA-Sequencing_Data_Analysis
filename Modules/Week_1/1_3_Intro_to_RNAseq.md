@@ -42,7 +42,7 @@ Perrou, C. 2011. [Molecular Stratification of Triple-Negative Breast Cancers](ht
 
 - RNA-seq was performed on 677 breast tumors from patients.
 - Breast tumors fall into 5 major sub-types.
-- Breast tumors that had been categorized as Triple-Negative actually fell in two sub-types – Claudin-low and Basal-like.
+- Breast tumors that had been categorized as Triple-Negative actually fell in two sub-types: Claudin-low and Basal-like.
 - This discovery has led to new approaches to treating triple-negative breast cancer.
 - This is a hierarchically clustered heat map
   - Each patient sample is a column
