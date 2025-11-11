@@ -119,4 +119,10 @@ This is a huge improvement (and actually allows for single cell resoltuion) from
 <img width="400" alt="Visuim old slides" src="https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Images/old_slides.png">
 </p>
 
+In the end, you are left with a cDNA library sequence that is barcoded like so (see below) and can be used directly on a standard sequencer. 
+
+<p align="center">
+<img width="400" alt="barcoded library sequence" src="https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Images/library_barcodes.png">
+</p>
+
 Continue on to [The RNA-seq Protocol](1_4_241105_RNAseqProtocol.pdf)
