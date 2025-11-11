@@ -9,6 +9,7 @@ A transcriptome is the sum set of total mRNA molecules from a given sample. RNA-
 There are many flavors of RNA-seq these days: mRNA-seq, total RNA-seq, single cell RNA-seq, small RNA-seq, low-input RNA-seq, etc. Each accompanied by their own specific protocols. 
 
 In general, there are common attributes to all...
+
 1. Isolate mRNA and convert it to cDNA
 2. Create a library of cDNA fragments with specialized adapter sequences ligated to each end
 3. Interrogate the sequence of each cDNA fragment on high-throughput sequencing instrumentation
