@@ -218,14 +218,16 @@ $ conda list  # This shows the software currently installed in your active envir
 (2025dsci) [jesshill@colostate.edu@c3cpu-a2-u32-1 ~]$ 
 ```
 
-Yay! You should now have your environment 2025dsci installed and activated. 
+Yay! You should now have your environment `2025dsci` installed and activated. 
 
-**!!! Exercise:** Let's install software. For this class, we will need the software packages: fastp bwa hisat2 bedtools samtools subread deeptools
+**!!! Exercise:** Let's install software! For this class, we will need the software packages: `fastp` `bwa` `hisat2` `bedtools` `samtools` `subread` `deeptools`
+
 ```
 # First double, triple check that you're in the 2025dsci environment
 $ conda env list #Is it starred?
- 
-$ conda install -c bioconda fastp bwa hisat2 bedtools samtools subread deeptools   # this doesnt always work to install all together, if it doesnt just do individually 
+
+# To try and install all of the pieces of software at once do the following, however this doesnt always work and they often have to be installed individually. Try anyway. 
+$ conda install -c bioconda fastp bwa hisat2 bedtools samtools subread deeptools 
  
 # You may need to press y to install dependencies. Type "y"
 # Some things will say they are failing. That's ok. 
@@ -233,14 +235,13 @@ $ conda install -c bioconda fastp bwa hisat2 bedtools samtools subread deeptools
 # This whole install took ~20 minutes for me
 ```
 
-**NOTE:** If you see a KILLED message and it looks like it stopped installing, try installing the software one at a time. I usually run into trouble when I try to istall mulitiple packages at once! 
+**NOTE:** If you see a KILLED message and it looks like it stopped installing, try installing the software one at a time. I usually run into trouble when I try to install mulitiple packages at once! 
 
 Now, let's test and see whether the software you requested was installed successfully. If they weren't installed successfully, you will get an error message. 
 ```
 $ fastp
 $ bwa
-$ hisat2 
-#Note: hisat2 will say Error at the bottom because you didn't give it a sequence file. That's ok.
+$ hisat2       #Note: hisat2 will say Error at the bottom because you didn't give it a sequence file. That's ok.
 $ bedtools
 $ samtools
 $ featureCounts
