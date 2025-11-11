@@ -275,10 +275,9 @@ Just make sure you are actively in the environment when you are installing new s
 
 ## Resources 
 
-For more information: [Installing software](https://curc.readthedocs.io/en/latest/software/python.html) 
+- For more information: [Installing software](https://curc.readthedocs.io/en/latest/software/python.html)
+- For a list of all avialable bioconda software: [Bioconda](https://bioconda.github.io/conda-package_index.html)
+- For a list of all availble conda software: [Anaconda](https://anaconda.org/anaconda/repo)
 
-For a list of all avialable bioconda software: [Bioconda](https://bioconda.github.io/conda-package_index.html) 
-
-For a list of all availble conda software: [Anaconda](https://anaconda.org/anaconda/repo)
 
 Continue on to [RNAseq best practices](1_6_241107_RNAseqBestPractices.pdf)
