@@ -102,32 +102,41 @@ Another way of installing software is through a **conda virtual environment**. V
 **!!! Exercise:** We first need to set up a configuration file in our home directory. We will start a new configuration file specifically for the conda software. This will tell conda where to save and install programs.
 
 Follow along with these steps:
-```
-# Ensure you are on a compile node
-$ hostname
- 
-# if you see anything with 'login', execute:
-$ acompile
- 
-# see if you are not in your home directory
-$ pwd 
- 
-#if you are not in your home directory, use the `cd` command with no argument to go there.
-$ cd 
 
-#now, let's look and see if you already have a .condarc file. Some of you may
+Ensure you are on a compile node
+```
+$ hostname
+```
+
+If you see anything with 'login', execute
+``` 
+$ acompile
+```
+
+See if you are not in your home directory
+``` 
+$ pwd 
+```
+
+If you are not in your home directory, use the `cd` command with no argument to go there.
+```
+$ cd 
+```
+ 
+Now, let's look and see if you already have a `.condarc` file. Some of you may
+```
 $ ls -alh
 ```
 
 If you have a `.condarc` file, just look inside of it with `more` or `head` and see what it says.
 
-If you do not have a `.condarc`, file, let's make one ...
+If you do not have a `.condarc`, file, let's make one
 ```
 $ pwd # make double triple sure you're in your home directory or this won't work
 $ nano .condarc
 ```
 
-Now copy and paste the following code into your file:
+Now copy and paste the following code into your file
 ```
 pkgs_dirs:
   - /projects/$USER/.conda_pkgs
@@ -146,14 +155,14 @@ Yay! If you now have a `.condarc` file and see the four lines of code within it 
 
 **!!! Exercise:** Next, we will activate and explore **conda**. 
 
-Conda is a module. To activate conda, use the `module load` command:
+Conda is a module. To activate conda, use the `module load` command
 ```
 $ hostname # double check you're on a compile node
 $ module avail
 $ module load anaconda
 ```
 
-We can list all the virtual conda environments we can currently load:
+We can list all the virtual conda environments we can currently load
 ```
 $ conda env list
 
@@ -181,8 +190,8 @@ The output shows us the default environments that the personnel at CU Boulder ha
 
 We want to build a custom virtual environment for this class. To do so...
 ```
-$ hostname.      # Ensure first that you're on a compile node.
-$ conda create -n 2025dsci
+$ hostname      # Ensure first that you're on a compile node.
+$ conda create -n 2025dsci 
  
 # You will be asked if you want to proceed. Type y
 # When your environment is created, check that it exists:
@@ -191,9 +200,9 @@ $ conda create -n 2025dsci
 $ conda env list
 ```
 
-you should now see a new virtual environment has appeared called `2025dsci`
+You should now see a new virtual environment has appeared called `2025dsci`
 
-To navigate into your new environment, do this...
+To navigate into your new environment, do this
 ```
 $ conda activate 2025dsci
 $ conda env list # This shows you which environments are available and selected
@@ -210,7 +219,7 @@ Yay! You should now have your environment 2025dsci installed and activated.
 # First double, triple check that you're in the 2025dsci environment
 $ conda env list #Is it starred?
  
-$ conda install -c bioconda fastp bwa hisat2 bedtools samtools subread deeptools 
+$ conda install -c bioconda fastp bwa hisat2 bedtools samtools subread deeptools   # this doesnt always work to install all together, if it doesnt just do individually 
  
 # You may need to press y to install dependencies. Type "y"
 # Some things will say they are failing. That's ok. 
@@ -261,6 +270,10 @@ $ conda install -c bioconda <SOFTWARE1> <SOFTWARE2>
 #OR
 $ conda install -c <SOFTWARE1> <SOFTWARE2>
 ```
+
+Just make sure you are actively in the environment when you are installing new stuff!
+
+## Resources 
 
 For more information: [Installing software](https://curc.readthedocs.io/en/latest/software/python.html) 
 
