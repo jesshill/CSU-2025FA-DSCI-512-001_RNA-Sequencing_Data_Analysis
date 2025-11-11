@@ -12,7 +12,7 @@ ALPINE is an example of a **High-Performance Computing system** or HPC. HPC is a
 
 **ALPINE** is a joint venture between CSU and CU Boulder, and is sponsored by those institutes and by a grant from the National Science Foundation. [ALPINE](https://www.colorado.edu/rc/alpine) is shared between CU Boulder, CSU, CU Anschutz, and RMACC (Rocky Mountain Advanced Computing Consortium, a network of >20 other academic institutions in Colorado, Arizona, Idaho, Montana, and New Mexico).
 
-However, please keep in mind that a supercomputer isn't required for RNAseq data analysis. Most of these tasks can be done on a personal MAC or LINUX computer. PCs can also theoretically do the same tasks but it will be much more challenging to install the software.
+However, please keep in mind that a supercomputer isn't required for RNA-seq data analysis. Most of these tasks can be done on a personal MAC or LINUX computer. PCs can also theoretically do the same tasks but it will be much more challenging to install the software.
 
 Let's make sure that everyone... 
 
