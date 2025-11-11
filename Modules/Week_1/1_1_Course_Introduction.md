@@ -38,7 +38,8 @@ Please take this [brief survey](https://forms.gle/VuRskcNHvUHU5WeY6)
 - We will focus on Illumina sequencing. We don't cover [long read sequencing](https://www.genomicseducation.hee.nhs.uk/genotes/knowledge-hub/long-read-sequencing/) (i.e., Pac Bio or minION).
 - We focus on RNA-seq on model organisms and humans, not on un-sequenced genomes
 - We don't cover [metagenomics](https://www.genome.gov/genetics-glossary/Metagenomics)
-- We don't cover [single-cell resolution sequencing](https://www.the-scientist.com/single-cell-sequencing-in-a-nutshell-71048), but we will talk about it
+- We don't cover [single-cell resolution sequencing](https://www.the-scientist.com/single-cell-sequencing-in-a-nutshell-71048), but we will talk about it.
+  - Here is a link to the [Seurat Pipeline](https://satijalab.org/seurat/), kind of like the DESeq2 for scRNAseq data
 - However, many of the general principles and best practices will carry over, and everything you learn will be generalizable and relevant!
 
 #### When I leave this course, will I be able to analyze my own sequencing data?
