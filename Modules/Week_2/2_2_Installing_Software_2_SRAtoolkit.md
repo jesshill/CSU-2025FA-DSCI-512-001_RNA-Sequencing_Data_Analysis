@@ -69,14 +69,12 @@ For more information on how to navigate vdb-config, check Set up of fasterq-dump
 
 We only need to specify SRA-Toolkit's temp space once. So you won't need to vdb-config any more.
 
-Next time we want to use SRA-Toolkit, we only need to do the following to install it and it will work:
-
+Next time we want to use SRA-Toolkit, we only need to do the following to install it and it will work
 ```
 $ module load sra-toolkit
 ```
 
 Next, we'll learn how to obtain raw RNA-seq files from the NCBI Short Read Database using the command ...
-
 ```
 $ fasterq-dump
 ```
