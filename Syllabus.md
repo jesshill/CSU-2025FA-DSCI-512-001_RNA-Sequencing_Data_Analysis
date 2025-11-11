@@ -24,9 +24,9 @@ RNA-seq is a commonly used method for analyzing gene expression. This course wil
 
 **Class Recordings:** Lectures will be simulcast and recorded on Zoom, and then posted to canvas. Students can choose to attend class sessions over zoom instead of in person as needed. Due to a lengthy zoom-to-canvas conversion, videos will not be available until late afternoon or the following day. Please note - coming to class is the best way to learn!
 
-The zoom link for this class is: https://zoom.us/j/95945572799
+The zoom link for this class is: [https://zoom.us/j/98430413323](https://zoom.us/j/98430413323)
 
-Meeting ID: 959 4557 2799
+Meeting ID: 984 3041 3323
 
 # Schedule
 
