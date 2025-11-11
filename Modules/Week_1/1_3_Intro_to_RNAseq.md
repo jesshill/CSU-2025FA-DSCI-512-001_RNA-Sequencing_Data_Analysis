@@ -79,6 +79,8 @@ Images adapted from Stark et al., 2019
 
 ## What is the spatial resolution of RNA-seq? 
 
+#### Single cells
+
 The original protocols for RNA-seq required 4 micrograms of total RNA preparation. This was a large input requirement. Advancements in the RNA-seq protocol now make it possible to perform RNA-seq on individual cells that contain only tens of picograms of total RNA. By combining these reduced input protocols with microfluidics, individual cells can now have their individual transcriptomes profiled.
 
 **DROP-seq** is one of the first and most successful examples of this type of technology. DROP-seq creates oil-water droplets of individual cells followed by parallel processing of thousands or tens of thousands of RNA-seq libraries [Macosco et al., 2015, Cell](https://www.cell.com/fulltext/S0092-8674(15)00549-8). Click [here](https://mccarrolllab.org/dropseq/) to see droplet formation in action!
@@ -98,5 +100,9 @@ The first tissue studied by this method was the mouse retina. The transcriptomes
 Figure from [Macosco et al., 2015, Cell](https://www.cell.com/fulltext/S0092-8674(15)00549-8): A.) Retinal tissue was dissociated and assessed by DROP-seq. B.) A tSNE plot of the resulting transcriptome profiles.
 
 Single-cell resolution RNA-seq is now available through kits and platforms mass-produced by different companies including the 10X Genomics Chromium Platform and Illumiina Sequencing (PIP-seq). However, these high resolution assays still present certain technical challeneges depending on the cell types/organisms being probed. 
+
+#### Whole tissues
+
+...
 
 Continue on to [The RNA-seq Protocol](1_4_241105_RNAseqProtocol.pdf)
