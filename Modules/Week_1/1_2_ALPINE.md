@@ -10,17 +10,17 @@ ALPINE is an example of a **High-Performance Computing system** or HPC. HPC is a
 
 **Supercomputers** in the crudest terms are basically what happens if you glued 100's or 1000's of individual computers together. You end up making a giant computer with more functionality.
 
-**ALPINE** is a joint venture between Colorado State University and CU Boulder and is sponsored by those institutes and by a grant from the National Science Foundation. [ALPINE](https://www.colorado.edu/rc/alpine) is shared between CU Boulder, Colorado State University, CU Anschutz, and RMACC (Rocky Mountain Advanced Computing Consortium, a network of >20 other academic institutions in Colorado, Arizona, Idaho, Montana, and New Mexico).
+**ALPINE** is a joint venture between CSU and CU Boulder, and is sponsored by those institutes and by a grant from the National Science Foundation. [ALPINE](https://www.colorado.edu/rc/alpine) is shared between CU Boulder, CSU, CU Anschutz, and RMACC (Rocky Mountain Advanced Computing Consortium, a network of >20 other academic institutions in Colorado, Arizona, Idaho, Montana, and New Mexico).
 
-However, please keep in mind that a supercomputer isn't required for RNA-seq data analysis. Most of these tasks can be done on a personal MAC or LINUX computer. PCs can also theoretically do the same tasks but it will be much more challenging to install the software.
+However, please keep in mind that a supercomputer isn't required for RNAseq data analysis. Most of these tasks can be done on a personal MAC or LINUX computer. PCs can also theoretically do the same tasks but it will be much more challenging to install the software.
 
-Today, we will do the following together ... 
+Let's make sure that everyone... 
 
-1. Register for ALPINE if you haven't already
-2. Log into ALPINE using OnDemand - see how many students can do this
+1. Is registered for ALPINE account if you haven't already
+2. Can log into ALPINE using OnDemand
 3. Review some concepts about ALPINE
 
-Thursday, we will ...
+We will then...
 
 1. Review the ALPINE High Performance Compute System
 2. Initiate a “conda virtual environment” where we can install RNA-seq software
@@ -122,7 +122,7 @@ Password: godofmischief,push
 The team at CU Boulder who developed ALPINE have helped to create an alternative way to interact with the ALPINE Supercomputer, one that can happen in you internet browser like Chrome or Firefox. This method of accessing ALPINE is called OnDemand.
 
 - Navigate to [https://ondemand-rmacc.rc.colorado.edu](https://ondemand-rmacc.rc.colorado.edu) in a new tab or window
-- For me, I right click on the above link and select **Open Link in New Window**
+- Right click on the above link and select **Open Link in New Window**
 - You will be asked to select an identity provider using a pull-down menu. Select on the pull-down menu (it may say **ORCID**). Start typing **Colorado State University**. Click on **Remember** and log in. It should look like this
 
 <p align="center">
