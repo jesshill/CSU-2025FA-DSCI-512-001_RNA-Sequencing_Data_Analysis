@@ -107,8 +107,10 @@ New technologies like the [Visium Spatial Transcriptomics from 10x genomics](htt
 
 The workflow: take fresh frozen, fixed frozen, or formalin fixed and parafin embedded tissues and section them for input onto the special slides. Then you permiablize the tissue and capture the RNA for barcoding and library construction. Then you sequence the sample libraries. 
 
+During the RNA capture and library prep step, you are allowing the tissue slice to lay on slides with 2 specific capture areas that are each coated with a continuous lawn of 2 micron x 2 micron barcoded squares. This allows captured RNA to bind and provide the single cell-scale resolution. 
 
-
-Transcripts are assigned to 2 micron areas ...
+<p align="center">
+<img width="700" alt="Visuim example" src="...">
+</p>
 
 Continue on to [The RNA-seq Protocol](1_4_241105_RNAseqProtocol.pdf)
