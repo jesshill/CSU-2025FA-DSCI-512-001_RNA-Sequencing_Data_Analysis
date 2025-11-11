@@ -75,7 +75,7 @@ The one we want is `sra-toolkit/3.0.0`. To load it, do the following:
 $ module load sra-toolkit
 ```
 
-**!!! Quick Tip** Don't forget to use TAB autocomplete. 
+**!!! Quick Tip:** Don't forget to use TAB autocomplete. 
 
 Let's test if it is installed properly. One of the commands in the sra-toolkit package is `fasterq-dump`
 ```
@@ -86,7 +86,7 @@ If you received `command not found` sra-toolkit is NOT installed
 
 If you received a printout of instructions, sra-toolkit IS installed
 
-**!!! Quick Tip** for working with modules
+**!!! Quick Tip:** for working with modules
 
 ```
 $ module spider <term>  # search for a term
@@ -106,13 +106,15 @@ Follow along with these steps:
 # Ensure you are on a compile node
 $ hostname
  
-# if you see anything with 'login', execute acompile
+# if you see anything with 'login', execute:
+$ acompile
  
 # see if you are not in your home directory
 $ pwd 
  
-#if you are not in your home directory, use the cd command with no argument to go there.
- 
+#if you are not in your home directory, use the `cd` command with no argument to go there.
+$ cd 
+
 #now, let's look and see if you already have a .condarc file. Some of you may
 $ ls -alh
 ```
