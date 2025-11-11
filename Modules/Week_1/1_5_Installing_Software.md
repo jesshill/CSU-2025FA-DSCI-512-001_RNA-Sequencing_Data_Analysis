@@ -77,6 +77,11 @@ $ module load sra-toolkit
 
 **!!! Quick Tip:** Don't forget to use TAB autocomplete. 
 
+Now, when you load sra-toolkit for the first time you should see a message: `The first time you use SRA Toolkit you will need to configure it by running "vdb-config -i".
+Please see CURC documentation for more information about configuring and running SRA Toolkit.`
+
+We will do this later, skip for now!
+
 Let's test if it is installed properly. One of the commands in the sra-toolkit package is `fasterq-dump`
 ```
 $ fasterq-dump
