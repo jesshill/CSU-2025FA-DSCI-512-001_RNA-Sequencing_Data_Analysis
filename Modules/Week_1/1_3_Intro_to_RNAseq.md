@@ -8,7 +8,9 @@
 
 ## How do we do RNA-seq? 
 
-1. Isolate mRNA convert it to cDNA
+There are many flavors of RNA-seq these days, ...
+
+1. Isolate mRNA and convert it to cDNA
 2. Create a library of cDNA fragments with specialized adapter sequences ligated to each end
 3. Interrogate the sequence of each cDNA fragment on high-throughput sequencing instrumentation
 4. Identify the gene of origin for each fragment
@@ -23,7 +25,7 @@
 ### Discovery 
 
 - Annotate genomes
-- Find new transcripts, splice junctions, polyA sites
+- Find new transcripts, splice junctions, polyA sites, gene orientation
 - Identify Single Nucleotide Polymorphisms (SNPs) differences
 
 ### Comparison
