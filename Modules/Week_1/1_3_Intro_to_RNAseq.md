@@ -6,7 +6,7 @@ A transcriptome is the sum set of total mRNA molecules from a given sample. RNA-
 
 ## How do we do RNA-seq? 
 
-There are many flavors of RNA-seq these days: mRNA-seq, total RNA-seq, single cell RNA-seq, small RNA-seq, low-input RNA-seq, etc. Each accompanied by their own specific protocols. 
+There are many flavors of RNA-seq these days: mRNA-seq, strand specific RNA-seq, total RNA-seq, single cell RNA-seq, small RNA-seq, low-input RNA-seq, etc. Each accompanied by their own specific protocols. 
 
 In general, there are common attributes to all...
 
