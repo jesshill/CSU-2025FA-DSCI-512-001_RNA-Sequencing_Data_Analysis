@@ -4,7 +4,7 @@ We are going to start to use the **SRA Toolkit (Short Reach Archive Tools)** to 
 
 If your grant is supported by US government funds, you must deposit your data in NCBI prior to publication. If you are publishing in any major journal, you will be required to deposit your data at either NCBI or an equivalent public data repository and allow your reviewers to preview the data.
 
-Before we start, we'll need to just configure SRA Tools. We will only need to do this once.
+**Before we start, we'll need to just configure SRA Tools**. We will only need to do this once.
 
 Let's ensure we all have the proper version ...
 
