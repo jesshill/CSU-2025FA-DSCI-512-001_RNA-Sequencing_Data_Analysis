@@ -39,6 +39,8 @@ Let's double check that this worked using the vdb-config interactive browser:
 
 ```
 $ vdb-config -i
+
+# some of you might have needed to do... vdb-config --interactive if I remember correctly?
 ```
 
 This will open up a window like so...
