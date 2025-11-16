@@ -204,7 +204,7 @@ The example script above is great for a nice short, quick run. It's capabilities
 
 #### The intensive run
 
-This run takes advantage of a full node but may take a while to start. Remember: Max cores per Haswell node = 24; Max time = 24 hours)
+This run takes advantage of a full node but may take a while to start. (Remember: Max cores per Haswell node = 24; Max time = 24 hours)
 
 ```
 #!/usr/bin/env bash
