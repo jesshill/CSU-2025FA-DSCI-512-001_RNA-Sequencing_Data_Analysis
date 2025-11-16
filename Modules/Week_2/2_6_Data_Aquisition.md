@@ -60,7 +60,7 @@ $ fasterq-dump --help #test that it works
 
 Say we want to download a single .fastq file from a dataset. We'll use **fasterq-dump** within the **sra-tools** suite of tools to do this.
 
-First, I look up the SRR number of the .fastq file I want to download. Let's pick the first on this SRA Run Selector page.
+First, look up the SRR number of the .fastq file you want to download. Let's pick the first on this SRA Run Selector page.
 
 <p align="center">
 <img width="700" alt="SRA" src="https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Images/SRA.png">
@@ -79,14 +79,14 @@ reads read      : 10,715,338
 reads written   : 10,715,338
  
 $ vdb-validate SRR5832182   # check that the files are intact and weren't corrupted during transit.
-2021-11-18T14:43:01 vdb-validate.2.11.0 info: Validating '/scratch/alpine/erinnish@colostate.edu/ncbi/sra/SRR5832182.sra'...
-2021-11-18T14:43:01 vdb-validate.2.11.0 info: Table 'SRR5832182.sra' metadata: md5 ok
-2021-11-18T14:43:01 vdb-validate.2.11.0 info: Column 'ALTREAD': checksums ok
-2021-11-18T14:43:02 vdb-validate.2.11.0 info: Column 'QUALITY': checksums ok
-2021-11-18T14:43:02 vdb-validate.2.11.0 info: Column 'READ': checksums ok
-2021-11-18T14:43:02 vdb-validate.2.11.0 info: Column 'X': checksums ok
-2021-11-18T14:43:02 vdb-validate.2.11.0 info: Column 'Y': checksums ok
-2021-11-18T14:43:02 vdb-validate.2.11.0 info: Table 'SRR5832182.sra' is consistent
+2025-11-16T11:43:01 vdb-validate.2.11.0 info: Validating '/scratch/alpine/jesshill@colostate.edu/ncbi/sra/SRR5832182.sra'...
+2025-11-16T11:43:01 vdb-validate.2.11.0 info: Table 'SRR5832182.sra' metadata: md5 ok
+2025-11-16T11:43:01 vdb-validate.2.11.0 info: Column 'ALTREAD': checksums ok
+2025-11-16T11:43:02 vdb-validate.2.11.0 info: Column 'QUALITY': checksums ok
+2025-11-16T11:43:02 vdb-validate.2.11.0 info: Column 'READ': checksums ok
+2025-11-16T11:43:02 vdb-validate.2.11.0 info: Column 'X': checksums ok
+2025-11-16T11:43:02 vdb-validate.2.11.0 info: Column 'Y': checksums ok
+2025-11-16T11:43:02 vdb-validate.2.11.0 info: Table 'SRR5832182.sra' is consistent
  
 $ ls
 SRR5832182_1.fastq  SRR5832182_2.fastq
