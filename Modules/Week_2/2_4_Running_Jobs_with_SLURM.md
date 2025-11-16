@@ -9,7 +9,7 @@
 ## A review of vocabulary words
 
 - **High-Performance Computing (HPC):** this is the field of computing that uses **supercomputers**, **compute clusters**, or **servers** to solve computational tasks. It is most often used in STEM research fields but has also expanded to business and industry fields.
-- **Supercomputers** and **compute clusters:** are both architectures of computers in which multiple, small computers are stitched together so they function as a single, big computer. Differ in their scale with the supercomputer term being used for larger systems.
+- **Supercomputers** and **compute clusters** are both architectures of computers in which multiple, small computers are stitched together so they function as a single, big computer. They differ in their scale, with the supercomputer term being used for larger systems.
 - **Servers:** this is another catch-all term that can also refer to a compute cluster (of varying sizes, some are small) but implies that the system is hosting some function for users.
 
 ## The ALPINE System: 
