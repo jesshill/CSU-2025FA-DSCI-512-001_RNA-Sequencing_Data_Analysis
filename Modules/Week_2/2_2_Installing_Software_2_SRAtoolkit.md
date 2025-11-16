@@ -61,13 +61,13 @@ Check that your `/scratch/alpine` directory is listed
 
 Type **lowercase x** to Exit
 
-For more information on how to navigate vdb-config, check Set up of fasterq-dump
+For more information on how to navigate vdb-config, check **Set up** of fasterq-dump
 
 ## Reviewing SRA-Toolkit Usage
 
 We only need to specify SRA-Toolkit's temp space once. So you won't need to vdb-config any more.
 
-Next time we want to use SRA-Toolkit, we only need to do the following to install it and it will work
+Next time we want to use SRA-Toolkit, we only need to do the following to install it and it will work.
 ```
 $ module load sra-toolkit
 ```
