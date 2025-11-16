@@ -20,9 +20,9 @@
 
 ### Where do we run jobs when we are working on ALPINE?
 
-- For small jobs (single node) - these can run directly from the command line
-- Try to avoid running jobs on the **login node**
-  - acompile node is not a login node
+- Try to avoid running jobs on the **login node!**
+- For small jobs and testing (single node) - these can be run directly from the command line on a **compile node**.
+  - use `acompile` to switch from a login node to a compile node. 
 - For larger jobs, we submit the job to a **compute node**
 
 ### How do we submit a job to the compute node?
