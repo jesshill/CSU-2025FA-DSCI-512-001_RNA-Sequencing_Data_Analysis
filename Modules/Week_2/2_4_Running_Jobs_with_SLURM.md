@@ -39,11 +39,11 @@ The job sharing utility that is installed on ALPINE is called **SLURM** and we u
 
 **!!! Exercise:** Follow along. Let's do some SLURM practice.
 
-- First, let's navigate to the space `/scratch/alpine/$USER`
+- First, navigate to the space `/scratch/alpine/$USER`
 - Let's make a new directory called `test_slurm`
 - `cd` into the `test_slurm` sub-directory
 - Next, let's make a practice shell script.
-- Start a file called using `$ touch testscript.sh`
+- Start a file called `testscript.sh` using `touch` or `nano`.
 - Open `testscript.sh` by navigating to DASHBOARD, FILES, and editing the file. OR you can use nano.
 
 ### Write the following code into `testscript.sh`
@@ -63,7 +63,7 @@ This script is run with the command:
 $ bash testscript.sh
 ```
 
-OK, this feels familiar. The script prints Hello, waits 30 seconds, then prints world, then waits 30 seconds.
+The script prints Hello, waits 30 seconds, then prints world, then waits 30 seconds.
 
 To run jobs using SLURM, we take a typical `.sh` script and convert it to an `.sbatch` script. To turn a bash script into an sbatch script we just need to do a few things...
 
@@ -72,7 +72,6 @@ To run jobs using SLURM, we take a typical `.sh` script and convert it to an `.s
 3. execute with the command `$ sbatch <yourscript.sbatch>`
 
 Sbatch scripts look like so...
-
 ```
 #!/bin/usr/env bash
  
