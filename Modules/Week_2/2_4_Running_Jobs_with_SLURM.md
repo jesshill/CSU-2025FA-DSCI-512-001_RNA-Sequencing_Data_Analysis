@@ -138,9 +138,9 @@ $ scancel <jobID#>   # to cancel a script
 
 Do you see a log file that was created? Peek into it to explore it.
 
-**???** What just happened? 
+**??** What just happened? 
 
-**???** What do all the #SBATCH lines mean? 
+**??** What do all the #SBATCH lines mean? 
 
 Everything after an `#SBATCH` is a **SLURM directive**. Think of these like **options**. You're telling SLURM details about how you want your script to be run.
 
