@@ -1,6 +1,6 @@
 # Project Initation
 
-We will now start a project. In doing so, let's introduce or review some aspects of the ALPINE architecture.
+We will now start a project. Quick review of some aspects of the ALPINE architecture.
 
 ## Start an RNA-seq data analysis project
 
