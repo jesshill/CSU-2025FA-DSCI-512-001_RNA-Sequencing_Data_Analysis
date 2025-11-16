@@ -94,7 +94,7 @@ SRR5832182_1.fastq  SRR5832182_2.fastq
 
 The line **vdb-validate** automates the process of checking **md5-sums**
 
-**!! Common pitfall:** the number one reason vdb-validate doesn't come out ok - Error on SRA's side. So just stay calm.
+**!! Common pitfall:** the number one reason vdb-validate doesn't come out ok - Error on SRA's side. So stay calm.
 
 ## Start a downloads project
 
@@ -156,12 +156,10 @@ SRR5832199
 
 There are two ways to automate downloading.
 
-**LOOPS:** The first is to **loop** over the list of samples and download each, in succession. In this model, when the first sample completes its download, the download of the next will start. This can be done using a while, for, or while read loop structure. Because of the way fasterq-dump is written, we can use multiple tasks for this process, improving its efficiency. If each file takes 4 minutes to download using 12 tasks, the whole job of downloading all 18 samples will take (4 min x 18 samples) 72 minutes, or an hour and 12 minutes.
-
-To see an example of **Data acquisition using loops** type of code see below...
+**1) LOOPS:** The first is to **loop** over the list of samples and download each, in succession. In this model, when the first sample completes its download, the download of the next will start. This can be done using a `while`, `for`, or `while read` loop structure. Because of the way fasterq-dump is written, we can use multiple tasks for this process, improving its efficiency. If each file takes 4 minutes to download using 12 tasks, the whole job of downloading all 18 samples will take (4 min x 18 samples) 72 minutes, or an hour and 12 minutes.
 
 <details>
-  <summary>Click to expand/collapse</summary>
+  <summary>To see an example of 'Data acquisition using loops' type of code click here</summary>
 
 ---
 
@@ -239,7 +237,7 @@ $ sbatch automateSRA_wLoops.sbatch SRR_Acc_List_GomezOrte.txt
 
 </details>
 
-**ARRAYS:** The second way to automate downloading is to use an **array** structure to download each file simultaneously. In this model, we start all the downloads at the same time. We probably don't need as many tasks per download, so let's go with 4 tasks and it takes 10 minutes to download each sample. Because all the downloading will happen, simultaneously, or **in parallel**, the entire job will take 10 minutes. This sounds way better. Let's do it...
+**2.) ARRAYS:** The second way to automate downloading is to use an **array** structure to download each file simultaneously. In this model, we start all the downloads at the same time. We probably don't need as many tasks per download, so let's go with 4 tasks and it takes 10 minutes to download each sample. Because all the downloading will happen, simultaneously, or **in parallel**, the entire job will take 10 minutes. This sounds way better. Let's do it...
 
 Copy and paste this following short script into the same directory and call it `automateSRA.sbatch`. This will automate the process of downloading every sample in the SRR list using **fasterq-dump**.
 
