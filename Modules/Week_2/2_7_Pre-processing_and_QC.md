@@ -192,6 +192,11 @@ fastp -i ../01_input/tester_SRR5832182_1.fastq \
 <img width="700" alt="adapter removal" src="https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Images/adapter_removal.jpg">
 </p>
 
+
+<p align="center">
+<img width="700" alt="index and read sequencing" src="https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Images/index_and_read_sequencing.png">
+</p>
+
 Concatamers of primers and adapters can also occur.
 
 ### Adapters can be sequenced on the opposite end of a short insert
