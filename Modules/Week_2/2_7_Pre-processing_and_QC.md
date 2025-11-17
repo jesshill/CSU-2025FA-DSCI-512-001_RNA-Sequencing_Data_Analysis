@@ -122,7 +122,7 @@ By default, fastp tries to discern the adapter and primer sequences based on ove
 | ----------- | ----------------- | ----------- |
 | --adapter_fasta | <path to a fasta file> | a fasta file containing a the adapter sequences | 
 
-**!!! Exercise:*** Go ahead and try to write a line of fastp code using the table above to help you.
+**!!! Exercise:** Go ahead and try to write a line of fastp code using the table above to help you.
 
 - Execute your code using `sbatch preProcess_fastp.sbatch`
 - Check for your output in the output directory
@@ -193,6 +193,7 @@ fastp -i ../01_input/tester_SRR5832182_1.fastq \
 </p>
 
 
+
 <p align="center">
 <img width="700" alt="index and read sequencing" src="https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Images/index_and_read_sequencing.png">
 </p>
@@ -217,7 +218,7 @@ OK, that was just the first run of the tester files. What if we want to do the w
 
 We'll need to incorporate a loop into our bash script. Let's make a new script called:
 
-- **preProcessingWithLooping.sbatch**
+**preProcessingWithLooping.sbatch**
 
 ```
 #!/usr/bin/env bash
