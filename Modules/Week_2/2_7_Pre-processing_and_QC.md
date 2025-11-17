@@ -19,7 +19,7 @@ Today, we want to do several things in one step. We want to...
 - Assess the overall quality of the data we have obtained
 - Remove low Phred-scoring reads
 - Remove any adapter sequence that has snuck into our reads
-- Remove polyA tails or PolyX tracks. PolyA tails won't align to the genome. And PolyX tracks sometimes arise erroneously through the sequencing process.
+- Remove polyA tails or PolyX tracks. PolyA tails won't align to the genome. And PolyX tracks (homopolymer runs) sometimes arise erroneously through the sequencing process.
 
 We can do all of these tasks with the toolkit **fastp**
 
@@ -146,10 +146,10 @@ By default, fastp tries to discern the adapter and primer sequences based on ove
 fastp -i ../01_input/tester_SRR5832182_1.fastq -I ../01_input/tester_SRR5832182_2.fastq -o ../03_output/tester_EG01_trim_1.fastq -O ../03_output/tester_EG01_trim_2.fastq -h ../03_output/test_EG01_report.html -j ../03_output/test_EG01_report.json --detect_adapter_for_pe --thread 2 -gxp
 ```
 
-**Hot tip!** You can wrap your long line of code into multiple lines that are interpretted as one line by the shell using `\`
+**Hot tip!** You can wrap your long line of code into multiple lines that are interpretted as one line by the shell using `\`.
 
 - This doesn't always work for all browsers.
-- You need to make sure that you don't have any white space after the `\`
+- You need to make sure that you don't have any white space after the `\`.
 
 ```
 #!/usr/bin/env bash
@@ -174,7 +174,6 @@ fastp -i ../01_input/tester_SRR5832182_1.fastq \
 ---
 
 </details>
-
 
 
 ### Let's review our goals
