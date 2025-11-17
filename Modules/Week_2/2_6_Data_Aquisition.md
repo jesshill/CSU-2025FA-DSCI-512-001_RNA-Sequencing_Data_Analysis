@@ -300,19 +300,19 @@ Now, just execute the program like so...
 $ sbatch --array=0-17 automateSRA.sbatch SRR_Acc_List_GomezOrte.txt 
 ```
 
-**NOTE:** We are signed up for a special “reservation”. This means that because our class is an official sanctioned ALPINE class, we have been given priority on our jobs during our classtime. To take advantage of this during classtime, run your job with our special priority access code like so:
+**NOTE:** We should be signed up for a special “reservation”. Meaning that because our class is an official sanctioned ALPINE class, we have been given priority on our jobs during our classtime. To take advantage of this during classtime, run your job with our special priority access code like so:
 
 ```
 $ sbatch --account=csu99_alpine1 --array=0-17 automateSRA.sbatch SRR_Acc_List_GomezOrte.txt 
 ```
 
-**NOTE:** You can also download just a subset of SRR files.
-
-**NOTE:** What does that term `$SLURM_NTASKS` mean? This is an environmental variable that dereferences whatever number is written in the line `#SBATCH –ntasks=4`. So, in this case `$SLURM_NTASKS` dereferences to 4. And this is how you'll need to sync up the resources you request with the resources you tell the software you have available to use. These numbers must match. You can do it by hand, or you can use the `$SLURM_NTASKS` variable.
+**NOTE:** 
+- You can also download just a subset of SRR files.
+- What does that term `$SLURM_NTASKS` mean? This is an environmental variable that dereferences whatever number is written in the line `#SBATCH –ntasks=4`. So, in this case `$SLURM_NTASKS` dereferences to 4. And this is how you'll need to sync up the resources you request with the resources you tell the software you have available to use. These numbers must match. You can do it by hand, or you can use the `$SLURM_NTASKS` variable.
 
 ## Finish it up
 
-Best practices are to write a README file to keep track of what you did. Make sure you include...
+Best practices are to write a README.txt file to keep track of what you did. Make sure you include...
 
 - The date
 - Your name
@@ -321,7 +321,7 @@ Best practices are to write a README file to keep track of what you did. Make su
 
 ## Explore the data from the Gómez-Orte, et al., 2017 study
 
-**YAY!** We have successfully obtained the data for this class.
+We should all have successfully obtained the data for this class. **YAY!** 
 
 #### Exploring the data: 
 
@@ -335,10 +335,10 @@ Best practices are to write a README file to keep track of what you did. Make su
 Sequencing data is stored in the fastq standardized data format:
 
 ```
-@SRR5832182.1 HISEQ-MFG:180:hw5f3bcxx:2:1101:1205:2195 length=101
-CGCGAACAGTCCTCAAATCGGGGATCGAAAAAGGATTCGTGGAATCACAGTATTTTTATGTATAATTTCTTCCACCGAAGAGGGAGCAACAAGAGAGCGGC
-+SRR5832182.1 HISEQ-MFG:180:hw5f3bcxx:2:1101:1205:2195 length=101
-DDDDDHHIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIGHHHIEHIIIIIIIIIIFHIIIHIIIIIHIIIIIIIIIIIIIIIIGHHIIIIIHIIHIIIIH
+@SRR5832182.1 HISEQ-MFG:180:hw5f3bcxx:2:1101:1205:2195 length=101                                       # Header Line
+CGCGAACAGTCCTCAAATCGGGGATCGAAAAAGGATTCGTGGAATCACAGTATTTTTATGTATAATTTCTTCCACCGAAGAGGGAGCAACAAGAGAGCGGC   # Sequence Line
++SRR5832182.1 HISEQ-MFG:180:hw5f3bcxx:2:1101:1205:2195 length=101                                       # Seperator Line
+DDDDDHHIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIGHHHIEHIIIIIIIIIIFHIIIHIIIIIHIIIIIIIIIIIIIIIIGHHIIIIIHIIHIIIIH   # Quality Score Line
 ```
 
 In this format, each molecule sequenced on the sequencing instrument contains four rows of information. Each molecule sequenced is referred to as a **read**.
