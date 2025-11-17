@@ -10,7 +10,7 @@ Then go ahead and activate our conda environment.
 $ acompile --time=2:00:00
 $ module load anaconda
 $ conda env list
-$ conda activate 2024dsci
+$ conda activate 2025dsci
 $ cd /scratch/alpine/<youreID@colostate.edu>/DSCI512   # move to your directory
 ```
 
