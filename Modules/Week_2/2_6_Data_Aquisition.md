@@ -52,7 +52,6 @@ When you publish your own RNA-seq data, you will be required by the journal to d
 Let's test that sra-tools is working
 
 ```
-$ module load sra-toolkit #if you haven't already
 $ fasterq-dump --help #test that it works
 ```
 
@@ -169,7 +168,7 @@ Using a `for`, `while`, or another type of loop can help to automate the downloa
 
 Here is one method:
 
-**Step 1:** Make a file that lists all the samples to download:. Create a file called `SRR_Acc_List_GomezOrte.txt`
+**Step 1:** Make a file that lists all the samples to download. Create a file called `SRR_Acc_List_GomezOrte.txt`
 
 ```
 $ more SRR_Acc_List_GomezOrte.txt
@@ -197,8 +196,23 @@ SRR5832199
 
 ```
 #!/usr/bin/env bash
- 
- 
+
+# =====================================================================
+#  Usage:      sbatch automateSRA.sbatch <file_listing_SRR_files.txt>
+#
+#  Input:      A text file where each line contains an SRR accession
+#               (e.g., SRR12345678). The script loops through each
+#               accession and:
+#                   1. Downloads FASTQ files using fasterq-dump
+#                   2. Splits paired-end reads into separate files
+#                   3. Validates the resulting SRA data with vdb-validate
+#
+#  Notes:
+#               - $SLURM_NTASKS is set automatically based on the
+#                 --ntasks value in the SBATCH header.
+#               - Runtime depends on dataset sizes and number of threads.
+# =====================================================================
+
 #SBATCH --nodes=1
 #SBATCH --ntasks=12
 #SBATCH --time=02:00:00
@@ -206,7 +220,7 @@ SRR5832199
 #SBATCH --mail-type=end
 #SBATCH --mail-user=tstark@colostate.edu #REPLACE THIS E-MAIL WITH YOUR E-MAIL
 #SBATCH --output=log-download-%j.out
- 
+
 # EXCUTE code with: $ sbatch automateSRA.sbatch <file_listing_SRR_files.txt>
  
 # INSTALL software
@@ -220,8 +234,10 @@ module load sra-toolkit
 while read line
 do
    echo -e $line
+   # Download and split FASTQ files using multiple threads
    echo "fasterq-dump -e $SLURM_NTASKS --split-files $line"
    time fasterq-dump -e $SLURM_NTASKS --split-files $line
+   # Validate SRA data integrity
    echo "vdb-validate $line"
    vdb-validate $line
 done < $1
