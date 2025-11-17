@@ -260,7 +260,6 @@ Copy and paste this following short script into the same directory and call it `
 ```
 #!/usr/bin/env bash
  
- 
 #SBATCH --nodes=1
 #SBATCH --ntasks=4
 #SBATCH --time=00:20:00
@@ -271,14 +270,26 @@ Copy and paste this following short script into the same directory and call it `
 # Make sure that in --array=0-n, the number n matches the number of lines in <file>
 # The format of <file> is a list of SRR#s with each SRR# on its own line.
  
- 
+
+# Read input file containing SRR accessions.
+# Convert the entire file into an array (ARR[]) where:
+#   ARR[0] = first line (SRR#)
+#   ARR[1] = second line (SRR#) 
 myinfile=$1
 ARR=($(cat $myinfile))
- 
+#
+# Select the SRR accession for this SLURM array task.
+# $SLURM_ARRAY_TASK_ID determines which line to process. 
 line=${ARR[ $SLURM_ARRAY_TASK_ID ]}
 echo -e $line
+#
+# Download FASTQ files using fasterq-dump:
+#   -e $SLURM_NTASKS : number of threads
+#   --split-files   : outputs *_1.fastq and *_2.fastq for paired-end
 echo "fasterq-dump -e $SLURM_NTASKS --split-files $line"
 time fasterq-dump -e $SLURM_NTASKS --split-files $line
+#
+# Validate the downloaded SRA data for integrity.
 echo "vdb-validate $line"
 vdb-validate $line
 ```
