@@ -151,6 +151,7 @@ Everything after an `#SBATCH` is a **SLURM directive**. Think of these like **op
 #SBATCH --ntasks=1  <-- Requests 1 core (can be up to 64 per single node)
 #SBATCH --time=0:1:30   <-- Requests 1 minute & 30 seconds of time. Job will stop then
 #SBATCH --partition=atesting  <-- Requests a "testing partition"
+#SBATCH --qos=testing  <-- Used for all testing partitions
 #SBATCH --output=sample-%j.out <-- saves the output in a file named sample-%j.out where %j is a variable where the job number will output
 ```
 
@@ -215,6 +216,7 @@ This run takes advantage of a full node but may take a while to start. (Remember
 #SBATCH --ntasks=24
 #SBATCH --time=12:00:00
 #SBATCH --partition=amilan
+#SBATCH --qos=normal
 #SBATCH --mail-type=end
 #SBATCH --mail-user=tstark@colostate.edu # replace this with your own e-mail to receive an e-mail update when this job is complete
 #SBATCH --output=log-download-%j.out
@@ -243,6 +245,7 @@ This will run right away and is great for testing if things work. (Remember: Max
 #SBATCH --ntasks=2
 #SBATCH --time=00:10:00
 #SBATCH --partition=atesting
+#SBATCH --qos=testing
 #SBATCH --output=log-download-%j.out
  
 echo "hello"
