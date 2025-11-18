@@ -1,8 +1,6 @@
 # Automating RNA-seq pipelines
 
-OK, that was insanely slow.
-
-We wrote out a single command line by hand. There were a lot of details. We needed to make no errors. You can probably imagine that this task becomes more cumbersome as your project gets bigger. It becomes harder to write a line of code error-free.
+OK, that was slow. We wrote out a single command line by hand. There were a lot of details. We needed to make no errors. You can probably imagine that this task becomes more cumbersome as your project gets bigger. It becomes harder to write a line of code error-free.
 
 To guard against errors and streamline large projects, we need an **automation strategy**. This is the heart of pipeline building.
 
@@ -53,10 +51,10 @@ The key to our automation strategy is that we will loop over each row and parse 
 
 A quick description of vocabulary:
 
-- **samples** - each pair of .fastq files represents a sample
-- **conditions** - There are two types of conditions in this study... diet and temperature
-- **reps** - There are three reps for each condition combination
+- **Samples:** Each pair of .fastq files represents a sample
+- **Conditions:** There are two types of conditions in this study: diet and temperature
+- **Reps:** There are three reps for each condition combination
 
-**Yay!** Let's see how we will automate the entire pipeline here:
+Let's see how we will automate the entire pipeline here:
 
 Continue on to [Automation 2](3_2_Automation_2.md)
