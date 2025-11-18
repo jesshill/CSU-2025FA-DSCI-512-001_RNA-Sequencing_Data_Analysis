@@ -109,6 +109,7 @@ $ cp testscript.sh testscript.sbatch
 #SBATCH --ntasks=1
 #SBATCH --time=0:1:30
 #SBATCH --partition=atesting
+#SBATCH --qos=testing
 #SBATCH --output=sample-%j.out
  
 ## Software is loaded here...
