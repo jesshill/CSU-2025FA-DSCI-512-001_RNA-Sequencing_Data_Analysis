@@ -28,7 +28,7 @@ Here are some examples of aligners you may encounter:
 
 All of these aligners should be available to install on ALPINE using conda... [bioconda](https://bioconda.github.io/index.html).
 
-## For this class, we will use HISAT2
+## We will use HISAT2
 
 - Reference manual:
   - [HISAT2 web-manual](http://daehwankimlab.github.io/hisat2/manual/)
