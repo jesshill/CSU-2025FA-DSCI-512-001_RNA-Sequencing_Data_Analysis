@@ -97,7 +97,7 @@ sleep 30
 **!!! Exercise:** Copy the `.sh` script into an `.sbatch` script called `testscript.sbatch`
 
 ```
-$ cp testscrip.sh testscript.sbatch
+$ cp testscript.sh testscript.sbatch
 ```
 
 **!!! Exercise:** open `testscript.sbatch` in a text editor and convert it to an `.sbatch` script by adding the following directives:
