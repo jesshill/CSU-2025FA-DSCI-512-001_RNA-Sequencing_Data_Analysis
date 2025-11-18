@@ -55,23 +55,23 @@ All of these aligners should be available to install on ALPINE using conda... [b
 
 ### HISAT2 alignment strategy 
 
-- Figure: From Kim et al., 2015. HISAT: a fast spliced aligner with low memory requirements. Nature Methods. 12, p357–360.
-- First - M reads are mapped first. Completely aligned to a given exon. All unmapped reads are reserved.
-- Second - using the previously unmapped reads, all 2M_gt_15 reads are mapped. These have more than 15 bp of homology within each exon. The unmapped reads are reserved.
-- Third - using the previously unmapped reads, all the remaining small-anchor and “other” models are tried. These contain 1 - 15 bp of homology to each exon, or they span more than two exons.
+- Figure from Kim et al., 2015. HISAT: a fast spliced aligner with low memory requirements. Nature Methods. 12, p357–360.
+- First: M reads are mapped first. Completely aligned to a given exon. All unmapped reads are reserved.
+- Second: Using the previously unmapped reads, all 2M_gt_15 reads are mapped. These have more than 15 bp of homology within each exon. The unmapped reads are reserved.
+- Third: Using the previously unmapped reads, all the remaining small-anchor and “other” models are tried. These contain 1 - 15 bp of homology to each exon, or they span more than two exons.
 
 ## How do we use HISAT2? 
 
 1. Install software (done)
 2. Prepare the genome
-  - Download genome information (.fasta)
-  - Build indexes – this is like writing the index to a book
+    - Download genome information (.fasta)
+    - Build indexes – this is like writing the index to a book
 3. Run HISAT2
-  - Input: FASTQ files (two for each read if you’re doing paired-end)
-  - Input: Genome indexes (created above)
+    - Input: FASTQ files (two for each read if you’re doing paired-end)
+    - Input: Genome indexes (created above)
 4. Get HISAT2 output
-  - Output: .bam files – alignment files
-  - Output: Log files
+    - Output: .bam files – alignment files
+    - Output: Log files
 
 Other genome files that are useful to download when you download the .fasta files:
 - Chromosome length files (.txt)
