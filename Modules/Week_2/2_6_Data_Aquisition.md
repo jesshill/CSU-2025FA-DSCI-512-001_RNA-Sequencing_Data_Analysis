@@ -265,6 +265,7 @@ Copy and paste this following short script into the same directory and call it `
 #SBATCH --ntasks=4
 #SBATCH --time=00:20:00
 #SBATCH --partition=amilan
+#SBATCH --qos=normal
 #SBATCH --output=log-download-%A.%a.out
  
 # Execute code with: $ sbatch --array=1-n automateSRA.sbatch <file>
