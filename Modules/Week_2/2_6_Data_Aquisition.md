@@ -217,6 +217,7 @@ SRR5832199
 #SBATCH --ntasks=12
 #SBATCH --time=02:00:00
 #SBATCH --partition=amilan
+#SBATCH --qos=normal
 #SBATCH --mail-type=end
 #SBATCH --mail-user=tstark@colostate.edu #REPLACE THIS E-MAIL WITH YOUR E-MAIL
 #SBATCH --output=log-download-%j.out
