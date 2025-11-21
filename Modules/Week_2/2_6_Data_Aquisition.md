@@ -328,7 +328,6 @@ We should all have successfully obtained the data for this class. **YAY!**
 #### Exploring the data: 
 
 - Let's explore what we obtained
-- Using `more`, read the metadata file `metadata_gomezOrte.txt`
 - Using `more`, peek into some of the .fastq files
 - Using `wc`, explore how big these files are
 
