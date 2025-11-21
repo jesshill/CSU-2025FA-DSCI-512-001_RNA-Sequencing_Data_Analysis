@@ -61,6 +61,7 @@ Go ahead and start your script by
 #SBATCH --ntasks=2
 #SBATCH --time=00:15:00
 #SBATCH --partition=atesting
+#SBATCH --qos=testing
 #SBATCH --output=log-preprocess-%j.out
  
  
@@ -227,7 +228,8 @@ We'll need to incorporate a loop into our bash script. Let's make a new script c
 #SBATCH --nodes=1
 #SBATCH --ntasks=12
 #SBATCH --time=06:00:00
-#SBATCH --partition=shas
+#SBATCH --partition=amilan
+#SBATCH --qos=normal
 #SBATCH --mail-type=end
 #SBATCH --mail-user=<eID>@colostate.edu
 #SBATCH --output=log-download-%j.out
