@@ -119,7 +119,8 @@ Options:
 #SBATCH --nodes=1                        # this script is designed to run on one node
 #SBATCH --ntasks=4                       # how many cores you want to use (up to 24)
 #SBATCH --time=00:20:00                  # how much time to request
-#SBATCH --qos=amilan                   # modify this to reflect which queue you want to use.
+#SBATCH --partition=amilan               # modify this to reflect which queue you want to use
+#SBATCH --qos=normal                     # the quality of service for the partition we are using 
 #SBATCH --output=log_align_%j.txt        # capture  output in a logfile with %j as jobID
  
 # hisat2 command
