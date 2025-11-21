@@ -40,7 +40,7 @@ SRR5832199_1.fastq	SRR5832199_2.fastq	EG18	18_Bsubtilis_25_3	Bsubtilis	25	3
 | Column | Contents | Example |
 | --- | --- | --- |
 | 1 | 1st .fastq file | SRR5832182_1.fastq | 
-| 2 | 1nd .fastq file | SRR5832182_2.fastq | 
+| 2 | 2nd .fastq file | SRR5832182_2.fastq | 
 | 3 | A short name for each sample - short alphnumeric sorting numbers & letters | EG01 | 
 | 4 | A long name for each sample - with condition info | 01_Ecoli_15_1 | 
 | 5 | condition #1 | 	Ecoli | 
