@@ -147,7 +147,8 @@ $ more log_align_<jobID>.txt
 #SBATCH --nodes=1                        # this script is designed to run on one node
 #SBATCH --ntasks=4                       # how many cores you want to use (up to 24)
 #SBATCH --time=00:20:00                  # how much time to request
-#SBATCH --qos=atesting                    # modify this to reflect which queue you want to use.
+#SBATCH --partition=atesting             # modify this to reflect which queue you want to use
+#SBATCH --qos=testing                    # the quality of service for the partition we are using 
 #SBATCH --output=log_align_%j.txt        # capture  output in a logfile with %j as jobID
  
 # hisat2 command line
