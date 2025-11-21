@@ -289,6 +289,7 @@ echo -e $line
 #   -e $SLURM_NTASKS : number of threads
 #   --split-files   : outputs *_1.fastq and *_2.fastq for paired-end
 echo "fasterq-dump -e $SLURM_NTASKS --split-files $line"
+time fasterq-dump -e $SLURM_NTASKS --split-files -O ../01_input/ $line         # The -O <out/put/dir> specifies where to save the .fastq files 
 time fasterq-dump -e $SLURM_NTASKS --split-files $line
 #
 # Validate the downloaded SRA data for integrity.
