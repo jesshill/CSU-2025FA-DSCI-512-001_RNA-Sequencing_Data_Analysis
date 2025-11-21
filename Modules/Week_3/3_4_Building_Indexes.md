@@ -136,6 +136,7 @@ If you're in JupyterHub, you can open the file in an editor, by double-clicking 
 #SBATCH --ntasks=4
 #SBATCH --time=00:29:00
 #SBATCH --partition=atesting
+#SBATCH --qos=testing
 #SBATCH --output=log_hisat2-build_%J.out
  
 # Test that you have hisat2 working
@@ -162,6 +163,7 @@ $ more log_hisat2-build*   # read the output file created
 #SBATCH --ntasks=4
 #SBATCH --time=00:29:00
 #SBATCH --partition=atesting
+#SBATCH --qos=testing
 #SBATCH --output=log_hisat2-build_%J.txt
  
 # Build hisat2 indexes for C. elegans
@@ -221,6 +223,7 @@ So, your code in buildWormIndices.sbatch should look like this:
 #SBATCH --ntasks=4
 #SBATCH --time=00:29:00
 #SBATCH --partition=atesting
+#SBATCH --qos=testing
 #SBATCH --output=log_hisat2-build_%J.txt
  
 # Build hisat2 indexes for C. elegans
