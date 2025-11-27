@@ -2,7 +2,6 @@
 
 Let's log into alpine and make sure we have the following!
 
-Refresher: 
 - Navigate to [https://ondemand-rmacc.rc.colorado.edu/](https://ondemand-rmacc.rc.colorado.edu/)
 - Login, then do the following...
 
