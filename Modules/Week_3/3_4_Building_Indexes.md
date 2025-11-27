@@ -427,4 +427,4 @@ Now we are ready to align our reads to the genome.
 
 Next, we'll return to Automation - focusing on editing our script files and running the whole pipeline.
 
-Continue on to [Alignment 2](3_5_Alignment_2.md)
+Continue on to [Automation 2](3_2_Automation_2.md)
