@@ -36,10 +36,10 @@ Once you have your output files, let's save our logfiles into their own director
 ```
 # Navigate to your scripts folder:
 $ pwd
-/pl/active/onishimura_lab/ERIN/COURSES/2024_testing/PROJ01_GomezOrte/02_scripts
+/scratch/alpine/<eID@colostate.edu>/DSCI512/PROJ01_GomezOrte/02_scripts
 $ ls
-$ mkdir 241121_logfiles
-$ mv *.out 241121_logfiles
+$ mkdir 251209_logfiles
+$ mv *.out 251209_logfiles
 $ ls
 ```
 
@@ -92,7 +92,7 @@ Let's peek in a .sam file. It should be located somewhere in your directory `03_
 
 ```
 $ more EG01.sam
-(dsci512) [erinnish@colostate.edu@shas0137 02_hisat2]$ more EG01.sam 
+(2025dsci) [jesshill@colostate.edu 02_hisat2]$ more EG01.sam 
 @HD     VN:1.0  SO:unsorted
 @SQ     SN:chrI LN:15072434
 @SQ     SN:chrII        LN:15279421
@@ -101,7 +101,7 @@ $ more EG01.sam
 @SQ     SN:chrM LN:13794
 @SQ     SN:chrV LN:20924180
 @SQ     SN:chrX LN:17718942
-@PG     ID:hisat2       PN:hisat2       VN:2.2.1        CL:"/projects/erinnish@colostate.edu/software/anaconda/envs/dsci512/bin/hisat2-align-s --wrapper basic-0 -x /scratch/summit/erinnish@colostate.edu/DSCI512/PROJ02_ce11IndexBuild/ce11 --summary-file ../03_output/2020-11-19_output/02_hisat2/EG01_summary.txt -p 10 --passthrough --read-lengths 101,92,99,96,91,100,93,90,95,98,97,88,87,94,89,86,81,80,68,46,83,79,76,75,74,73,70,66,65,59,58,53,50,43,41,39,34,32 -1 ../03_output/2020-11-19_output/01_fastp/EG01/EG01_trim_1.fastq -2 ../03_output/2020-11_19_output/01_fastp/EG01/EG01_trim_2.fastq"
+@PG     ID:hisat2       PN:hisat2       VN:2.2.1        CL:"/projects/jesshill@colostate.edu/software/anaconda/envs/2025dsci/bin/hisat2-align-s --wrapper basic-0 -x /scratch/summit/erinnish@colostate.edu/DSCI512/PROJ02_ce11IndexBuild/ce11 --summary-file ../03_output/2020-11-19_output/02_hisat2/EG01_summary.txt -p 10 --passthrough --read-lengths 101,92,99,96,91,100,93,90,95,98,97,88,87,94,89,86,81,80,68,46,83,79,76,75,74,73,70,66,65,59,58,53,50,43,41,39,34,32 -1 ../03_output/2020-11-19_output/01_fastp/EG01/EG01_trim_1.fastq -2 ../03_output/2020-11_19_output/01_fastp/EG01/EG01_trim_2.fastq"
 SRR5832182.4    99      chrIII  10215997        60      101M    =       10216103        207     GGCGACTCCACGAGCATAAGCTCCGGCGAATTTGCTTTCATTGTTCAAAGCAGCGATAGCGGCGATGAATTGAGCCATTGGATGGAGGTTATCTGGGAAGT   DDDDDHIIIIIIIIIIIIIIIIIIIIIIIHHIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIHIHIIIIIIIIIIIIIIH   AS:i:0 XN:i:0  XM:i:0  XO:i:0  XG:i:0  NM:i:0  MD:Z:101        YS:i:0  YT:Z:CP NH:i:1
 SRR5832182.4    147     chrIII  10216103        60      101M    =       10215997        -207 AGCATTCGGACAACGTGGGTTGGAAGATCGGCACGGGCGTTCCATTCTTTTGTGATAGCGGCAGTCTGGGCCTCGGATGGAACATCTCCTGTACACAAAAG FIIIIHIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIHIIIIIIIIDDDDD AS:i:0 XN:i:0  XM:i:0  XO:i:0  XG:i:0  NM:i:0  MD:Z:101        YS:i:0  YT:Z:CP NH:i:1
 ```
@@ -188,13 +188,13 @@ OPTIONS:
      -o <output_file.txt>   # choose an output file name (../03_output/GomezOrte_feature_counts.txt)
 ```
 
-**Questions:** What is the featureCounts output? Where is it? Explore the output.
+**Questions:** 
+- What is the featureCounts output? Where is it? Explore the output.
+- How many reads were successfully mapped? How many alignments were unsuccessfully assigned to a gene? How long did it take?
 
-**Questions:** How many reads were successfully mapped? How many alignments were unsuccessfully assigned to a gene? How long did it take?
-
-**NOTE:** featureCounts does not use multi-mapping reads in the final tabulation. All reads must be uniquely mapped to be counted.
-
-**NOTE:** For fastp and hisat2, we used loops to run each sample separately. However, for featureCounts, all the samples are combined together into a single line of code. So, if you have 8 samples, fastp will run 8x times, then hisat2 will run 8x times, but featureCounts will only run once. When featureCounts runs, it will merge all the samples together.
+**NOTE:** 
+- featureCounts does not use multi-mapping reads in the final tabulation. All reads must be uniquely mapped to be counted.
+- For fastp and hisat2, we used loops to run each sample separately. However, for featureCounts, all the samples are combined together into a single line of code. So, if you have 8 samples, fastp will run 8x times, then hisat2 will run 8x times, but featureCounts will only run once. When featureCounts runs, it will merge all the samples together.
 
 ## One last task - Merge the Feature Counts files 
 
@@ -217,10 +217,10 @@ To do this...
 # Run this at the end to merge all your counts files together
 #
 # AUTHOR:
-# Erin Osborne Nishimura
+# Jessica Hill
 #
 # START DATE:
-# November 19,2024
+# December 09,2025
 #
 #
 # Usage statement: 
@@ -233,7 +233,7 @@ To do this...
 #Select the proper date for the output file you'd like to merge:
 day=`date +%Y-%m-%d`
 #OR
-#day='2024-11-20'
+#day='2025-12-09'
  
  
 # Select the metadata file. Replace <metadata.txt> with your metadata path and file. 
