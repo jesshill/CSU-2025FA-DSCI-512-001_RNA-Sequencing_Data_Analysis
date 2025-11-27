@@ -7,22 +7,22 @@
 
 ## Downloading the genome and building indexes
 
-Because our project involves the C. elegans genome, we will now download the C. elegans genome and build HISAT2 indexes using it. These are files that will make it possible to use the C. elegans genome as a reference genome in a HISAT2 alignment. This is a very common step in any NextGen sequencing alignment protocol.
+Because our project involves the *C. elegans* genome, we will now download the C. elegans genome and build HISAT2 indexes using it. These are files that will make it possible to use the C. elegans genome as a reference genome in a HISAT2 alignment. This is a very common step in any NextGen sequencing alignment protocol.
 
-To get started, we'll need to download some information on the C.elegans genome from a trusted repository.
+To get started, we'll need to download some information on the *C. elegans* genome from a trusted repository.
 
-To build the genome, we'll need as input two things...
+To build the genome, we'll need as input two things:
 - The genome as fasta files, one for each chromosome
 - A name for our genome that we choose. (Since we're using Caenorhabditis elegans, version 11, we'll call it **ce11**)
 
 **!!! Exercise:** Build hisat2 indices 
 
-Ensure you are on ALPINE, are on the acompile node, and have activated your conda environment, and are in the proper folder
+Ensure you are on ALPINE, are on the **acompile node**, and have activated your conda environment, and are in the proper folder
 
 ```
 $ acompile
 $ module load anaconda
-$ conda activate 2024dsci
+$ conda activate 2025dsci
 $ cd /scratch/alpine/<eID@colostate.edu>/DSCI512/
 ```
 
@@ -44,7 +44,7 @@ For this project, we will take meticulous notes of everything we are doing. If w
 
 ```
 $ cd PROJ02_ce11IndexBuild
-$ touch 241119_README_downloads.txt
+$ touch 251204_README_downloads.txt
 ```
 
 - Open this file using a text editor. You'll need to ensure your working directory is synced in the file structure on the left panel.
@@ -52,7 +52,7 @@ $ touch 241119_README_downloads.txt
   - Date
   - Your name
   - The directory in which you are currently working
-  - Your goal (downloading the C. elegans genome and building hisat2 indices for it.)
+  - Your goal (downloading the *C. elegans* genome and building hisat2 indices for it.)
 
 **!!! Exam Notes:** You will be asked to keep a running Notebook of all your notes for Homework 4, Homework 5, and the Exam. You will turn this notebook in as Question #6 of the exam.
 
