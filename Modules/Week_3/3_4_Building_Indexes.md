@@ -7,13 +7,13 @@
 
 ## Downloading the genome and building indexes
 
-Because our project involves the *C. elegans* genome, we will now download the C. elegans genome and build HISAT2 indexes using it. These are files that will make it possible to use the C. elegans genome as a reference genome in a HISAT2 alignment. This is a very common step in any NextGen sequencing alignment protocol.
+Because our project involves the *C. elegans* genome, we will now download the *C. elegans* genome and build HISAT2 indexes using it. These are files that will make it possible to use the *C. elegans* genome as a reference genome in a HISAT2 alignment. This is a very common step in any NextGen sequencing alignment protocol.
 
 To get started, we'll need to download some information on the *C. elegans* genome from a trusted repository.
 
 To build the genome, we'll need as input two things:
 - The genome as fasta files, one for each chromosome
-- A name for our genome that we choose. (Since we're using Caenorhabditis elegans, version 11, we'll call it **ce11**)
+- A name for our genome that we choose. (Since we're using *Caenorhabditis elegans*, version 11, we'll call it **ce11**)
 
 **!!! Exercise:** Build hisat2 indices 
 
@@ -28,7 +28,7 @@ $ cd /scratch/alpine/<eID@colostate.edu>/DSCI512/
 
 Start a new project entitled `PROJ02_ce11IndexBuild`
 
-**NOTE:** for this project, we will be making C. elegans version #11 index build. So the abbreviation will be **ce11**. Those are two **ONES**. It is **NOT** the word “cell”.
+**NOTE:** for this project, we will be making *C. elegans* version #11 index build. So the abbreviation will be **ce11**. Those are two **ONES**. It is **NOT** the word “cell”.
 
 ```
 $ pwd 
@@ -52,11 +52,9 @@ $ touch 251204_README_downloads.txt
   - Date
   - Your name
   - The directory in which you are currently working
-  - Your goal (downloading the *C. elegans* genome and building hisat2 indices for it.)
+  - Your goal (downloading the *C. elegans* genome and building hisat2 indices for it)
 
-**!!! Exam Notes:** You will be asked to keep a running Notebook of all your notes for Homework 4, Homework 5, and the Exam. You will turn this notebook in as Question #6 of the exam.
-
-## Explore the C. elegans genome 
+## Explore the *C. elegans* genome 
 
 - In a new internet browser tab, navigate to [UCSC Genome Browser](https://genome.ucsc.edu/)
 - Under **Downloads**, select **Genome Data**
@@ -83,15 +81,15 @@ $ rsync -avzP rsync://hgdownload.cse.ucsc.edu/goldenPath/ce11/chromosomes/ .
 $ ls -alh
 ```
 
-- Does this seem familiar? We did something similar in DSCI510 [Downloading files from the internet]()
+- Does this seem familiar? We did something similar in DSCI510 [Downloading files from the internet](https://github.com/jesshill/CSU-2025FA-DSCI-510-001_LINUX_as_a_computational_platform/blob/main/Modules/Week2/2-3_File_Transfer.md)
 - Next, let's check whether the files arrived uncorrupted by transit using md5sum.
 
 ```
 # Check the md5 sums:
 $ more md5sum.txt                  # This reads the md5sum file that UCSC included in the directory
 $ md5sum *.fa.gz                   # This checks all the md5sums of the files you downloaded
-$ md5sum *.fa.gz > 2511DD_sums.txt # This saves all the md5sums of the files you downloaded in a file
-$ diff md5sum.txt  2511DD_sums.txt # This compares the md5sums you generated to the ones UCSC gave you.
+$ md5sum *.fa.gz > 251204_sums.txt # This saves all the md5sums of the files you downloaded in a file
+$ diff md5sum.txt  251204_sums.txt # This compares the md5sums you generated to the ones UCSC gave you.
                                    # You shouldn't see anything coming up.
 ```
 
@@ -107,7 +105,7 @@ $ gunzip *.fa.gz
 
 ### Concatenate the genome
 
-These days, many genomes are downloadable as a single file. C. elegans was the first animal to have its genome sequenced so it is in the older format with a file for each chromosome. Let's merge the files together into one complete genome file.
+These days, many genomes are downloadable as a single file. *C. elegans* was the first animal to have its genome sequenced so it is in the older format with a file for each chromosome. Let's merge the files together into one complete genome file.
 
 To concatenate the separate chromosome files into a whole genome file...
 
@@ -166,7 +164,7 @@ $ more log_hisat2-build*   # read the output file created
 #SBATCH --qos=testing
 #SBATCH --output=log_hisat2-build_%J.txt
  
-# Build hisat2 indexes for C. elegans
+# Build hisat2 indexes for *C. elegans*
  
  
 # Check the build
@@ -297,7 +295,7 @@ Add this to your paths.txt file. It should look something like this...
 # This directory contains the C. elegans hisat2 indices for ce11.
 
 # The path and prefix of this hisat2 build 
-/scratch/alpine/<email>/DSCI512/PROJ02_ce11IndexBuild/ce11
+/scratch/alpine/$USER/DSCI512/PROJ02_ce11IndexBuild/ce11
 ```
 
 **Write the path to your whole genome fasta file**
@@ -306,7 +304,7 @@ It should look something like this...
 
 ```
 # The path to the whole genome fasta file is:
-/scratch/alpine/<email>/DSCI512/PROJ02_ce11IndexBuild/ce11_wholegenome.fa
+/scratch/alpine/$USER/DSCI512/PROJ02_ce11IndexBuild/ce11_wholegenome.fa
 ```
 
 ## Get the .gtf file
@@ -338,13 +336,13 @@ $ gunzip ce11_annotation_ensembl_to_ucsc.gtf.gz
 # This directory contains the C. elegans hisat2 indices for ce11.
 
 # The path and prefix of this hisat2 build 
-/scratch/alpine/<email>/DSCI512/PROJ02_ce11IndexBuild/ce11
+/scratch/alpine/$USER/DSCI512/PROJ02_ce11IndexBuild/ce11
 
 # The path to the whole genome fasta file is:
-/scratch/alpine/<email>/DSCI512/PROJ02_ce11IndexBuild/ce11_wholegenome.fa
+/scratch/alpine/$USER/DSCI512/PROJ02_ce11IndexBuild/ce11_wholegenome.fa
 
 # The path to the .gtf annotation file is:
-/scratch/alpine/<email>/DSCI512/PROJ02_ce11IndexBuild/ce11_annotation_ensembl_to_ucsc.gtf
+/scratch/alpine/$USER/DSCI512/PROJ02_ce11IndexBuild/ce11_annotation_ensembl_to_ucsc.gtf
 ```
 
 ## Additional Content About gtf/gff files for Exam Project
@@ -380,7 +378,7 @@ or
 depending on how genes are specified in column #9 of your .gff file
 ```
 
-I said “in principle”, this should work. Last year, we learned that in practice, it could be buggy, and Arabidopsis people found that they needed to convert their downloaded .gff files to .gtf files. To do the conversion, go here...
+“In principle”, this should work. However, in practice it can be buggy. You may need to convert the downloaded .gff files to .gtf files. To do the conversion, go here...
 
 <details>
   <summary>See here for .gff to .gtf conversion. You only need to do that if you have a .gff file!</summary>
@@ -411,11 +409,12 @@ Here's some more info on it: [https://manpages.ubuntu.com/manpages/resolute/en/m
 
 Just to review. Here is what we did:
 
-1. Downloaded the C. elegans genome from UCSC Genome Browser as individual chromosome fasta files and used checksums to test integrity.
-2. Built the hisat2 indices from the C. elegans genome using hisat2-build.
+1. Downloaded the *C. elegans* genome from UCSC Genome Browser as individual chromosome fasta files and used checksums to test integrity.
+2. Built the hisat2 indices from the *C. elegans* genome using hisat2-build.
 3. Checked the builds using
 4. Concatenated the chromosome files together into a ce11_wholegenome.fa file
 5. Obtained a .gtf annotation file.
+
 Started a paths.txt file that contains all the paths we need for future steps of the analysis process
 
 Go ahead and update your readme file. Be sure to include:
