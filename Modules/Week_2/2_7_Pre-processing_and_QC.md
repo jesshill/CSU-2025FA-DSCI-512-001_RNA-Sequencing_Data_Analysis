@@ -140,6 +140,7 @@ By default, fastp tries to discern the adapter and primer sequences based on ove
 #SBATCH --ntasks=2
 #SBATCH --time=00:15:00
 #SBATCH --partition=atesting
+#SBATCH --qos=testing
 #SBATCH --output=log-preprocess-%j.out
  
  
