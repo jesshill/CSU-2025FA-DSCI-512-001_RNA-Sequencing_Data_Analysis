@@ -34,7 +34,7 @@ Rstudio is a dedicated **IDE (Integrated Development Environment)** for R. Think
 
 ## Exercise - Analyze Gomez-Orté Dataset in R using DESeq2
 
-Today we will do everything on your local computer. You won't need to log into ALPINE.
+For this, we will do everything on your local computer. You won't need to log into ALPINE.
 
 **Start a project on your laptop**
 
@@ -53,7 +53,7 @@ Download these input files from ALPINE:
 - Your metadata file:
   - `~/01_input/metadata_gomezOrte.txt`
 - Your merged counts.txt file:
-  - `~/DSCI512/PROJ01_GomezOrte/03_output/<DATE>_output/03_feature/2024-<mo>-<da>_merged_counts.txt`
+  - `~/DSCI512/PROJ01_GomezOrte/03_output/<DATE>_output/03_feature/2025-<mo>-<da>_merged_counts.txt`
 
 NOTE: if you DON“T have your own counts file, you can “borrow” an old one from [here](https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Data/2024-11-20_merged_counts.txt)
 
