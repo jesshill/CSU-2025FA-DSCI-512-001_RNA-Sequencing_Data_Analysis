@@ -17,7 +17,6 @@ ALPINE maintenance days are on **Wednesdays!**
   - Typos
   - Paths
 - Metadata
-  - HW assignment 4
 - .gff files versis .gtf files
   - About .gff files 
 - Thoughts on chatGPT are in the "Syllabus" 
