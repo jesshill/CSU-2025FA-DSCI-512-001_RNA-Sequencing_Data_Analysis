@@ -64,7 +64,7 @@ Copied from there:
 
 7. Clean up the project I included a script that automates the process of compressing files and deleting temp files. This is located in the same directory you cloned from github. To use this script:
 
-- Make sure the cleanup script RNAseq_cleanup_241117.sh is copied into the 02_scripts directory (move it one directory up).
+- Make sure the cleanup script RNAseq_cleanup_251211.sh is copied into the 02_scripts directory (move it one directory up).
 - Modify the “Modify this Section” part of the clean script.
 - Modify the execute_RNAseq_pipeline.sbatch script to 1) comment out the bash line that runs the RNAseq_analyzer script, 2) remove the from the bash line that runs the cleanup script, and 3) add the metadata path
 - It should look like this:
@@ -75,7 +75,7 @@ Copied from there:
 ######################################################
  
 # Execute this script to analyze samples in your metadata file
-#bash analyze_RNAseq_241117.sh $SLURM_NTASKS $line 
+#bash analyze_RNAseq_251211.sh $SLURM_NTASKS $line 
  
  
 #############################
@@ -83,7 +83,7 @@ Copied from there:
 #############################
  
 ## Execute the cleanup script to zip .fastq files and delete extra files
-bash cleanup_RNAseq_241117.sh $line
+bash cleanup_RNAseq_251211.sh $line
 ```
 
 - Again, run with:
