@@ -159,6 +159,7 @@ fastp -i ../01_input/tester_SRR5832182_1.fastq -I ../01_input/tester_SRR5832182_
 #SBATCH --ntasks=2
 #SBATCH --time=00:15:00
 #SBATCH --partition=atesting
+#SBATCH --qos=testing
 #SBATCH --output=log-preprocess-%j.out
  
  
