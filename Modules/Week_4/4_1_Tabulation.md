@@ -1,6 +1,6 @@
 # Tabulation Using featureCounts
 
-Today, let's begin by logging into alpine and checking how far we got before the break.
+Let's log into alpine and make sure we have the following!
 
 Refresher: 
 - Navigate to [https://ondemand-rmacc.rc.colorado.edu/](https://ondemand-rmacc.rc.colorado.edu/)
@@ -20,7 +20,7 @@ Do you have the following?
 ```
 $ pwd
 /scratch/alpine/jesshill@colostate.edu/2025_DSCI512/PROJ01_GomezOrte/03_output
-$ ls 2024-11-21_output/03_feature/
+$ ls 2025-12-09_output/03_feature/
 EG01_counts.txt          EG04_counts.txt          EG07_counts.txt          EG10_counts.txt          EG13_counts.txt          EG16_counts.txt
 EG01_counts.txt.summary  EG04_counts.txt.summary  EG07_counts.txt.summary  EG10_counts.txt.summary  EG13_counts.txt.summary  EG16_counts.txt.summary
 EG02_counts.txt          EG05_counts.txt          EG08_counts.txt          EG11_counts.txt          EG14_counts.txt          EG17_counts.txt
