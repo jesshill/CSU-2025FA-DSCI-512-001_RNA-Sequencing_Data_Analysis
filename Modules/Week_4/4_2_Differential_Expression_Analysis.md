@@ -135,4 +135,4 @@ If something isn't working, don't get bogged down, just e-mail someone:
 - NCBI GEO people
 - UCSC Genome people
 
-Continue on to [DESeq2 slides](https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Modules/Week_4/241203_deseq2_slides.pdf)
+Continue on to [DESeq2 slides](https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Modules/Week_4/4_3_241203_deseq2_slides.pdf)
