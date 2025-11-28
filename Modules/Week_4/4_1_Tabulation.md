@@ -167,7 +167,7 @@ Gene3      chrI    5456    8467    +       1234     234       134        234
 - The reads per gene will need to be **normalized to account for read depth**. We will do this later in DESeq2.
 - Just know that at this stage, you can't **eyeball** to see whether some gene is over-expressed in some sample.
 
-**!! NOTE** For our previous steps, like fastp and hisat2, we operated on each sample individually. So, if we have 18 samples in our dataset, the goal would be to run fastp 18 times, once for each sample. featureCounts is different. In this step, we will **merge** together all the samples. We will only run featureCounts once and that single step will take ALL the samples as input. *Here is a visual summary of that concept:*
+**!! NOTE:** For our previous steps, like fastp and hisat2, we operated on each sample individually. So, if we have 18 samples in our dataset, the goal would be to run fastp 18 times, once for each sample. featureCounts is different. In this step, we will **merge** together all the samples. We will only run featureCounts once and that single step will take ALL the samples as input. *Here is a visual summary of that concept:*
 
 <p align="center">
 <img width="700" alt="feature counts idea" src="https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Images/featurecounts_idea.jpg">
