@@ -206,7 +206,7 @@ Other helpful options:
                          you often unzip and re-zip files.
 ```
 
-Here is an example of my script called `rsync_alpine.sh`...
+Here is an example script called `rsync_alpine.sh`
 
 ```
 #!/bin/bash
@@ -218,7 +218,7 @@ rsync -auvz -e 'ssh -p 22' jesshill\@colostate.edu@login.rc.colorado.edu:/scratc
 - To use it, don't forget to replace my eID with yours!
 - When prompted for the password, don't forget to type: password,push
 
-**!!! Exercise:** Make a shell script on your local computer inside the directory where you want to copy/backup your /scratch/alpine files.
+**!!! Exercise:** Make a shell script on your local computer inside the directory where you want to copy/backup your `/scratch/alpine` files.
 
 **!!! Common pitfalls:** 
 - Be aware that `directory` and `directory/` with a trailing slash will have different behaviors in rsync. `directory` will move the whole directory. `directory/` with the trailing slash will move only the contents of directory.
@@ -265,22 +265,31 @@ Cyberduck is available on MacOS and PC. The Cyberduck in the Apple Store costs m
 1. Open Cyberduck
 2. Click on the **open connection** icon (looks like a world with a plus sign)
 3. Fill out the infomration to connect you to ALPINE
-  1. Connect Using: SFTP
-  2. Connect to: login.rc.colorado.edu
-  3. Login: Your full eID@colostate.edu e-mail
-  4. Password: Try using password,push
-  5. Port: 22
+    - Connect Using: SFTP
+    - Connect to: login.rc.colorado.edu
+    - Login: Your full eID@colostate.edu e-mail
+    - Password: Try using password,push
+    - Port: 22
 4. You will be prompted by DUO to authenticate
 5. Navigate to the desired folder by clicking the 'Go' menu
 6. Select 'Go to folder'
 7. Type in the folder destination where you want to upload or download a file (For example: /scratch/alpine/tstark@colostate.edu)
 8. Move files
-  1. From your local computer to ALPINE, just drag and drop them into the destination folders.
-  2. From ALPINE to your local computer, just select the files, right-click, and select “Download To…”
+    - From your local computer to ALPINE, just drag and drop them into the destination folders.
+    - From ALPINE to your local computer, just select the files, right-click, and select “Download To…”
+
+**TIP:** For mac users, if Cyberduck isnt working, try removing your Cyberduck password from your mac keychain. 
 
 ### Secure Copy utility - scp
 
 Can send and fetch data to and from a remote server. 
+
+```
+Usage: 
+$ scp <sourcefile> <target>  
+$ scp <http://address/to/file/file.txt> <.> # downloads files 
+$ scp <localfile> <<http://address/to/file/file.txt>  # uploads files 
+```
 
 In the following examples, replace `<path-to-file>` with the path of the file you wish to copy, `<username>` with your Research Computing username, and `<target-path>` with the full path to the directory you would like to send the file to.
 
