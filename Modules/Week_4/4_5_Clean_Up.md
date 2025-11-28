@@ -28,7 +28,7 @@ ALPINE maintenance days are on **Wednesdays!**
 - Use NCBI GEO and SRA Toolkit
 - Upload your .gtf files with your raw data! So helpful!
 - Reference R
-  - cite R when publishing: Type into R: 
+  - cite R when publishing: Type into R... 
 ```
 citation()
 ```
