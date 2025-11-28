@@ -175,7 +175,10 @@ Gene3      chrI    5456    8467    +       1234     234       134        234
 
 **featureCounts Usage:**
 
-For more detail on featureCounts usage, there is a link to a tutorial at the end of this section. Briefly,
+- Obtain some .sam files to tabulate
+- Obtain a .gtf file
+- Write the featureCounts line of code
+- Execute featureCounts using the pipeline
 
 ```
 USAGE:
@@ -195,6 +198,26 @@ OPTIONS:
 **NOTE:** 
 - featureCounts does not use multi-mapping reads in the final tabulation. All reads must be uniquely mapped to be counted.
 - For fastp and hisat2, we used loops to run each sample separately. However, for featureCounts, all the samples are combined together into a single line of code. So, if you have 8 samples, fastp will run 8x times, then hisat2 will run 8x times, but featureCounts will only run once. When featureCounts runs, it will merge all the samples together.
+
+**Example:** 
+
+```
+#!/usr/bin/env bash
+
+#SBATCH --job-name=tabulate 
+#SBATCH --nodes=1                        # this script is designed to run on one node
+#SBATCH --ntasks=4                       # how many cores you want to use (up to 24)
+#SBATCH --time=00:30:00                  # how much time to request
+#SBATCH --partition=atesting         # modify this to reflect which queue you want to use 
+#SBATCH --qos=testing                    # modify this to reflect which queue you want to use
+#SBATCH --output=log_tabulate_%j.txt     # capture  output in a logfile with %j as jobID
+
+# Tabulate alignments
+featureCounts -p -T ${SLURM_NTASKS} \
+-a ../../PROJ02_ce11IndexBuild/ce11_annotation_ensembl_to_ucsc.gtf \
+-o ../03_output/GomezOrte_feature_counts.txt \
+../03_output/EG01.sam ../03_output/EG02.sam ../03_output/EG03.sam
+```
 
 ## One last task - Merge the Feature Counts files 
 
