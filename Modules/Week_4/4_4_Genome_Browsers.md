@@ -19,9 +19,9 @@ Another option is **IGV - Integrative Genomics Viewer**. IGV comes in a web app 
 
 ### Prepping .bw files for upload
 
-- Behind the scenes, downloaded all the .bw files.
-- Merged them together using this script: [merge_bw script](https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Data/merge_bw_script.md)
-- Placed the merged files in an http-viewable location (i.e., [Galaxy server](https://usegalaxy.org/))
+- Download all the .bw files.
+- Merge them together using this script: [merge_bw script](https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Data/merge_bw_script.md)
+- Place the merged files in an http-viewable location (i.e., [Galaxy server](https://usegalaxy.org/))
 - Used UCSC Genome Browser's **upload tracks** to link to my files.
 
 ### Exercise 
@@ -34,7 +34,7 @@ Another option is **IGV - Integrative Genomics Viewer**. IGV comes in a web app 
 **Go to IVG-Web** 
 
 - Navigate to [IGV App](https://igv.org/app/)
-- The human genome is loaded by default. To switch to C. elegans, let's go to the **Genome** menu tab.
+- The human genome is loaded by default. To switch to *C. elegans*, let's go to the **Genome** menu tab.
 - Typically, I would recommend selecting **Local file** and having you upload the exact fasta file and .gtf file that you used for your RNA-seq analysis. In the interest of time and because we downloaded everything from UCSC, we can do select **UCSC GenArk**...
 
 <p align="center">
@@ -46,7 +46,7 @@ Another option is **IGV - Integrative Genomics Viewer**. IGV comes in a web app 
 **Upload your tracks** 
 
 - To add new tracks, go to **Tracks** and **Local File**...
-  - Select ALL your files - all the _merged.bw files and the .gtf file.
+  - Select ALL your files: all the _merged.bw files and the .gtf file.
 
 **Customize the look and feel** 
 
@@ -65,8 +65,8 @@ Another option is **IGV - Integrative Genomics Viewer**. IGV comes in a web app 
 **Change the colors**
 
 - Click on **Select Tracks**
-- Click on all square boxes to the left of all the **B.Subtilis** samples
-- Click on the gear icon (settings icon) to the right of any B.Subtilis sample.
+- Click on all square boxes to the left of all the **B. Subtilis** samples
+- Click on the gear icon (settings icon) to the right of any *B. Subtilis* sample.
 - Click on **Set track color**.
 - A color box will pop up but sometimes it is lower down and you'll need to scroll down to find it.
 - Pick a color.
@@ -97,7 +97,7 @@ Another option is **IGV - Integrative Genomics Viewer**. IGV comes in a web app 
 **Try downloading an image file:**
 
 - Click on **Save Image**
-- Save a picture or vector file. Note - these vector files don't behave well for me.
+- Save a picture or vector file. Note: these vector files don't behave well for me.
 
 ## Bonus Take-Home Content 
 
