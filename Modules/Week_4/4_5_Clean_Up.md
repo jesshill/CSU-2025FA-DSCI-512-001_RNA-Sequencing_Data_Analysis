@@ -62,7 +62,7 @@ citation()
 
 Copied from there:
 
-7. Clean up the project I included a script that automates the process of compressing files and deleting temp files. This is located in the same directory you cloned from github. To use this script:
+7. Clean up the project: A script is included to automate the process of compressing files and deleting temp files. This is located in the same directory you cloned from github. To use this script:
 
 - Make sure the cleanup script RNAseq_cleanup_251211.sh is copied into the 02_scripts directory (move it one directory up).
 - Modify the “Modify this Section” part of the clean script.
@@ -129,14 +129,14 @@ PROJ01_GomezOrte  PROJ01.tar.gz  PROJ02_ce11_indexBuild PROJ02.tar.gz PROJ03_myP
 
 You can just download with right-click download. However, if download is disrupted, you'll need to start again.
 
-rsync can pick up downloads if they are disrupted. Saves you time. You can build your own sync script and do your syncs periodically and automatically.
+`rsync` can pick up downloads if they are disrupted. Saves you time. You can build your own sync script and do your syncs periodically and automatically.
 
 Basically:
 - Open a terminal on your local computer
   - Mac: terminal
   - PC: putty
 
-rsync code will look something like this...
+`rsync` code will look something like this...
 
 ```
 $ rsync -auvz -e 'ssh -p 22' jesshill\@colostate.edu@login.rc.colorado.edu:/scratch/alpine/jesshill@colostate.edu/DSCI512/PROJ01.tar.gz .
@@ -148,7 +148,7 @@ $ rsync -auvz -e 'ssh -p 22' jesshill\@colostate.edu@login.rc.colorado.edu:/scra
 
 **!!!** When prompted for the password, don't forget to type: password,push
 
-- As in, your password, then a comma, then the word push. No spaces. You'll have to say accept on your DUO app on your phone for it to continue
+- As in: your password, then a comma, then the word push. No spaces. You'll have to say accept on your DUO app on your phone for it to continue
 
 **!!!** Common pitfall: Be aware that directory and directory/ with a trailing slash will have different behaviors in rsync. directory will move the whole directory. directory/ with the trailing slash will move only the contents of directory.
 
@@ -161,7 +161,7 @@ $ rsync -auvz -e 'ssh -p 22' jesshill\@colostate.edu@login.rc.colorado.edu:/scra
 
 Scratch space on ALPINE is deleted every 90 days. If you would like to avoid this, please work in your project space (250 GB limit) or request petabyte storage space (for a fee).
 
-To avoid having your projects disappear in the poof with no warning, it is important to save your work locally.
+To avoid having your projects disappear in a poof with no warning, it is important to save your work locally.
 
 There are many strategies to do this. We will discuss one strategy. Consult with your lab and/or the ALPINE help people for advice on what would be best for your projects!
 
@@ -171,7 +171,7 @@ There are many strategies to do this. We will discuss one strategy. Consult with
 
 **rsync usage:**
 
-The rsync utility can be used to synchronize files and directories across two locations. This can often lead to efficiencies in repeat-transfer scenarios, as rsync only copies files that are different between the source and target locations (and can even transfer partial files when only part of a file has changed). This can be very useful in reducing the amount of copies you may perform when synchronizing two datasets.
+The `rsync` utility can be used to synchronize files and directories across two locations. This can often lead to efficiencies in repeat-transfer scenarios, as `rsync` only copies files that are different between the source and target locations (and can even transfer partial files when only part of a file has changed). This can be very useful in reducing the amount of copies you may perform when synchronizing two datasets.
 
 ```
 rsync -auvz -e 'ssh -p 22' <source> <target> 
@@ -195,7 +195,7 @@ rsync   this is the command
 -z               compress option. This compresses the data during transit.
 -e 'ssh -p 22'   This specifies that you want to connect to the remotes server 
                  using secure shell.
-<source>         source. This is the summit source directory. In the form: eID\@colostate.edu@login.rc.colorado.edu:/scratch/summit/location
+<source>         source. This is the summit source directory. In the form: eID\@colostate.edu@login.rc.colorado.edu:/scratch/alpine/location
 <target>         This is your local space. I just use a dot. 
                          
 Other helpful options:
@@ -206,12 +206,12 @@ Other helpful options:
                          you often unzip and re-zip files.
 ```
 
-Here is an example of my script called `rsync_summit.sh`...
+Here is an example of my script called `rsync_alpine.sh`...
 
 ```
 #!/bin/bash
  
-#Pull work from summit to the local directory
+#Pull work from alpine to the local directory
 rsync -auvz -e 'ssh -p 22' jesshill\@colostate.edu@login.rc.colorado.edu:/scratch/alpine/jesshill@colostate.edu/DSCI512_RNAseq .
 ```
 
@@ -290,4 +290,3 @@ $ tar -zxvf PROJ01.tar.gz
 ```
 
 -x means “expand”
-
