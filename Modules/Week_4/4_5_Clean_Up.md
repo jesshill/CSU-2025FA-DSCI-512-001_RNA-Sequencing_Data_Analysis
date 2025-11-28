@@ -258,6 +258,26 @@ They are interactive sFTP clients to transfer and edit files on remote servers.
 2. Press Enter. Accept your Duo 2-Factor notification. If the connection succeeds you will see your CURC filesystem on the “Remote Site” tab.
 3. Navigate to the file you would like to transfer in either your local filesystem or your CURC filesystem. Right click the file and click “Upload” or “Download”.
 
+**Cyberduck example**
+
+Cyberduck is available on MacOS and PC. The Cyberduck in the Apple Store costs money, and we don't recommend it. Just obtain the free version from the cyberduck website.
+
+1. Open Cyberduck
+2. Click on the **open connection** icon (looks like a world with a plus sign)
+3. Fill out the infomration to connect you to ALPINE
+  1. Connect Using: SFTP
+  2. Connect to: login.rc.colorado.edu
+  3. Login: Your full eID@colostate.edu e-mail
+  4. Password: Try using password,push
+  5. Port: 22
+4. You will be prompted by DUO to authenticate
+5. Navigate to the desired folder by clicking the 'Go' menu
+6. Select 'Go to folder'
+7. Type in the folder destination where you want to upload or download a file (For example: /scratch/alpine/tstark@colostate.edu)
+8. Move files
+  1. From your local computer to ALPINE, just drag and drop them into the destination folders.
+  2. From ALPINE to your local computer, just select the files, right-click, and select “Download To…”
+
 ### Secure Copy utility - scp
 
 Can send and fetch data to and from a remote server. 
