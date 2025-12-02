@@ -219,6 +219,8 @@ Concatamers of primers and adapters can also occur.
 
 OK, that was just the first run of the tester files. What if we want to do the whole list of files?
 
+> make the tester_SRR5832183 files "head -n 100000 SRR5832183_1.fastq > tester_SRR5832183_1.fastq
+
 We'll need to incorporate a loop into our bash script. Let's make a new script called:
 
 **preProcessingWithLooping.sbatch**
