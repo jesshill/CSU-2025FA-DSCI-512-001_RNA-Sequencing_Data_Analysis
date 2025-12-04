@@ -122,8 +122,6 @@ $ cat *.fa > ce11_wholegenome.fa
 $ touch buildWormIndices.sbatch
 ```
 
-If you're in JupyterHub, you can open the file in an editor, by double-clicking it on the file system browser along the left-hand side.
-
 **Copy and paste this code into the program file to initiate it**
 
 ```
