@@ -244,7 +244,7 @@ hisat2-build --version
 - Then, execute!
 
 ```
-$ sbatch buildWormIndices.sbatch
+$ sbatch --account=csu99_alpine1 buildWormIndices.sbatch
  
 # To check on it:
 $ scheck
