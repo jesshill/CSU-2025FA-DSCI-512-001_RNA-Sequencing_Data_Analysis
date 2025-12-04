@@ -322,7 +322,7 @@ And finally, the last piece of the puzzle is the .gtf of .gff file. This is the 
 <img width="700" alt="..." src="...">
 </p>
 
-- Download it here, upload it to your ce11 folder
+- Download it here, upload it to your PROJ02_ce11IndexBuild folder
 - check md5sums - (md5sum = 466558e94b59e643cad8b89835ec4f12)
 - Unzip it
 
