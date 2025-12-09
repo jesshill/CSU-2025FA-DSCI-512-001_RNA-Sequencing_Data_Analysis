@@ -256,7 +256,7 @@ $ ls -alh
 - No matter how large your genome is, you'll always have just 8 of these files.
 
 ```
-# the inspection output will look something like this
+##### the inspection output will look something like this...
 
 projects/.colostate.edu/jesshill/software/anaconda/envs/2025dsci/bin/hisat2-inspect:24: DeprecationWarning: the imp module is deprecated in favour of importlib and slated 
 for removal in Python 3.12; see the module's documentation for alternative uses
@@ -276,6 +276,21 @@ Sequence-7      chrX    17718942
 Num. SNPs: 0
 Num. Splice Sites: 0
 Num. Exons: 0
+
+
+#### what is it doing...
+
+Print a summary that includes information about index settings, as well as the names and lengths of the input sequences. The summary has this format:
+
+Colorspace	<0 or 1>
+SA-Sample	1 in <sample>
+FTab-Chars	<chars>
+Sequence-1	<name>	<len>
+Sequence-2	<name>	<len>
+...
+Sequence-N	<name>	<len>
+
+Fields are separated by tabs. Colorspace is always set to 0 for HISAT2.
 ```
 
 **README time!** Write down what you did. Some other information you'll want to include in your notebook.
