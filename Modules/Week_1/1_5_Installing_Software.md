@@ -197,7 +197,7 @@ The output shows us the default environments that the personnel at CU Boulder ha
 We want to build a custom virtual environment for this class. To do so...
 ```
 $ hostname      # Ensure first that you're on a compile node.
-$ conda create -n 2025dsci 
+$ conda create -n 2025dsci python=3.11 # we need this version of python for deeptools and hisat2-inspect to work
  
 # You will be asked if you want to proceed. Type y
 # When your environment is created, check that it exists:
