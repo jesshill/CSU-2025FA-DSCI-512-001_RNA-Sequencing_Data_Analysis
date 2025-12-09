@@ -255,6 +255,29 @@ $ ls -alh
 
 - No matter how large your genome is, you'll always have just 8 of these files.
 
+```
+# the inspection output will look something like this
+
+projects/.colostate.edu/jesshill/software/anaconda/envs/2025dsci/bin/hisat2-inspect:24: DeprecationWarning: the imp module is deprecated in favour of importlib and slated 
+for removal in Python 3.12; see the module's documentation for alternative uses
+  import imp
+Index version   2.2.1
+Flags   1
+2.0-compatible  0
+SA-Sample       1 in 16
+FTab-Chars      10
+Sequence-1      chrI    15072434
+Sequence-2      chrII   15279421
+Sequence-3      chrIII  13783801
+Sequence-4      chrIV   17493829
+Sequence-5      chrM    13794
+Sequence-6      chrV    20924180
+Sequence-7      chrX    17718942
+Num. SNPs: 0
+Num. Splice Sites: 0
+Num. Exons: 0
+```
+
 **README time!** Write down what you did. Some other information you'll want to include in your notebook.
 
 ## Write a paths file
