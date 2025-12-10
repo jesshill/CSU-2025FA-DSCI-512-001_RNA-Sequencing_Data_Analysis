@@ -355,7 +355,7 @@ And finally, the last piece of the puzzle is the .gtf of .gff file. This is the 
 - Upload it to ALPINE using the UPLOAD button on the Dashboard
 
 <p align="center">
-<img width="700" alt="..." src="...">
+<img width="700" alt="upload example" src="https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Images/upload.png">
 </p>
 
 - Download it here, upload it to your PROJ02_ce11IndexBuild folder
