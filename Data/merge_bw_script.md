@@ -76,3 +76,21 @@ You will run the shell script from '04_samtools' with the following syntax:
 ```
 $ bash merge_bw_script.sh
 ```
+
+What you should now see are 12 new files called the following: 
+```
+Ecoli_15.bedGraph
+Ecoli_20.bedGraph
+Ecoli_25.bedGraph
+Bsubtilis_15.bedGraph
+Bsubtilis_20.bedGraph
+Bsubtilis_25.bedGraph
+Ecoli_15_merged.bw
+Ecoli_20_merged.bw
+Ecoli_25_merged.bw
+Bsubtilis_15_merged.bw
+Bsubtilis_20_merged.bw
+Bsubtilis_25_merged.bw
+```
+
+You can now take your _merged.bw files that have your replicates merged together by diet and temperature and upload them either to IGV or UCSC genome browser. Just try with IGV for now. 
