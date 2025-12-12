@@ -62,12 +62,12 @@ bigWigMerge EG16_sort.bw EG17_sort.bw EG18_sort.bw Bsubtilis_25.bedGraph
 # Use bedgraphtobigwig
 # Usage: bedGraphToBigWig in.bedGraph chrom.sizes out.bw
  
-bedgraphtobigwig Ecoli_15.bedGraph ce11.chrom.sizes Ecoli_15_merged.bw
-bedgraphtobigwig Ecoli_20.bedGraph ce11.chrom.sizes Ecoli_20_merged.bw
-bedgraphtobigwig Ecoli_25.bedGraph ce11.chrom.sizes Ecoli_25_merged.bw
-bedgraphtobigwig Bsubtilis_15.bedGraph ce11.chrom.sizes Bsubtilis_15_merged.bw
-bedgraphtobigwig Bsubtilis_20.bedGraph ce11.chrom.sizes Bsubtilis_20_merged.bw
-bedgraphtobigwig Bsubtilis_25.bedGraph ce11.chrom.sizes Bsubtilis_25_merged.bw
+bedGraphToBigWig Ecoli_15.bedGraph ce11.chrom.sizes Ecoli_15_merged.bw
+bedGraphToBigWig Ecoli_20.bedGraph ce11.chrom.sizes Ecoli_20_merged.bw
+bedGraphToBigWig Ecoli_25.bedGraph ce11.chrom.sizes Ecoli_25_merged.bw
+bedGraphToBigWig Bsubtilis_15.bedGraph ce11.chrom.sizes Bsubtilis_15_merged.bw
+bedGraphToBigWig Bsubtilis_20.bedGraph ce11.chrom.sizes Bsubtilis_20_merged.bw
+bedGraphToBigWig Bsubtilis_25.bedGraph ce11.chrom.sizes Bsubtilis_25_merged.bw
 ```
 
 Again, this script will need to be in your '04_samtools' directory, where the files are located!
