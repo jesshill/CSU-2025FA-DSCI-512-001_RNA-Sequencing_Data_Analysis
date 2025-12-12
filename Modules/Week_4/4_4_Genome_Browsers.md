@@ -19,10 +19,10 @@ Another option is **IGV - Integrative Genomics Viewer**. IGV comes in a web app 
 
 ### Prepping .bw files for upload
 
-- Download all the .bw files.
-- Merge them together using this script: [merge_bw script](https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Data/merge_bw_script.md)
+- Merge the .bw files togehter using the instructions and script provided [here](https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Data/merge_bw_script.md)
+  - You will have to install 2 more tools for this script to run! 
+- Now download your replicate merged .bw files.
 - Place the merged files in an http-viewable location (i.e., [Galaxy server](https://usegalaxy.org/))
-- Used UCSC Genome Browser's **upload tracks** to link to my files.
 
 ### Exercise 
 
@@ -35,7 +35,7 @@ Another option is **IGV - Integrative Genomics Viewer**. IGV comes in a web app 
 
 - Navigate to [IGV App](https://igv.org/app/)
 - The human genome is loaded by default. To switch to *C. elegans*, let's go to the **Genome** menu tab.
-- Typically, I would recommend selecting **Local file** and having you upload the exact fasta file and .gtf file that you used for your RNA-seq analysis. In the interest of time and because we downloaded everything from UCSC, we can do select **UCSC GenArk**...
+- Typically, would recommend selecting **Local file** and having you upload the exact fasta file and .gtf file that you used for your RNA-seq analysis. In the interest of time and because we downloaded everything from UCSC, we can do select **UCSC GenArk**...
 
 <p align="center">
 <img width="700" alt="igv screenshot" src="https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Images/IGV-screenshot.png">
@@ -46,7 +46,9 @@ Another option is **IGV - Integrative Genomics Viewer**. IGV comes in a web app 
 **Upload your tracks** 
 
 - To add new tracks, go to **Tracks** and **Local File**...
-  - Select ALL your files: all the _merged.bw files and the .gtf file.
+  - Select ALL your files:
+    - all the _merged.bw files
+    - the .gtf file
 
 **Customize the look and feel** 
 
@@ -97,7 +99,7 @@ Another option is **IGV - Integrative Genomics Viewer**. IGV comes in a web app 
 **Try downloading an image file:**
 
 - Click on **Save Image**
-- Save a picture or vector file. Note: these vector files don't behave well for me.
+- Save a picture (.png) or vector (.svg) file.
 
 ## Bonus Take-Home Content 
 
@@ -113,21 +115,19 @@ IGV (Integrated Genome Viewer) is a stand-alone, downloadable program you can us
 
 #### Prepping .bw files for upload 
 
-As part of the `RNAseq_analyzer.sh` pipeline, I wrote in steps to convert .sam files to sorted .bam files and to generate .bam index files.
+As part of the `RNAseq_analyzer.sh` pipeline, there are steps to convert .sam files to sorted .bam files and to generate .bam index files.
 
 - **file.sam –> file.bam** This compresses the .sam file into a binary file
 - **file.bam –> file_sort.bam** This sorts the .bam file by chromosome location
 - **file_sort.bam.bai** This makes a simple indexing reference file for the sorted .bam file
 - **file.bam –> file.bw** This creates a bigwig file
 
-These files can be downloaded from your location on summit (direct download, rsync, or cyberduck). They can then be opened with IGV.
-
-First, we'll go through how to do this using IGV.
+These files can be downloaded from your location on ALPINE (direct download, rsync, or cyberduck). They can then be opened with IGV.
 
 ### IGV Exercise
 
 - From the drop-down menu, select `C. elegans (ce11)`
-- From JupyterHub, download `EG01_sort.bam` and `EGO01_sort.bam.bai`. You can do this by navigating to these files in the file structure, **right-clicking** on them, and selecting **Download**.
+- Download `EG01_sort.bam` and `EGO01_sort.bam.bai`. You can do this by navigating to these files in the file structure, **right-clicking** on them, and selecting **Download**.
 - In IGV: From **File**, select **Load from File**
 - Within elect your **EGO01_sort.bam** file, making sure that the file **EGO01_sort.bam.bai** is located in the same directory.
 - Repeat the process for one or two other samples.
