@@ -93,4 +93,4 @@ Bsubtilis_20_merged.bw
 Bsubtilis_25_merged.bw
 ```
 
-You can now take your _merged.bw files that have your replicates merged together by diet and temperature and upload them either to IGV or UCSC genome browser. Just try with IGV for now. 
+You can now take your `_merged.bw` files that have your replicates merged together by diet and temperature and upload them either to IGV or UCSC genome browser. Just try with IGV for now. 
