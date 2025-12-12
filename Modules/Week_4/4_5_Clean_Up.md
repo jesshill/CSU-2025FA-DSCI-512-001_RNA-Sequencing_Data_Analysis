@@ -119,7 +119,7 @@ $ pwd
 $ ls
 PROJ01_GomezOrte  PROJ02_ce11_indexBuild  PROJ03_myPorcineProject
 $ tar -zcvf PROJ01.tar.gz PROJ01_GomezOrte
-$ tar -zcvf PROJ02.tar.gz PROJ02_ce11_indexBuild
+$ tar -zcvf PROJ02.tar.gz PROJ02_ce11IndexBuild
 $ tar -zcvf PROJ03.tar.gz PROJ03_myPorcineProject
 $ ls 
 PROJ01_GomezOrte  PROJ01.tar.gz  PROJ02_ce11_indexBuild PROJ02.tar.gz PROJ03_myPorcineProject  PROJ03.tar.gz
