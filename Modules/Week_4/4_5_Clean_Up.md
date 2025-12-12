@@ -64,9 +64,9 @@ Copied from there:
 
 7. Clean up the project: A script is included to automate the process of compressing files and deleting temp files. This is located in the same directory you cloned from github. To use this script:
 
-- Make sure the cleanup script RNAseq_cleanup_251211.sh is copied into the 02_scripts directory (move it one directory up).
+- Make sure the cleanup script cleanup_RNAseq.sh is copied into the 02_scripts directory.
 - Modify the “Modify this Section” part of the clean script.
-- Modify the execute_RNAseq_pipeline.sbatch script to 1) comment out the bash line that runs the RNAseq_analyzer script, 2) remove the from the bash line that runs the cleanup script, and 3) add the metadata path
+- Modify the execute_RNAseq_pipeline.sbatch script to: 1) comment out the bash line that runs the RNAseq_analyzer script, 2) remove the # from the bash line that runs the cleanup script, and 3) add the metadata path
 - It should look like this:
 
 ```
@@ -75,7 +75,7 @@ Copied from there:
 ######################################################
  
 # Execute this script to analyze samples in your metadata file
-#bash analyze_RNAseq_251211.sh $SLURM_NTASKS $line 
+#bash analyze_RNAseq.sh $SLURM_NTASKS $line 
  
  
 #############################
@@ -83,13 +83,13 @@ Copied from there:
 #############################
  
 ## Execute the cleanup script to zip .fastq files and delete extra files
-bash cleanup_RNAseq_251211.sh $line
+bash cleanup_RNAseq.sh $line
 ```
 
 - Again, run with:
 
 ```
-$ sbatch --array=0-17 execute_RNAseq_pipeline.sbatch 
+$ sbatch --account=csu99_alpine1 --array=0-17 execute_RNAseq_pipeline.sbatch 
 ```
 
 ## 2. create a tarball out of the whole project
