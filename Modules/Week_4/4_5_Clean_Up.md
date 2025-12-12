@@ -94,7 +94,14 @@ $ sbatch --account=csu99_alpine1 --array=0-17 execute_RNAseq_pipeline.sbatch
 
 ## 2. create a tarball out of the whole project
 
-Compress your PROJ01_GomezOrte directory into a single file...
+Before we do this, lets gzip our .fastq files in our `01_input` directory! 
+
+WARNING: this will take a minute
+```
+$ gzip *.fastq
+```
+
+Ok, once this is done, now we can compress your PROJ01_GomezOrte directory into a single file...
 
 **Usage**
 
