@@ -60,7 +60,9 @@ NOTE: if you DON“T have your own counts file, you can “borrow” an old one 
 **Download script**
 
 - Same directory as above
-- Download [241203_GomezOrte_DESeq2.R](https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Data/251110_GomezOrte_DESeq2.R) and place it in your `02_scripts` directory
+- Download both the old and new scripts for good measure, though the old script has some aspects that are not currently functional, so you should really just work from the new script. Place the script(s) in your `02_scripts` directory.
+  - Old script: [241203_GomezOrte_DESeq2.R](https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Data/241203_GomezOrte_DESeq2.R)
+  - New script: [251209_DESQ2_GomezOrte.Rmd](https://github.com/jesshill/CSU-2025FA-DSCI-512-001_RNA-Sequencing_Data_Analysis/blob/main/Data/251209_DESQ2_GomezOrte.Rmd)
 
 explore the files you have acquired. 
 
