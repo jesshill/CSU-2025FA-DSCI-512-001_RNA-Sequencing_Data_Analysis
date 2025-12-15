@@ -183,6 +183,7 @@ Use a design structure that matches your biological question
 dds <- DESeqDataSetFromMatrix(countData = cts,
                               colData = coldata,
                               design = ~ food + temp)
+                              #design = ~ food + temp, food:temp)
 ```
 This analyzes the dataset by food (first) and temp (second)
 
@@ -315,7 +316,7 @@ QUESTIONS - What can we conclude about this plot? Which condition makes a bigger
 
 calculate the statistically significant differences between E.coli and B. subtilis diets
 
-Set your contrast expression: contrast=(a character vector with exactly three elements): 1) the name of a factor in the design formula, 2) the name of the numerator level for the fold change, and 3) the name of the denominator level for the fold change (simplest case)
+Set your contrast expression: contrast=(a character vector with exactly three elements): 1) the name of a factor in the design formula, 2) the name of the numerator level for the fold change (treatment), and 3) the name of the denominator level for the fold change (reference) (simplest case)
 
 Set your lfcThreshold to a value of your choosing. This will set whether you want to exclude any genes as significant because their fold change is too low. Default is 0. That means, take all statistically significant genes. In this dataset, erin selected 0.5 because there were A LOT of significant genes and she was trying to reduce the number. You may consider being even stricter than this, 0.5 is pretty low threshold!
 
@@ -324,7 +325,7 @@ Set your alpha value. This is your p-value cut-off for significance. The default
 res_EcolVBsubt <- results(dds,
                             lfcThreshold = 0.5,
                             alpha = 0.1,
-                            contrast=c("food", "Ecoli", "Bsubtilis"))
+                            contrast=c("food", "Bsubtilis", "Ecoli"))
 
 summary(res_EcolVBsubt)
 ```
