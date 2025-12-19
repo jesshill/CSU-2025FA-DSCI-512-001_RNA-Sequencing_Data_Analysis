@@ -67,7 +67,7 @@ SRR5832199_1.fastq      SRR5832199_2.fastq      EG18    18_Bsubtilis_25_3       
 
 **!!!** If your dataset is not accessible through an SRA link, but uses some other data distribution strategy, just follow the instructions to obtain the data and report what you did to get it onto ALPINE. This may require downloading data to your local computer and then uploading that to ALPINE.
 
-**!!!** More tips on uploading data to ALPINE. Sometimes, it can be frustrating to upload several large datasets to ALPINE using the upload icon (up arrow) on Jupyter Hub. In these cases, using dedicated sFTP software can work much more smoothly.
+**!!!** More tips on uploading data to ALPINE. Sometimes, it can be frustrating to upload several large datasets to ALPINE using the upload icon. In these cases, using dedicated sFTP software can work much more smoothly.
 
 ### Turn in the answers to the following questions
 
