@@ -28,7 +28,7 @@
 - For plant genomes, try [Phytozome](https://phytozome-next.jgi.doe.gov/) or [Ensemble Plants](https://plants.ensembl.org/index.html), for example: [Ensemble Arabidopsis](https://plants.ensembl.org/Arabidopsis_thaliana/Info/Index)
   - Note: for Ensembl/Ensembl Plants, go to your genome of interest, then click on **Download DNA sequence (FASTA)**
 
-- Note: for Ensembl, here is the instructions for download... [instructions for rsync download](https://www.ensembl.org/info/data/ftp/rsync.html)
+- Note: for Ensembl, here is the instructions for download... [instructions for rsync download](https://www.ensembl.org/info/data/index.html)
 - Note: for Ensembl Plants, the instructions are similar to above, but need to include “all” instead of “ensembl” between “org” and “pub”, like so...
 
 ```
